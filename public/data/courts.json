@@ -326,6 +326,21 @@
           "url": "https://english.court.gov.cn/2021-10/20/c_761768.htm"
         }
       ]
+    },
+    "USBNC": {
+      "name": "U.S. District Court · Eastern District of California (Sacramento)",
+      "status": "reference",
+      "note": "Per Benicia, contea di Solano: divisione di Sacramento. Arresto in rem secondo Supplemental Rule C e regole marittime locali; verificare il terminal e la collocazione della nave.",
+      "sources": [
+        {
+          "title": "Eastern District: circoscrizione e sede",
+          "url": "https://www.caed.uscourts.gov/CAEDnew/index.cfm/cmecf-e-filing/jurisdiction-and-venue/"
+        },
+        {
+          "title": "Eastern District: Local Rules, Admiralty",
+          "url": "https://www.caed.uscourts.gov/caednew/assets/File/EDCA%20Local%20Rules%20Effective%208-7-23.pdf"
+        }
+      ]
     }
   },
   "countries": {
