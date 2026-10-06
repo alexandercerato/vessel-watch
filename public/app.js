@@ -1,3 +1,4 @@
+import {watchedZoneAt} from './watched-zones.js?v=20261006-sa';
 import {createResolver} from './destinations.js?v=20261006-en';
 const $=s=>document.querySelector(s),cfg=window.VESSEL_WATCH_CONFIG??{};
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -39,7 +40,7 @@ function render(){
  $('#results').textContent=result.length+' of '+rows.length+' vessels · Times '+(timezone==='UTC'?'UTC':'Europe/Rome')+' · Names open VesselFinder · Dossier & history opens the local record';
  renderZones();if(selected)renderDetail();
 }
-function renderZones(){const zones=snapshot?.zones??zoneData;$('#zones').innerHTML=zones.map(z=>'<article class="zone-card"><h3>'+esc(z.name)+'</h3><span class="muted">'+esc(z.country==='Italia'?'Italy':z.country)+'</span><p class="mono">'+coord(z)+'</p><p>Indicative radius: '+Number(z.radius_nm)+' NM</p></article>').join('');}
+function renderZones(){const zones=zoneData;$('#zones').innerHTML=zones.map(z=>'<article class="zone-card"><h3>'+esc(z.name)+'</h3><span class="muted">'+esc(z.country==='Italia'?'Italy':z.country)+'</span><p class="mono">'+coord(z)+'</p><p>Indicative radius: '+Number(z.radius_nm)+' NM</p></article>').join('');}
 function roleDate(r,role){const v=r.company_role_dates?.[role];return v?(v.basis==='during'?'During ':'Since ')+v.date:'Not stated in report';}
 function field(label,value){return '<div><dt>'+esc(label)+'</dt><dd>'+esc(value??'—')+'</dd></div>';}
 function renderDetail(){const r=rows.find(r=>r.imo===selected);if(!r)return;$('#detail-title').textContent=r.name;
@@ -51,7 +52,7 @@ function detailEvents(){const events=historyData?.events??snapshot?.events?.filt
 async function loadHistory(){if(!selected||!snapshot)return;const imo=selected,seq=++historySeq;try{const data=await api('/api/vessels/'+imo+'/history');if(seq!==historySeq||selected!==imo)return;historyData=data;}catch{if(seq!==historySeq)return;historyData={error:'History unavailable. Try Refresh.'};}renderDetail();}
 function openDetail(imo){selected=imo;historyData=null;renderDetail();$('#detail').showModal();loadHistory();}
 async function api(route){const res=await fetch(apiBase+route,{cache:'no-store',headers:token?{authorization:'Bearer '+token}:{},signal:AbortSignal.timeout(12000)});if(!res.ok)throw new Error(res.status===401?'Service access required':'AIS service unavailable (HTTP '+res.status+')');return res.json();}
-function decay(){for(const r of rows){if(!r.position)continue;r.age_seconds=Math.max(0,Math.floor((Date.now()-Date.parse(r.position.at))/1000));r.freshness=r.age_seconds<=900?'recent':r.age_seconds<=86400?'stale':'lost';}}
+function decay(){for(const r of rows){if(!r.position)continue;const z=watchedZoneAt(r.position.lat,r.position.lon,zoneData);r.position.zone=z?{id:z.id,name:z.name,country:z.country}:null;r.age_seconds=Math.max(0,Math.floor((Date.now()-Date.parse(r.position.at))/1000));r.freshness=r.age_seconds<=900?'recent':r.age_seconds<=86400?'stale':'lost';}}
 async function refresh(){if(refreshing)return;refreshing=true;$('#refresh').disabled=true;
  try{const data=await api('/api/watch');if(!Array.isArray(data.vessels)||data.vessels.length!==fleet.vessels.length)throw new Error('Invalid service response');
    const expected=new Set(fleet.vessels.map(v=>v.imo));if(data.vessels.some(v=>!expected.has(v.imo))||new Set(data.vessels.map(v=>v.imo)).size!==expected.size)throw new Error('Service fleet differs from report');
@@ -75,4 +76,4 @@ $('#settings').addEventListener('click',()=>{$('#api-base').value=apiBase;$('#re
 $('#config-form').addEventListener('submit',e=>{e.preventDefault();const value=$('#api-base').value.trim();try{if(value&&new URL(value).protocol!=='https:'&&!value.startsWith('http://localhost'))throw new Error();}catch{$('#api-base').setCustomValidity('Use a valid HTTPS address.');$('#api-base').reportValidity();return;}$('#api-base').setCustomValidity('');apiBase=value.replace(/\/$/,'');token=$('#read-token').value;localStorage.setItem('vw-api',apiBase);sessionStorage.setItem('vw-token',token);$('#config').close();snapshot=null;refresh();});
 function clock(){$('#clock').textContent=fmt(new Date().toISOString());}setInterval(clock,1000);clock();
 $('#timezone').textContent=timezone==='UTC'?'UTC':'Rome';
-async function init(){try{[fleet,zoneData,legalData]=await Promise.all([fetch('data/fleet.json').then(r=>r.json()),fetch('data/zones.json').then(r=>r.json()).then(d=>d.zones),Promise.all([fetch('data/ports.json').then(r=>{if(!r.ok)throw new Error();return r.json();}),fetch('data/courts.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error();return r.json();})]).catch(()=>null)]);if(legalData)resolveDestination=createResolver(...legalData);rows=fleet.vessels.map(s=>({...s,freshness:'unknown',navigation:'unknown',position:null,static:{},identity:null}));render();refresh();}catch{notice('The vessel list could not be loaded. Reload the page.',true);$('#connection').textContent='Fleet not loaded';}}init();
+async function init(){try{[fleet,zoneData,legalData]=await Promise.all([fetch('data/fleet.json').then(r=>r.json()),fetch('data/zones.json',{cache:'no-store'}).then(r=>r.json()).then(d=>d.zones),Promise.all([fetch('data/ports.json').then(r=>{if(!r.ok)throw new Error();return r.json();}),fetch('data/courts.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error();return r.json();})]).catch(()=>null)]);if(legalData)resolveDestination=createResolver(...legalData);rows=fleet.vessels.map(s=>({...s,freshness:'unknown',navigation:'unknown',position:null,static:{},identity:null}));render();refresh();}catch{notice('The vessel list could not be loaded. Reload the page.',true);$('#connection').textContent='Fleet not loaded';}}init();
