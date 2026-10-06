@@ -10,6 +10,9 @@ if(canvas&&panel){
  const ctx=canvas.getContext('2d');
  const WORLD_W=1500;
  const WORLD_H=470;
+ const MOBILE_W=720;
+ const MOBILE_H=420;
+ let mobileMode=false;
  let w=WORLD_W,h=WORLD_H,dpr=1,running=true,score=0,speed=310,last=performance.now(),spawn=1.3;
  let ship={x:105,y:0,vy:0,w:138,h:58};
  const obs=[];
@@ -23,16 +26,18 @@ if(canvas&&panel){
 
  function resize(){
   dpr=Math.min(window.devicePixelRatio||1,2);
-  w=WORLD_W;
-  h=WORLD_H;
-  canvas.width=Math.round(WORLD_W*dpr);
-  canvas.height=Math.round(WORLD_H*dpr);
+  mobileMode=window.matchMedia('(max-width:650px)').matches;
+  w=mobileMode?MOBILE_W:WORLD_W;
+  h=mobileMode?MOBILE_H:WORLD_H;
+  ship.x=mobileMode?64:105;
+  canvas.width=Math.round(w*dpr);
+  canvas.height=Math.round(h*dpr);
   ctx.setTransform(dpr,0,0,dpr,0,0);
   if(ship.y===0||ship.y>ground()-ship.h)ship.y=ground()-ship.h;
  }
  function ground(){return h-62}
  function reset(){
-  obs.length=0;score=0;speed=310;spawn=1.05;running=true;
+  obs.length=0;score=0;speed=mobileMode?225:310;spawn=1.05;running=true;
   ship.y=ground()-ship.h;ship.vy=0;
   scoreEl.textContent='0';planEl.textContent='100%';
   messageEl.textContent='CLICK · TAP · SPACE TO JUMP';
@@ -41,7 +46,7 @@ if(canvas&&panel){
  }
  function jump(){
   if(!running)return;
-  if(ship.y>=ground()-ship.h-2)ship.vy=-600;
+  if(ship.y>=ground()-ship.h-2)ship.vy=mobileMode?-535:-600;
  }
  function spawnObstacle(){
   const t=types[Math.floor(Math.random()*types.length)];
@@ -188,7 +193,7 @@ if(canvas&&panel){
  function tick(now){
   const dt=Math.min(.032,(now-last)/1000);last=now;
   if(running&&!panel.hidden){
-   ship.vy+=1550*dt;ship.y+=ship.vy*dt;
+   ship.vy+=(mobileMode?1380:1550)*dt;ship.y+=ship.vy*dt;
    if(ship.y>ground()-ship.h){ship.y=ground()-ship.h;ship.vy=0}
    spawn-=dt;
    if(spawn<=0){spawnObstacle();spawn=Math.max(.72,1.35-score/1050)+Math.random()*.48}
@@ -198,7 +203,7 @@ if(canvas&&panel){
      o.passed=true;score+=10;scoreEl.textContent=String(score);
      planEl.textContent=(100+Math.min(899,Math.floor(score*.72)))+'%';
      directiveEl.textContent=o.type.directive;
-     speed=Math.min(430,speed+3);
+     speed=Math.min(mobileMode?320:430,speed+3);
     }
     if(collide(ship,o))gameOver();
     if(o.x+o.w<-30)obs.splice(i,1);
