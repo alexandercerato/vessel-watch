@@ -1,0 +1,413 @@
+{
+  "checked_at": "2026-10-06",
+  "scope": "Tribunale di riferimento per sequestro civile se la nave giunge nel porto dichiarato; non determina la competenza sul merito né i presupposti del credito.",
+  "aliases": {
+    "PORT SAID": "EGPSD",
+    "SAMCHEONPO KR": "KRSCP",
+    "SAMCHEONPO": "KRSCP",
+    "GENOA": "ITGOA",
+    "GENOVA": "ITGOA",
+    "CHENNAI": "INMAA",
+    "MADRAS": "INMAA",
+    "ULSAN": "KRUSN",
+    "DAESAN": "KRTSN",
+    "TILBURY": "GBTIL",
+    "SINGAPORE": "SGSIN",
+    "PARANAGUA": "BRPNG",
+    "LAZARO CARDENAS": "MXLZC",
+    "SAN DIEGO": "USSAN"
+  },
+  "ports": {
+    "KRPTK": {
+      "name": "Suwon District Court · Pyeongtaek Branch",
+      "status": "reference",
+      "note": "Circoscrizione di Pyeongtaek; terminal sul lato Dangjin da verificare con il corrispondente locale.",
+      "sources": [
+        {
+          "title": "Civil Execution Act, art. 278",
+          "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+        },
+        {
+          "title": "Circoscrizione giudiziaria",
+          "url": "https://suwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_co=000253"
+        }
+      ]
+    },
+    "KRMAS": {
+      "name": "Changwon District Court · Masan Branch",
+      "status": "reference",
+      "note": "Sequestro conservativo presso il giudice del luogo della nave o della causa principale.",
+      "sources": [
+        {
+          "title": "Civil Execution Act, art. 278",
+          "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+        },
+        {
+          "title": "Circoscrizione di Masan",
+          "url": "https://changwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000431"
+        }
+      ]
+    },
+    "KRTSN": {
+      "name": "Daejeon District Court · Seosan Branch",
+      "status": "reference",
+      "note": "Circoscrizione di Seosan, Dangjin e Taean.",
+      "sources": [
+        {
+          "title": "Civil Execution Act, art. 278",
+          "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+        },
+        {
+          "title": "Circoscrizione di Seosan",
+          "url": "https://daejeon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000285"
+        }
+      ]
+    },
+    "KRTAN": {
+      "name": "Daejeon District Court · Seosan Branch",
+      "status": "reference",
+      "note": "Circoscrizione di Seosan, Dangjin e Taean.",
+      "sources": [
+        {
+          "title": "Civil Execution Act, art. 278",
+          "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+        },
+        {
+          "title": "Circoscrizione di Seosan",
+          "url": "https://daejeon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000285"
+        }
+      ]
+    },
+    "KRSCP": {
+      "name": "Changwon District Court · Jinju Branch",
+      "status": "reference",
+      "note": "Samcheonpo/Sacheon rientra nella circoscrizione di Jinju.",
+      "sources": [
+        {
+          "title": "Civil Execution Act, art. 278",
+          "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+        },
+        {
+          "title": "Circoscrizione di Jinju",
+          "url": "https://changwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000421"
+        }
+      ]
+    },
+    "KRKAN": {
+      "name": "Gwangju District Court · Suncheon Branch",
+      "status": "reference",
+      "note": "Circoscrizione di Gwangyang; verificare il terminal effettivo.",
+      "sources": [
+        {
+          "title": "Civil Execution Act, art. 278",
+          "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+        },
+        {
+          "title": "Circoscrizione di Suncheon",
+          "url": "https://gwangju.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000513"
+        }
+      ]
+    },
+    "KRUSN": {
+      "name": "Ulsan District Court",
+      "status": "reference",
+      "note": "Giudice territoriale di Ulsan; verificare collocazione della nave e presupposti della misura.",
+      "sources": [
+        {
+          "title": "Civil Execution Act, art. 278",
+          "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+        },
+        {
+          "title": "Ulsan District Court",
+          "url": "https://ulsan.scourt.go.kr/"
+        }
+      ]
+    },
+    "GBTIL": {
+      "name": "High Court of Justice · Admiralty Court (Londra)",
+      "status": "reference",
+      "note": "Riferimento per porti in Inghilterra e Galles; la Scozia e l’Irlanda del Nord hanno regimi distinti.",
+      "sources": [
+        {
+          "title": "CPR Part 61, in particolare 61.1 e 61.5",
+          "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part61"
+        }
+      ]
+    },
+    "USBAL": {
+      "name": "U.S. District Court · District of Maryland (Baltimore)",
+      "status": "reference",
+      "note": "Arresto in rem secondo Supplemental Rule C; per attachment di beni si applicano presupposti diversi.",
+      "sources": [
+        {
+          "title": "District of Maryland: Admiralty Cases",
+          "url": "https://www.mdd.uscourts.gov/admiralty-cases"
+        }
+      ]
+    },
+    "USTPA": {
+      "name": "U.S. District Court · Middle District of Florida (Tampa)",
+      "status": "reference",
+      "note": "Arresto in rem secondo Supplemental Rule C; verificare la natura del credito.",
+      "sources": [
+        {
+          "title": "Admiralty and Maritime Practice Manual",
+          "url": "https://www.flmd.uscourts.gov/admiralty-and-maritime-practice-manual-page"
+        },
+        {
+          "title": "Sede di Tampa",
+          "url": "https://www.flmd.uscourts.gov/locations/tampa"
+        }
+      ]
+    },
+    "USSAN": {
+      "name": "U.S. District Court · Southern District of California (San Diego)",
+      "status": "preliminary",
+      "note": "Riferimento territoriale federale; verifica locale delle regole di arresto e del credito necessaria.",
+      "sources": [
+        {
+          "title": "District Court",
+          "url": "https://www.casd.uscourts.gov/"
+        }
+      ]
+    },
+    "INMAA": {
+      "name": "Madras High Court · Chennai (Admiralty)",
+      "status": "reference",
+      "note": "High Court costiera del Tamil Nadu; arresto in rem ai sensi dell’Admiralty Act 2017.",
+      "sources": [
+        {
+          "title": "Admiralty Act 2017",
+          "url": "https://www.indiacode.nic.in/handle/123456789/2256?locale=en"
+        },
+        {
+          "title": "Ministero: giurisdizione delle High Courts costiere",
+          "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=174565"
+        }
+      ]
+    },
+    "GHTEM": {
+      "name": "High Court of Ghana · Tema",
+      "status": "preliminary",
+      "note": "High Court territoriale di riferimento; divisione e deposito dell’istanza marittima da confermare localmente.",
+      "sources": [
+        {
+          "title": "Judicial Service: elenco delle sedi",
+          "url": "https://judicial.gov.gh/jsweb/index.php/jsg-services/general-services/court-locator"
+        },
+        {
+          "title": "Judicial Service: giustizia marittima",
+          "url": "https://judicial.gov.gh/index.php/publications/news-publications/speeches/384-2023-08-07-15-47-53"
+        }
+      ]
+    },
+    "EGPSD": {
+      "name": "Economic Court territorialmente competente · Port Said",
+      "status": "preliminary",
+      "note": "Riferimento da confermare con il corrispondente egiziano: possibili competenze del giudice urgente costiero.",
+      "sources": [
+        {
+          "title": "IBA, Nabil Farag: Ship arrest in Egypt, 10.08.26",
+          "url": "https://www.ibanet.org/overview-ship-arrest-egypt"
+        }
+      ]
+    },
+    "EGSKT": {
+      "name": "Economic Court territorialmente competente · Alessandria",
+      "status": "preliminary",
+      "note": "Per Sidi Kerir: verificare circoscrizione del terminal e giudice degli ordini urgenti; sede qui indicata come preliminare.",
+      "sources": [
+        {
+          "title": "IBA, Nabil Farag: Ship arrest in Egypt, 10.08.26",
+          "url": "https://www.ibanet.org/overview-ship-arrest-egypt"
+        }
+      ]
+    },
+    "OMDQM": {
+      "name": "Court of Investment and Commerce · Duqm · Al Wusta",
+      "status": "preliminary",
+      "note": "Per crediti commerciali: giudice urgente della sezione di primo grado. Riforma in vigore dal 01.10.25; verificare la natura del credito e le eccezioni.",
+      "sources": [
+        {
+          "title": "RD 35/2025, artt. 11 e 14",
+          "url": "https://qanoon.om/p/2025/rd2025035/"
+        },
+        {
+          "title": "Decisione 433/2025: sedi e circoscrizioni",
+          "url": "https://qanoon.om/p/2025/sjc20250433/"
+        }
+      ]
+    },
+    "OMSOH": {
+      "name": "Court of Investment and Commerce · Sohar · North Al Batinah",
+      "status": "preliminary",
+      "note": "Per crediti commerciali: giudice urgente della sezione di primo grado. Riforma in vigore dal 01.10.25; verificare la natura del credito e le eccezioni.",
+      "sources": [
+        {
+          "title": "RD 35/2025, artt. 11 e 14",
+          "url": "https://qanoon.om/p/2025/rd2025035/"
+        },
+        {
+          "title": "Decisione 433/2025: sedi e circoscrizioni",
+          "url": "https://qanoon.om/p/2025/sjc20250433/"
+        }
+      ]
+    },
+    "PECLL": {
+      "name": "Juzgado Civil del Callao",
+      "status": "preliminary",
+      "note": "Riferimento territoriale preliminare; competenza specifica per arresto della nave non verificata nelle fonti consultate.",
+      "sources": [
+        {
+          "title": "Poder Judicial: Corte del Callao",
+          "url": "https://www.gob.pe/csjcallao"
+        }
+      ]
+    },
+    "BRPNG": {
+      "name": "Vara Cível da Comarca de Paranaguá",
+      "status": "preliminary",
+      "note": "Riferimento territoriale preliminare per crediti privati; competenza specifica per arresto e possibili fori concorrenti da verificare.",
+      "sources": [
+        {
+          "title": "TJPR: giurisdizione civile di Paranaguá",
+          "url": "https://portal.tjpr.jus.br/jurisprudencia/j/4100000035885931/Ac%C3%B3rd%C3%A3o-0131046-23.2025.8.16.0000"
+        }
+      ]
+    },
+    "CNYTG": {
+      "name": "Qingdao Maritime Court · Yantai Tribunal",
+      "status": "reference",
+      "note": "Il tribunale distaccato copre i porti e le acque di Yantai e riceve istanze di arresto prima della causa.",
+      "sources": [
+        {
+          "title": "Qingdao Maritime Court: Yantai Tribunal",
+          "url": "https://www.sdcourt.gov.cn/qdhsfy/394039/394179/394181/index.html"
+        }
+      ]
+    },
+    "CNYAT": {
+      "name": "Qingdao Maritime Court · Yantai Tribunal",
+      "status": "reference",
+      "note": "Il tribunale distaccato copre i porti e le acque di Yantai e riceve istanze di arresto prima della causa.",
+      "sources": [
+        {
+          "title": "Qingdao Maritime Court: Yantai Tribunal",
+          "url": "https://www.sdcourt.gov.cn/qdhsfy/394039/394179/394181/index.html"
+        }
+      ]
+    },
+    "CNSHG": {
+      "name": "Shanghai Maritime Court",
+      "status": "reference",
+      "note": "Giurisdizione sulle acque di Shanghai, incluso Yangshan; sequestro secondo Special Maritime Procedure Law.",
+      "sources": [
+        {
+          "title": "Shanghai Maritime Court: giurisdizione",
+          "url": "https://www.hshfy.sh.cn/shfy/English/MapView.jsp?pa=aaWQ9MzYzMTUxJnhoPTEmbG1kbT1sbTkzOQPdcssPdcssz"
+        },
+        {
+          "title": "SPC: arresto delle navi",
+          "url": "https://english.court.gov.cn/2021-10/20/c_761768.htm"
+        }
+      ]
+    },
+    "CNSGH": {
+      "name": "Shanghai Maritime Court",
+      "status": "reference",
+      "note": "Giurisdizione sulle acque di Shanghai, incluso Yangshan; sequestro secondo Special Maritime Procedure Law.",
+      "sources": [
+        {
+          "title": "Shanghai Maritime Court: giurisdizione",
+          "url": "https://www.hshfy.sh.cn/shfy/English/MapView.jsp?pa=aaWQ9MzYzMTUxJnhoPTEmbG1kbT1sbTkzOQPdcssPdcssz"
+        },
+        {
+          "title": "SPC: arresto delle navi",
+          "url": "https://english.court.gov.cn/2021-10/20/c_761768.htm"
+        }
+      ]
+    }
+  },
+  "countries": {
+    "SG": {
+      "name": "General Division of the High Court · Singapore",
+      "status": "reference",
+      "note": "Warrant of arrest e intervento dello Sheriff entro i limiti portuali di Singapore.",
+      "sources": [
+        {
+          "title": "Supreme Court Practice Directions 2021, Part 17",
+          "url": "https://epd2021-supremecourt.judiciary.gov.sg/part-17-admiralty-matters"
+        },
+        {
+          "title": "Sheriff: arresto delle navi",
+          "url": "https://www.judiciary.gov.sg/services/sheriff-services-admiralty-actions"
+        }
+      ]
+    },
+    "JM": {
+      "name": "Supreme Court of Judicature of Jamaica · Kingston",
+      "status": "reference",
+      "note": "Admiralty jurisdiction; procedura di arresto della nave in rem.",
+      "sources": [
+        {
+          "title": "Decisione Matcam Marine: arresto e giurisdizione",
+          "url": "https://www.supremecourt.gov.jm/content/matcam-marine-limited-v-matalon-michael-registered-owner-orion-warrior-formerly-matcam-1"
+        }
+      ]
+    },
+    "BS": {
+      "name": "Supreme Court of The Bahamas · Nassau",
+      "status": "reference",
+      "note": "Admiralty proceedings, CPR Part 59.",
+      "sources": [
+        {
+          "title": "Supreme Court Civil Procedure Rules 2022",
+          "url": "https://www.courts.bs/wp-content/uploads/2022/08/Supreme-Court-Civil-Procedure-Rules-2022-FINAL-for-Publication.pdf"
+        }
+      ]
+    },
+    "PA": {
+      "name": "Tribunales Marítimos de Panamá · Panama City",
+      "status": "reference",
+      "note": "Primo o Secondo Tribunale marittimo, secondo assegnazione; non la corte d’appello.",
+      "sources": [
+        {
+          "title": "Órgano Judicial: sequestro delle navi",
+          "url": "https://revistasapientia.organojudicial.gob.pa/index.php/sapientia/article/view/228?articlesBySimilarityPage=2"
+        }
+      ]
+    },
+    "LK": {
+      "name": "Commercial High Court · Colombo (Admiralty)",
+      "status": "reference",
+      "note": "Giurisdizione marittima esercitata a Colombo, anche per Hambantota.",
+      "sources": [
+        {
+          "title": "Commercial High Court: competenza",
+          "url": "https://colchc.gov.lk/faqs"
+        }
+      ]
+    },
+    "MX": {
+      "name": "Juzgado de Distrito del luogo della nave",
+      "status": "reference",
+      "note": "Per Lázaro Cárdenas: giudice federale territorialmente competente in Michoacán; sede e assegnazione da confermare. Art. 274 LNCM.",
+      "sources": [
+        {
+          "title": "Ley de Navegación y Comercio Marítimos, testo vigente",
+          "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNCM.pdf"
+        }
+      ]
+    }
+  },
+  "code_hints": {
+    "CNYNT": {
+      "code": "CNYTG",
+      "note": "YNT è il codice aeroportuale di Yantai: porto della stessa città ipotizzato, da confermare"
+    },
+    "CNSHA": {
+      "code": "CNSHG",
+      "note": "SHA è il codice aeroportuale di Shanghai: porto della stessa città ipotizzato, da confermare"
+    }
+  }
+}

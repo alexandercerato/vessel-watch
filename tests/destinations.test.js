@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import {createResolver} from '../public/destinations.js';
+const directory=JSON.parse(fs.readFileSync(new URL('../public/data/ports.json',import.meta.url)));
+const legal=JSON.parse(fs.readFileSync(new URL('../public/data/courts.json',import.meta.url)));
+const resolve=createResolver(directory,legal);
+test('spaced LOCODE and route select the destination, not origin',()=>{assert.equal(resolve('CN YNT').port,'Yantai Pt');assert.equal(resolve('CN YNT').match,'inferred');assert.equal(resolve('MXLZC->USSAN').code,'USSAN');assert.equal(resolve('MUPLU->KRTSN').port,'Daesan/Seosan');assert.match(resolve('MUPLU->KRTSN').court.name,/Seosan/);});
+test('unknown destination never fabricates port or court from flag or prefix',()=>{for(const raw of [null,'HIGHSEAS','ZZZZZ','KRSCW','KRTEN']){assert.equal(resolve(raw).port,null);assert.equal(resolve(raw).court,null);}assert.equal(resolve('KRSCW').country,'Corea del Sud');assert.equal(resolve(null).match,'missing');});
+test('exact aliases and parenthetical ambiguity',()=>{assert.equal(resolve('PORT SAID').code,'EGPSD');assert.equal(resolve('SAMCHEONPO_KR').code,'KRSCP');assert.equal(resolve('SGSIN(PEBGB)').code,'SGSIN');assert.equal(resolve('SGSIN(PECLL)').code,null);assert.equal(resolve('NOT SINGAPORE').code,null);});
+test('ambiguous names do not select one country silently',()=>{const r=createResolver({countries:['US','GB'],ports:{USAAA:'Twin Port',GBAAA:'Twin Port'}},{ports:{},countries:{}});assert.equal(r('Twin Port').code,null);});
+test('jurisdiction falls back only for supported national jurisdiction and preserves uncertainty',()=>{assert.match(resolve('JMKIN').court.name,/Jamaica/);assert.equal(resolve('GBABD').court,null);assert.equal(resolve('PECLL').court.status,'preliminary');for(const c of [...Object.values(legal.ports),...Object.values(legal.countries)]){assert.ok(c.sources.length);for(const source of c.sources)assert.equal(new URL(source.url).protocol,'https:');}});
