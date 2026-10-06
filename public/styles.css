@@ -7,3 +7,5 @@
 
 .ship-logo{width:170px;height:72px;object-fit:contain;background:#fff;border-radius:2px;padding:2px}.fleet-motto{font-size:.875rem;color:var(--muted);font-style:italic;margin:5px 0 12px}.brand div>span{color:#bdbdbd}
 @media(max-width:650px){.ship-logo{width:100px;height:48px}.brand{gap:10px}.brand strong{font-size:.75rem}.head-controls #clock{display:none}}
+
+.ship-logo{width:118px;height:88px;padding:0;object-fit:contain;background:transparent;border-radius:0}@media(max-width:650px){.ship-logo{width:82px;height:61px}}
