@@ -46,7 +46,7 @@ if(canvas&&panel){
  }
  function jump(){
   if(!running)return;
-  if(ship.y>=ground()-ship.h-2)ship.vy=mobileMode?-535:-600;
+  if(ship.y>=ground()-ship.h-2)ship.vy=mobileMode?-600:-665;
  }
  function spawnObstacle(){
   const t=types[Math.floor(Math.random()*types.length)];
