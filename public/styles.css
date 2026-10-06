@@ -4,3 +4,6 @@
 .destination-place{min-width:180px;max-width:230px;white-space:normal}.destination-court{min-width:235px;max-width:290px;white-space:normal}.destination-note{font-size:.8125rem;color:var(--muted);max-width:1050px;line-height:1.6}.court-sources{font-size:.8125rem;padding-left:20px}.court-sources li{margin:8px 0}
 
 .news-item{padding:24px 0;border-bottom:1px solid var(--line);max-width:1000px}.news-item h3{font-size:1.15rem;font-weight:500;margin:8px 0}.news-item h3 a{text-decoration:none}.news-item h3 a:hover{text-decoration:underline}.news-item p{font-size:.875rem;margin:8px 0}.news-meta{font-size:.75rem;color:var(--muted)}
+
+.ship-logo{width:170px;height:72px;object-fit:contain;background:#fff;border-radius:2px;padding:2px}.fleet-motto{font-size:.875rem;color:var(--muted);font-style:italic;margin:5px 0 12px}.brand div>span{color:#bdbdbd}
+@media(max-width:650px){.ship-logo{width:100px;height:48px}.brand{gap:10px}.brand strong{font-size:.75rem}.head-controls #clock{display:none}}
