@@ -69,8 +69,8 @@ document.addEventListener('click',e=>{const ship=e.target.closest('[data-imo]');
 $('#detail').addEventListener('close',()=>{selected=null;historySeq++;});
 for(const id of ['search','role','freshness','sort'])$('#'+id).addEventListener(id==='search'?'input':'change',render);
 for(const btn of document.querySelectorAll('[data-filter]'))btn.addEventListener('click',()=>{$('#freshness').value=btn.dataset.filter;switchTab('fleet');render();});
-function switchTab(name){for(const key of ['fleet','events','zones']){$('#'+key+'-panel').hidden=key!==name;$('#'+key+'-tab').classList.toggle('active',key===name);$('#'+key+'-tab').setAttribute('aria-selected',String(key===name));}}
-for(const name of ['fleet','events','zones'])$('#'+name+'-tab').addEventListener('click',()=>switchTab(name));
+function switchTab(name){for(const key of ['fleet','events','zones','news']){$('#'+key+'-panel').hidden=key!==name;$('#'+key+'-tab').classList.toggle('active',key===name);$('#'+key+'-tab').setAttribute('aria-selected',String(key===name));}}
+for(const name of ['fleet','events','zones','news'])$('#'+name+'-tab').addEventListener('click',()=>switchTab(name));
 $('#refresh').addEventListener('click',refresh);$('#export').addEventListener('click',exportCSV);
 $('#timezone').addEventListener('click',()=>{timezone=timezone==='UTC'?'Europe/Rome':'UTC';localStorage.setItem('vw-timezone',timezone);$('#timezone').textContent=timezone==='UTC'?'UTC':'Roma';render();});
 $('#settings').addEventListener('click',()=>{$('#api-base').value=apiBase;$('#read-token').value=token;$('#config').showModal();});
