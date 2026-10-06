@@ -1,0 +1,1111 @@
+{
+  "company": "HYUNDAI GLOVIS CO LTD",
+  "company_imo": "5341749",
+  "report_date": "2026-10-06",
+  "source": "Hyundai Glovis Co Ltd - Equasis report.pdf",
+  "vessels": [
+    {
+      "imo": "9122930",
+      "name": "GLOVIS CORONA",
+      "gross_tonnage": 55680,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 1996,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 2,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "during",
+          "date": "06/2015"
+        }
+      }
+    },
+    {
+      "imo": "9122942",
+      "name": "GLOVIS COMET",
+      "gross_tonnage": 55680,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 1996,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 2,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "during",
+          "date": "10/2014"
+        }
+      }
+    },
+    {
+      "imo": "9158604",
+      "name": "GLOVIS CHORUS",
+      "gross_tonnage": 55729,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 1997,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 2,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "12/02/2015"
+        }
+      }
+    },
+    {
+      "imo": "9414876",
+      "name": "GLOVIS CONDOR",
+      "gross_tonnage": 60552,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2011,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 2,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "27/08/2013"
+        },
+        "Registered owner": {
+          "basis": "during",
+          "date": "09/2019"
+        }
+      }
+    },
+    {
+      "imo": "9419759",
+      "name": "GLOVIS CARDINAL",
+      "gross_tonnage": 60559,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2012,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 2,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "29/08/2013"
+        },
+        "Registered owner": {
+          "basis": "during",
+          "date": "10/2019"
+        }
+      }
+    },
+    {
+      "imo": "9445409",
+      "name": "GLOVIS SOLOMON",
+      "gross_tonnage": 72946,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2011,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 2,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "15/10/2019"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "29/07/2014"
+        }
+      }
+    },
+    {
+      "imo": "9451898",
+      "name": "GLOVIS COUGAR",
+      "gross_tonnage": 60559,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2012,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 2,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "during",
+          "date": "09/2013"
+        },
+        "Registered owner": {
+          "basis": "during",
+          "date": "12/2019"
+        }
+      }
+    },
+    {
+      "imo": "9460899",
+      "name": "GLOVIS COMPANION",
+      "gross_tonnage": 60213,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2010,
+      "flag": "Liberia",
+      "company_roles": [
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 3,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "21/07/2021"
+        }
+      }
+    },
+    {
+      "imo": "9590589",
+      "name": "GLOVIS CENTURY",
+      "gross_tonnage": 58465,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2012,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 3,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "28/02/2012"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "24/11/2020"
+        }
+      }
+    },
+    {
+      "imo": "9590591",
+      "name": "GLOVIS CHALLENGE",
+      "gross_tonnage": 58465,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2012,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 3,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "24/11/2020"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "17/04/2012"
+        }
+      }
+    },
+    {
+      "imo": "9590606",
+      "name": "GLOVIS ADVANCE",
+      "gross_tonnage": 93544,
+      "ship_type": "Bulk Carrier",
+      "year_built": 2012,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 3,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "during",
+          "date": "09/2016"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "09/11/2020"
+        }
+      }
+    },
+    {
+      "imo": "9651101",
+      "name": "GLOVIS COURAGE",
+      "gross_tonnage": 59241,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2013,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 3,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "during",
+          "date": "12/2020"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "29/03/2013"
+        }
+      }
+    },
+    {
+      "imo": "9651113",
+      "name": "GLOVIS CHAMPION",
+      "gross_tonnage": 59241,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2013,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 3,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "10/06/2013"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "14/12/2020"
+        }
+      }
+    },
+    {
+      "imo": "9674165",
+      "name": "GLOVIS SPIRIT",
+      "gross_tonnage": 64824,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2013,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 4,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "15/03/2018"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "09/11/2020"
+        }
+      }
+    },
+    {
+      "imo": "9674177",
+      "name": "GLOVIS SUPREME",
+      "gross_tonnage": 64824,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2013,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 4,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "12/01/2021"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "08/11/2013"
+        }
+      }
+    },
+    {
+      "imo": "9674189",
+      "name": "GLOVIS SUPERIOR",
+      "gross_tonnage": 64824,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2013,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 4,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "20/12/2013"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "20/12/2020"
+        }
+      }
+    },
+    {
+      "imo": "9683661",
+      "name": "VL PIONEER",
+      "gross_tonnage": 161367,
+      "ship_type": "Crude Oil Tanker",
+      "year_built": 2014,
+      "flag": "Liberia",
+      "company_roles": [
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 4,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "01/06/2014"
+        }
+      }
+    },
+    {
+      "imo": "9702405",
+      "name": "GLOVIS SUNRISE",
+      "gross_tonnage": 64717,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2014,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 4,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "19/03/2018"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "22/12/2022"
+        }
+      }
+    },
+    {
+      "imo": "9702417",
+      "name": "GLOVIS SUMMIT",
+      "gross_tonnage": 64717,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2014,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 5,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "13/05/2014"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "01/01/2023"
+        }
+      }
+    },
+    {
+      "imo": "9702429",
+      "name": "GLOVIS SYMPHONY",
+      "gross_tonnage": 64717,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2014,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 5,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "20/06/2014"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "06/02/2023"
+        }
+      }
+    },
+    {
+      "imo": "9702431",
+      "name": "GLOVIS SPLENDOR",
+      "gross_tonnage": 64776,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2014,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 5,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "04/01/2023"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "28/10/2014"
+        }
+      }
+    },
+    {
+      "imo": "9706994",
+      "name": "GLOVIS CROWN",
+      "gross_tonnage": 59968,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2014,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 5,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "23/12/2014"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "10/12/2024"
+        }
+      }
+    },
+    {
+      "imo": "9707003",
+      "name": "GLOVIS CRYSTAL",
+      "gross_tonnage": 59954,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2015,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 5,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "11/02/2025"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "17/02/2015"
+        }
+      }
+    },
+    {
+      "imo": "9707015",
+      "name": "GLOVIS CAPTAIN",
+      "gross_tonnage": 59954,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2015,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 5,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "31/03/2025"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "30/03/2015"
+        }
+      }
+    },
+    {
+      "imo": "9707027",
+      "name": "GLOVIS COSMOS",
+      "gross_tonnage": 59954,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2015,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 6,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "13/05/2015"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "23/04/2025"
+        }
+      }
+    },
+    {
+      "imo": "9710608",
+      "name": "GLOVIS DESIRE",
+      "gross_tonnage": 43956,
+      "ship_type": "Bulk Carrier",
+      "year_built": 2015,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 6,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "14/03/2016"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "30/06/2015"
+        }
+      }
+    },
+    {
+      "imo": "9710658",
+      "name": "GLOVIS DAYLIGHT",
+      "gross_tonnage": 43956,
+      "ship_type": "Bulk Carrier",
+      "year_built": 2015,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 6,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "14/03/2016"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "09/12/2015"
+        }
+      }
+    },
+    {
+      "imo": "9710660",
+      "name": "GLOVIS DIAMOND",
+      "gross_tonnage": 43956,
+      "ship_type": "Bulk Carrier",
+      "year_built": 2016,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 6,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "03/03/2016"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "01/09/2017"
+        }
+      }
+    },
+    {
+      "imo": "9749104",
+      "name": "OC GRANDE",
+      "gross_tonnage": 8627,
+      "ship_type": "Chemical/Oil Products Tanker",
+      "year_built": 2016,
+      "flag": "Marshall Islands",
+      "company_roles": [
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 6,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "13/05/2016"
+        }
+      }
+    },
+    {
+      "imo": "9749568",
+      "name": "GLOVIS SUN",
+      "gross_tonnage": 65748,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2015,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 6,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "30/11/2015"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "12/12/2022"
+        }
+      }
+    },
+    {
+      "imo": "9749570",
+      "name": "GLOVIS STELLA",
+      "gross_tonnage": 65748,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2016,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 7,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "06/02/2023"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "08/01/2016"
+        }
+      }
+    },
+    {
+      "imo": "9749582",
+      "name": "GLOVIS SIRIUS",
+      "gross_tonnage": 65748,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2016,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 7,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "19/02/2016"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "29/01/2023"
+        }
+      }
+    },
+    {
+      "imo": "9749594",
+      "name": "GLOVIS SPRING",
+      "gross_tonnage": 65785,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2016,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 7,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "29/04/2016"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "01/11/2022"
+        }
+      }
+    },
+    {
+      "imo": "9775828",
+      "name": "GLOVIS SILVER",
+      "gross_tonnage": 71342,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2017,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 7,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "19/12/2017"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "17/10/2022"
+        }
+      }
+    },
+    {
+      "imo": "9798387",
+      "name": "GLOVIS SONIC",
+      "gross_tonnage": 72376,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2017,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 7,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "25/05/2017"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "25/03/2026"
+        }
+      }
+    },
+    {
+      "imo": "9798399",
+      "name": "GLOVIS SAFETY",
+      "gross_tonnage": 72376,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2017,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 8,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "29/06/2017"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "01/04/2026"
+        }
+      }
+    },
+    {
+      "imo": "9798404",
+      "name": "GLOVIS SKY",
+      "gross_tonnage": 72376,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2017,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 8,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "15/03/2026"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "21/09/2017"
+        }
+      }
+    },
+    {
+      "imo": "9798416",
+      "name": "GLOVIS SUNLIGHT",
+      "gross_tonnage": 72376,
+      "ship_type": "Vehicles Carrier",
+      "year_built": 2017,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 8,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "28/12/2017"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "02/04/2026"
+        }
+      }
+    },
+    {
+      "imo": "9845154",
+      "name": "V. PROGRESS",
+      "gross_tonnage": 153905,
+      "ship_type": "Crude Oil Tanker",
+      "year_built": 2019,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 8,
+      "company_role_dates": {
+        "Registered owner": {
+          "basis": "since",
+          "date": "29/11/2024"
+        },
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "24/10/2019"
+        }
+      }
+    },
+    {
+      "imo": "9904089",
+      "name": "VL RENAISSANCE",
+      "gross_tonnage": 160061,
+      "ship_type": "Crude Oil Tanker",
+      "year_built": 2021,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [],
+      "source_page": 8,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "31/08/2021"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "09/09/2026"
+        }
+      }
+    },
+    {
+      "imo": "9926738",
+      "name": "VL BREEZE",
+      "gross_tonnage": 160061,
+      "ship_type": "Crude Oil Tanker",
+      "year_built": 2022,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 9,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "03/03/2022"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "19/01/2026"
+        }
+      }
+    },
+    {
+      "imo": "9926740",
+      "name": "VL BRIGHT",
+      "gross_tonnage": 160061,
+      "ship_type": "Crude Oil Tanker",
+      "year_built": 2022,
+      "flag": "Korea (Republic of)",
+      "company_roles": [
+        "Registered owner",
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 9,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "31/03/2022"
+        },
+        "Registered owner": {
+          "basis": "since",
+          "date": "28/01/2026"
+        }
+      }
+    },
+    {
+      "imo": "9958274",
+      "name": "SOBAEK EXPLORER",
+      "gross_tonnage": 48993,
+      "ship_type": "LPG Tanker",
+      "year_built": 2024,
+      "flag": "Liberia",
+      "company_roles": [
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR"
+      ],
+      "source_page": 9,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "03/06/2024"
+        }
+      }
+    },
+    {
+      "imo": "9975040",
+      "name": "WOODSIDE SCARLET IBIS",
+      "gross_tonnage": 114795,
+      "ship_type": "LNG Tanker",
+      "year_built": 2024,
+      "flag": "Liberia",
+      "company_roles": [
+        "Ship manager / Commercial manager"
+      ],
+      "class_societies": [
+        "KR",
+        "NV"
+      ],
+      "source_page": 9,
+      "company_role_dates": {
+        "Ship manager / Commercial manager": {
+          "basis": "since",
+          "date": "27/06/2024"
+        }
+      }
+    }
+  ]
+}

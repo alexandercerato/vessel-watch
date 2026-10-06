@@ -1,0 +1,14 @@
+{
+  "description": "Reference circles around ports. They do not represent port boundaries, territorial waters or jurisdiction. Adjust to the ports you need to watch.",
+  "zones": [
+    {"id":"genova","name":"Genova","country":"Italia","lat":44.40,"lon":8.91,"radius_nm":3},
+    {"id":"livorno","name":"Livorno","country":"Italia","lat":43.55,"lon":10.29,"radius_nm":3},
+    {"id":"carrara","name":"Marina di Carrara","country":"Italia","lat":44.03,"lon":10.04,"radius_nm":2},
+    {"id":"trieste","name":"Trieste","country":"Italia","lat":45.64,"lon":13.76,"radius_nm":3},
+    {"id":"ravenna","name":"Ravenna / Porto Corsini","country":"Italia","lat":44.49,"lon":12.29,"radius_nm":3},
+    {"id":"civitavecchia","name":"Civitavecchia","country":"Italia","lat":42.10,"lon":11.79,"radius_nm":3},
+    {"id":"napoli","name":"Napoli","country":"Italia","lat":40.83,"lon":14.27,"radius_nm":3},
+    {"id":"gioia-tauro","name":"Gioia Tauro","country":"Italia","lat":38.45,"lon":15.90,"radius_nm":3},
+    {"id":"taranto","name":"Taranto","country":"Italia","lat":40.46,"lon":17.21,"radius_nm":3}
+  ]
+}
