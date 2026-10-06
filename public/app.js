@@ -63,6 +63,32 @@ async function refresh(){if(refreshing)return;refreshing=true;$('#refresh').disa
    render();if(selected)loadHistory();
  }catch(e){decay();$('#connection').textContent=snapshot?'Connection interrupted':'AIS service disconnected';notice((snapshot?'Data retained from the last refresh. ':'')+e.message+'. '+(!apiBase?'Open Connection to configure the service.':''),true);render();}
  finally{refreshing=false;$('#refresh').disabled=false;clearTimeout(timer);timer=setTimeout(refresh,Math.max(15,cfg.refreshSeconds??30)*1000);}}
+
+async function exportManagingPDF(){
+ const button=$('#export-pdf');button.disabled=true;
+ try{
+  let offline=false;
+  try{
+   const data=await api('/api/watch'),expected=new Set(fleet.vessels.map(v=>v.imo));
+   if(!Array.isArray(data.vessels)||data.vessels.length!==expected.size||data.vessels.some(v=>!expected.has(v.imo))||new Set(data.vessels.map(v=>v.imo)).size!==expected.size)throw new Error('Invalid fleet');
+   snapshot=data;rows=data.vessels;decay();render();
+  }catch{offline=true;}
+  if(!snapshot){toast('No AIS snapshot available. Connect the service and try again.');return;}
+  const {createFleetPDF,etaLabel}=await import('./pdf-export.js?v=20261006-pdf1');
+  const utc=at=>at&&Number.isFinite(Date.parse(at))?new Date(at).toISOString().replace('T',' ').slice(0,16)+' UTC':'Time unavailable';
+  const records=[...rows].sort((a,b)=>a.name.localeCompare(b.name)).map(r=>{
+   const d=destinationInfo(r),p=r.position;
+   const location=p?[(p.zone?p.zone.name+' - '+(p.zone.country==='Italia'?'Italy':p.zone.country):p.near??'Port not identified'),coord(p),'Fix: '+utc(p.at)+' | '+(labels[r.freshness]??'Unverified')].join('\n'):'Position unavailable';
+   const jurisdiction=[d.country??'Country not identified',d.port??'Port not identified',courtLabel(d),d.court?(d.court.status==='preliminary'||d.match==='inferred'?'Preliminary - confirm locally':'If arriving at declared port'):null].filter(Boolean).join('\n');
+   return [r.name+'\nIMO '+r.imo,location,jurisdiction,etaLabel(r.static?.eta_reported)+'\nStatic data: '+utc(r.static?.at)];
+  });
+  const blob=createFleetPDF(records,{snapshotAt:snapshot.generated_at,offline}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='fleet-monitor-managing-associate-'+new Date().toISOString().slice(0,10)+'.pdf';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);
+  if(offline)toast('PDF exported from the last available snapshot; the service could not be refreshed.');
+ }catch{toast('PDF export failed. Please try again.');}
+ finally{button.disabled=false;}
+}
+
 function exportCSV(){const cols=['name','imo','glovis_role','flag','mmsi','identity_source','latitude','longitude','freshness','position_at_utc','age_seconds','sog_kn','cog_deg','ais_navigation','destination_declared','destination_country','destination_port','destination_locode','arrival_arrest_court','court_verification','destination_static_at_utc','port_reference_area','source'];const csvCell=v=>'"'+String(v??'').replace(/^[=+\-@]/,"'").replace(/"/g,'""')+'"';const data=filtered().map(r=>[r.name,r.imo,isOwner(r)?'Registered owner':'Management only',r.flag,r.identity?.mmsi,r.identity?.source,r.position?.lat,r.position?.lon,r.freshness,r.position?.at,r.age_seconds,r.position?.sog,r.position?.cog,r.navigation,r.static?.destination,destinationInfo(r).country,destinationInfo(r).port,destinationInfo(r).code,destinationInfo(r).court?.name,destinationInfo(r).court?.status,r.static?.at,r.position?.zone?.name,r.position?.source]);const blob=new Blob(['\ufeff'+[cols,...data].map(line=>line.map(csvCell).join(',')).join('\r\n')],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='vessel-watch-'+new Date().toISOString().slice(0,10)+'.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 document.addEventListener('click',e=>{const ship=e.target.closest('[data-imo]');if(ship)openDetail(ship.dataset.imo);const close=e.target.closest('[data-close]');if(close)$('#'+close.dataset.close).close();});
 $('#detail').addEventListener('close',()=>{selected=null;historySeq++;});
@@ -70,6 +96,7 @@ for(const id of ['search','role','freshness','sort'])$('#'+id).addEventListener(
 for(const btn of document.querySelectorAll('[data-filter]'))btn.addEventListener('click',()=>{$('#freshness').value=btn.dataset.filter;switchTab('fleet');render();});
 function switchTab(name){for(const key of ['fleet','zones','news','game']){$('#'+key+'-panel').hidden=key!==name;$('#'+key+'-tab').classList.toggle('active',key===name);$('#'+key+'-tab').setAttribute('aria-selected',String(key===name));}}
 for(const name of ['fleet','zones','news','game'])$('#'+name+'-tab').addEventListener('click',()=>switchTab(name));
+$('#export-pdf').addEventListener('click',exportManagingPDF);
 $('#refresh').addEventListener('click',refresh);$('#export').addEventListener('click',exportCSV);
 $('#timezone').addEventListener('click',()=>{timezone=timezone==='UTC'?'Europe/Rome':'UTC';localStorage.setItem('vw-timezone',timezone);$('#timezone').textContent=timezone==='UTC'?'UTC':'Rome';render();});
 $('#settings').addEventListener('click',()=>{$('#api-base').value=apiBase;$('#read-token').value=token;$('#config').showModal();});
