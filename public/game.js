@@ -8,7 +8,7 @@ const restartBtn=document.getElementById('game-restart');
 
 if(canvas&&panel){
  const ctx=canvas.getContext('2d');
- const WORLD_H=380;
+ const MIN_WORLD_W=900;
  let w=1200,h=WORLD_H,dpr=1,running=true,score=0,speed=310,last=performance.now(),spawn=1.3;
  let ship={x:105,y:0,vy:0,w:138,h:58};
  const obs=[];
@@ -20,15 +20,18 @@ if(canvas&&panel){
   {kind:'carrier',label:'CARRIER',directive:'The American fleet has arrived to defend freedom.'}
  ];
 
- function logicalWidth(){
+ function logicalSize(){
   const rect=canvas.getBoundingClientRect();
-  return Math.max(760,Math.round(rect.width||canvas.parentElement?.clientWidth||1200));
+  const rw=Math.max(MIN_WORLD_W,Math.round(rect.width||canvas.parentElement?.clientWidth||1200));
+  const rh=Math.max(320,Math.round(rect.height||380));
+  return {rw,rh};
  }
  function resize(){
   const rect=canvas.getBoundingClientRect();
-  if(rect.width<50)return;
-  w=logicalWidth();
-  h=WORLD_H;
+  if(rect.width<50||rect.height<50)return;
+  const size=logicalSize();
+  w=size.rw;
+  h=size.rh;
   dpr=Math.min(window.devicePixelRatio||1,2);
   canvas.width=Math.round(w*dpr);
   canvas.height=Math.round(h*dpr);
