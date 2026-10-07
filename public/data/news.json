@@ -1,6 +1,17 @@
 {
-  "checked_at": "2026-10-07T01:43:00Z",
+  "checked_at": "2026-10-07T13:52:00Z",
   "items": [
+    {
+      "id": "hyundai-glovis-lgl-smr-pctc-study-20261006",
+      "title": "Hyundai Glovis and LGL to study SMR-powered car carrier operations",
+      "published_at": "2026-10-06",
+      "source": "The Korea Times",
+      "url": "https://www.koreatimes.co.kr/business/companies/20261006/hyundai-glovis-lgl-explore-smr-powered-car-carrier-route",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Hyundai Glovis and Liberty Global Logistics signed an agreement on September 30 to assess the commercial, regulatory and operational requirements for an SMR-powered PCTC service between South Korea and the United States. The project concerns a future vessel concept and none of the 44 monitored ships."
+    },
     {
       "id": "glovis-korea-shipping-20260902",
       "title": "New long-term car carrier charter for Hyundai Glovis",
