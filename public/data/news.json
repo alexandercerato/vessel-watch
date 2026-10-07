@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-06T13:48:00Z",
+  "checked_at": "2026-10-07T01:43:00Z",
   "items": [
     {
       "id": "glovis-korea-shipping-20260902",
@@ -11,6 +11,50 @@
       "vessel_names": [],
       "vessel_imos": [],
       "summary": "Korea Shipping Corporation announced a 73 billion won charter with Hyundai Glovis, due to run from November for five years and four months. This concerns the wider operating fleet; the article does not identify one of the 44 monitored vessels."
+    },
+    {
+      "id": "glovis-lighthouse-southampton-20260717",
+      "title": "Glovis Lighthouse makes first European port call at Southampton",
+      "published_at": "2026-07-17",
+      "source": "The Maritime Executive / Associated British Ports",
+      "url": "https://maritime-executive.com/corporate/abp-southampton-welcomes-record-breaking-vehicle-carrier-glovis-lighthouse",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Glovis Lighthouse called at Southampton on July 14 during its maiden voyage, becoming the port's largest vehicle carrier by capacity. The 10,800-CEU ship belongs to the wider Hyundai Glovis operating fleet and is not one of the 44 monitored vessels."
+    },
+    {
+      "id": "hyundai-glovis-leader-deployed-20260429",
+      "title": "Hyundai Glovis deploys 10,800-vehicle Glovis Leader",
+      "published_at": "2026-04-29",
+      "source": "Yonhap News Agency",
+      "url": "https://en.yna.co.kr/view/AEN20260429009800320",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Hyundai Glovis announced the deployment of Glovis Leader after its April 28 delivery. The LNG dual-fuel PCTC can carry 10,800 vehicles; it is part of the wider operating fleet and is not one of the 44 monitored vessels."
+    },
+    {
+      "id": "hyundai-glovis-middle-east-rerouting-20260403",
+      "title": "Middle East disruption forces Hyundai Glovis route changes",
+      "published_at": "2026-04-03",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/autos-transportation/hyundai-motor-flags-export-disruptions-middle-east-conflict-hits-shipping-2026-04-03/",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Hyundai Glovis said on April 3 that some Middle East routes were inaccessible, requiring temporary cargo storage and diversions through hubs including Sri Lanka. Reuters did not identify any of the 44 monitored vessels."
+    },
+    {
+      "id": "hmm-glovis-pctc-floatout-20260127",
+      "title": "First 10,800-CEU PCTC for HMM-Hyundai Glovis partnership floated out",
+      "published_at": "2026-01-27",
+      "source": "The Maritime Executive",
+      "url": "https://maritime-executive.com/article/china-launches-largest-car-carrier-for-hmm-hyundai-glovis-partnership",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Guangzhou Shipyard International floated out the first 10,800-CEU vehicle carrier for the HMM-Hyundai Glovis partnership on January 21. The ship was subsequently named Glovis Leader and is outside the 44-vessel watchlist."
     }
   ]
 }
