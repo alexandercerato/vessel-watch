@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Vessel Watch · Hyundai Glovis</title><link rel="stylesheet" href="styles.css?v=20261006-access1"><script src="runtime-config.js"></script><script type="module" src="app.js?v=20261006-pdf1"></script><style>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Vessel Watch · Hyundai Glovis</title><link rel="stylesheet" href="styles.css?v=20261006-access1"><script src="runtime-config.js"></script><script type="module" src="app.js?v=20261007-supplemental1"></script><style>
 .quote-ticker{display:flex;align-items:center;background:#111;color:#eee;border-top:1px solid #333;min-height:34px;overflow:hidden}
 .quote-window{flex:1;min-width:0;overflow:hidden;padding:8px 0}
 .quote-track{display:flex;width:max-content;animation:quote-scroll 120s linear infinite}
@@ -11,7 +11,7 @@
 .quote-ticker :focus-visible{outline:2px solid white;outline-offset:-2px}
 @keyframes quote-scroll{to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.quote-track{animation:none}.quote-window{overflow-x:auto}.quote-pause,.quote-track>span[aria-hidden]{display:none}}
-</style></head>
+</style><style>.public-source-section{margin:24px 0;border-top:1px solid #ddd;padding-top:16px}.public-source-section>summary{cursor:pointer;font-size:.875rem;font-weight:600}.reference-table td{white-space:normal;min-width:180px;max-width:310px}.reference-table td .sub{line-height:1.5}.reference-table th{white-space:normal}</style></head>
 <body class="gate-locked">
 <div id="ideology-gate" class="ideology-gate" role="dialog" aria-modal="true" aria-labelledby="ideology-title">
   <div class="ideology-card">
@@ -42,6 +42,7 @@
   <section id="fleet-panel" aria-label="Vessel list">
     <div class="toolbar"><label class="search"><span class="sr-only">Search vessel or IMO</span><input id="search" placeholder="Search vessel, IMO, country, port or court" type="search"></label><label><span class="sr-only">Company role</span><select id="role"><option value="all">All roles</option><option value="owner">Ownership (39)</option><option value="manager">Management only (5)</option></select></label><label><span class="sr-only">Filter positions</span><select id="freshness"><option value="all">All positions</option><option value="recent">Recent AIS</option><option value="area">In a watched area</option><option value="stale">Stale position</option><option value="unknown">No position</option></select></label><label><span class="sr-only">Sort vessels</span><select id="sort"><option value="priority">Operational priority</option><option value="name">Name A–Z</option><option value="age">Latest AIS</option></select></label><button id="export" class="export">Export CSV</button><button id="export-pdf" class="export" type="button">export a pdf. for the managing associate</button></div>
     <div class="table-wrap"><table class="fleet-table"><thead><tr><th>Vessel / IMO</th><th>Glovis role</th><th>Position / area</th><th>AIS status</th><th>Destination country / port</th><th>Competent Court</th><th>Last position</th></tr></thead><tbody id="rows"></tbody></table></div><p id="results" class="results"></p><p class="destination-note">Court references concern civil ship arrest <b>if the vessel arrives at the declared port</b>. Preliminary references require local confirmation. AIS destinations do not confirm arrival.</p>
+    <details class="public-source-section"><summary>Public source references · VesselFinder / MarineTraffic</summary><div id="public-references"></div></details>
   </section>
   <section id="zones-panel" hidden aria-label="Watched areas"><div class="section-intro"><h2>Ports of interest</h2><p>Indicative circles around ports. They do not define port limits, territorial waters or jurisdiction.</p></div><div id="zones" class="zone-grid"></div></section>
   <section id="news-panel" hidden aria-label="Fleet dispatches"><div class="section-intro"><h2>Fleet dispatches</h2><p class="fleet-motto">The shipping gossip. With sources.</p><p>Dispatches from the fleet and Hyundai Glovis operations. Checked every 12 hours. Publication dates and check times are shown separately.</p><p id="news-updated" class="muted">Checking the shipping gossip…</p></div><div id="news-list"></div></section>
