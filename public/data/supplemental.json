@@ -27,7 +27,7 @@
         "coordinates": null,
         "destination_reported": "ECMEC>KRVEO",
         "port": null,
-        "country": "South Korea",
+        "country": null,
         "eta_reported": "Oct 12, 11:00 (in 3 days)",
         "arrival_reported": null,
         "voyage_status": "declared_destination",
