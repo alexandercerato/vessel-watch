@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-15T01:48:00Z",
+  "checked_at": "2026-10-15T13:52:00Z",
   "items": [
     {
       "id": "hyundai-glovis-avikus-hinas-newbuilds-20261006",
@@ -44,6 +44,17 @@
       "vessel_names": [],
       "vessel_imos": [],
       "summary": "Korea Shipping Corporation announced a 73 billion won charter with Hyundai Glovis, due to run from November for five years and four months. This concerns the wider operating fleet; the article does not identify one of the 44 monitored vessels."
+    },
+    {
+      "id": "glovis-nova-maiden-voyage-20260729",
+      "title": "Glovis Nova begins maiden voyage as Hyundai Glovis expands 10,800-CEU fleet",
+      "published_at": "2026-07-29",
+      "source": "Hansa",
+      "url": "https://hansa.news/next-giant-car-carrier-for-hyundai-glovis/",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Hansa reported that the newly delivered Glovis Nova, the third 10,800-CEU car carrier in Hyundai Glovis's new series, began its maiden voyage to Europe with a record vehicle cargo. The vessel is part of the wider operating fleet and is not one of the 44 monitored ships."
     },
     {
       "id": "glovis-lighthouse-southampton-20260717",
