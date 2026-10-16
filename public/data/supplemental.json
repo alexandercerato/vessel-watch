@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-16T01:29:00Z",
-  "backend_compared_at": "2026-10-16T01:28:23.628Z",
+  "checked_at": "2026-10-16T13:34:00Z",
+  "backend_compared_at": "2026-10-16T13:33:49.409Z",
   "policy": "Public page references only. Relative ages are quoted as displayed and are not converted to signal timestamps. No coordinates or live AIS freshness are inferred from provider pages. ETA year and timezone are unverified unless explicitly supplied. The Railway AIS service was compared separately; supplemental references never overwrite newer timestamped AIS data.",
   "coverage": {
     "fleet": 44,
-    "vesselfinder_accessible": 24,
-    "vesselfinder_unavailable": 20,
+    "vesselfinder_accessible": 44,
+    "vesselfinder_unavailable": 0,
     "marinetraffic_accessible": 0,
     "marinetraffic_unavailable": 44
   },
@@ -17,24 +17,24 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9122930",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440161000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "East Asia",
-        "position_age_reported": "6 min ago",
+        "position_age_reported": "37 min ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Pyeongtaek, Korea",
-        "port": "Pyeongtaek",
+        "destination_reported": "Ulsan, Korea",
+        "port": "Ulsan",
         "country": "Korea",
-        "eta_reported": null,
-        "arrival_reported": "Oct 14, 00:31 UTC",
-        "voyage_status": "arrived",
+        "eta_reported": "Oct 17, 12:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": "Suwon District Court · Pyeongtaek Branch",
+          "name": "Ulsan District Court",
           "status": "reference",
           "checked_at": "2026-10-13",
           "sources": [
@@ -43,25 +43,25 @@
               "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
             },
             {
-              "title": "Pyeongtaek Branch jurisdiction",
-              "url": "https://suwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_co=000253"
+              "title": "Ulsan District Court",
+              "url": "https://ulsan.scourt.go.kr/"
             }
           ],
-          "note": "Pyeongtaek jurisdiction; terminals on the Dangjin side require confirmation with local counsel."
+          "note": "Ulsan territorial court; verify vessel location and requirements for relief."
         },
         "comparison": {
-          "backend_position_at": "2026-10-16T01:18:48.000Z",
-          "backend_destination": "KRVSU>KRPTK",
-          "backend_static_at": "2026-10-16T01:18:48.000Z",
+          "backend_position_at": "2026-10-16T12:41:28.000Z",
+          "backend_destination": "KRPTK>KRUSN",
+          "backend_static_at": "2026-10-16T12:41:28.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9122930",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -72,11 +72,11 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9122942",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440269000",
         "identity_check": "Matches current backend IMO/MMSI",
-        "area": "Aegean Sea",
+        "area": "Marmara Sea",
         "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
@@ -85,7 +85,7 @@
         "country": "Turkey",
         "eta_reported": "Oct 16, 17:20",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": null,
@@ -95,13 +95,13 @@
           "backend_static_at": "2026-10-15T20:52:36.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9122942",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -112,7 +112,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9158604",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440292000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -141,13 +141,13 @@
           "backend_static_at": "2026-10-05T13:17:45.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9158604",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -158,7 +158,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9414876",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441344000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -187,13 +187,13 @@
           "backend_static_at": "2026-10-15T02:27:46.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9414876",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -204,7 +204,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9419759",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441304000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -233,13 +233,13 @@
           "backend_static_at": "2026-10-11T01:01:45.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9419759",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -250,20 +250,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9445409",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441310000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "China Coast",
-        "position_age_reported": "4 days ago",
+        "position_age_reported": "3 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Zhoushan, China",
         "port": "Zhoushan",
         "country": "China",
         "eta_reported": "Oct 10, 03:00",
-        "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "arrival_reported": "Oct 16, 04:33 UTC",
+        "voyage_status": "moored",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -279,13 +279,13 @@
           "backend_static_at": "2026-10-08T05:43:06.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9445409",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -296,7 +296,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9451898",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441302000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -325,13 +325,13 @@
           "backend_static_at": "2026-10-13T12:56:30.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9451898",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -342,37 +342,28 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9460899",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440591000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "East Asia",
-        "position_age_reported": "10 min ago",
+        "position_age_reported": "22 hours ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Ulsan, Korea",
-        "port": "Ulsan",
-        "country": "Korea",
-        "eta_reported": "Oct 15, 01:00",
+        "destination_reported": "Balboa, Panama",
+        "port": "Balboa",
+        "country": "Panama",
+        "eta_reported": "Nov 3, 01:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": "Ulsan District Court",
-          "status": "reference",
-          "checked_at": "2026-10-13",
-          "sources": [
-            {
-              "title": "Civil Execution Act, art. 278",
-              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
-            },
-            {
-              "title": "Ulsan District Court",
-              "url": "https://ulsan.scourt.go.kr/"
-            }
-          ],
-          "note": "Ulsan territorial court; verify vessel location and requirements for relief."
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-14",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction for Cristobal has not yet been verified from an official judicial source during this check."
         },
         "comparison": {
           "backend_position_at": "2026-10-15T03:10:10.000Z",
@@ -380,13 +371,13 @@
           "backend_static_at": "2026-10-15T03:10:10.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9460899",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -397,7 +388,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9590589",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441200000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -420,13 +411,13 @@
           "backend_static_at": "2026-09-24T13:09:21.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9590589",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -437,7 +428,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9590591",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441190000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -466,13 +457,13 @@
           "backend_static_at": "2026-10-11T08:57:30.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9590591",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -483,20 +474,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9590606",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441222000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "South Africa",
-        "position_age_reported": "0 min ago",
+        "position_age_reported": "47 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Sepetiba, Brazil",
         "port": "Sepetiba",
         "country": "Brazil",
-        "eta_reported": "Oct 26, 18:00",
+        "eta_reported": "Oct 27, 15:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -509,16 +500,16 @@
         "comparison": {
           "backend_position_at": "2026-10-16T01:09:41.000Z",
           "backend_destination": "BRSPB",
-          "backend_static_at": "2026-10-16T01:09:41.000Z",
+          "backend_static_at": "2026-10-16T12:44:50.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9590606",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -529,51 +520,51 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9651101",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441168000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "South East Asia",
-        "position_age_reported": "0 min ago",
+        "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Singapore, Singapore",
-        "port": "Singapore",
-        "country": "Singapore",
-        "eta_reported": "Oct 16, 00:00",
-        "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "destination_reported": "Pyeongtaek, Korea",
+        "port": "Pyeongtaek",
+        "country": "Korea",
+        "eta_reported": "Oct 23, 08:00",
+        "arrival_reported": "Oct 16, 00:56 UTC",
+        "voyage_status": "moored",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": "General Division of the High Court · Singapore",
+          "name": "Suwon District Court · Pyeongtaek Branch",
           "status": "reference",
-          "checked_at": "2026-10-06",
+          "checked_at": "2026-10-13",
           "sources": [
             {
-              "title": "Supreme Court Practice Directions 2021, Part 17",
-              "url": "https://epd2021-supremecourt.judiciary.gov.sg/part-17-admiralty-matters"
+              "title": "Civil Execution Act, art. 278",
+              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
             },
             {
-              "title": "Sheriff: arresto delle navi",
-              "url": "https://www.judiciary.gov.sg/services/sheriff-services-admiralty-actions"
+              "title": "Pyeongtaek Branch jurisdiction",
+              "url": "https://suwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_co=000253"
             }
           ],
-          "note": "Warrant of arrest and Sheriff intervention within Singapore port limits."
+          "note": "Pyeongtaek jurisdiction; terminals on the Dangjin side require confirmation with local counsel."
         },
         "comparison": {
-          "backend_position_at": "2026-10-16T01:27:28.000Z",
-          "backend_destination": "SGSIN / PEBGA",
-          "backend_static_at": "2026-10-16T01:27:28.000Z",
+          "backend_position_at": "2026-10-16T09:05:59.000Z",
+          "backend_destination": "KRPTK",
+          "backend_static_at": "2026-10-16T12:59:59.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9651101",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -584,7 +575,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9651113",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441188000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -613,13 +604,13 @@
           "backend_static_at": "2026-10-08T23:56:07.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9651113",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -630,20 +621,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9674165",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441151000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "Caribbean Sea",
-        "position_age_reported": "29 hours ago",
+        "position_age_reported": "42 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Veracruz, Mexico",
         "port": "Veracruz",
         "country": "Mexico",
-        "eta_reported": "Oct 17, 04:00",
+        "eta_reported": "Oct 17, 00:30",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -659,13 +650,13 @@
           "backend_static_at": "2026-09-28T13:39:24.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9674165",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -676,7 +667,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9674177",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441133000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -714,13 +705,13 @@
           "backend_static_at": "2026-10-09T02:35:35.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9674177",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -731,7 +722,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9674189",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441156000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -760,13 +751,13 @@
           "backend_static_at": "2026-10-08T14:15:19.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9674189",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -777,7 +768,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9683661",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "636028886",
         "identity_check": "Backend MMSI unavailable; VesselFinder IMO/MMSI recorded as supplemental reference",
@@ -806,13 +797,13 @@
           "backend_static_at": null,
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9683661",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -823,33 +814,37 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9702405",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440202000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "East Asia",
-        "position_age_reported": "47 hours ago",
+        "position_age_reported": "3 days ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Batangas Anch., Philippines",
-        "port": "Batangas Anch.",
-        "country": "Philippines",
-        "eta_reported": null,
-        "arrival_reported": "Oct 12, 19:45 UTC",
-        "voyage_status": "arrived",
+        "destination_reported": "Singapore, Singapore",
+        "port": "Singapore",
+        "country": "Singapore",
+        "eta_reported": "Oct 19, 12:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-09",
+          "name": "General Division of the High Court · Singapore",
+          "status": "reference",
+          "checked_at": "2026-10-13",
           "sources": [
             {
-              "title": "Supreme Court: Rules of Procedure for Admiralty Cases (retrieval timeout; local competence unverified)",
-              "url": "https://oca.judiciary.gov.ph/wp-content/uploads/A.M.-No.-19-08-14-SC.pdf"
+              "title": "Supreme Court Practice Directions 2021, Part 17",
+              "url": "https://epd2021-supremecourt.judiciary.gov.sg/part-17-admiralty-matters"
+            },
+            {
+              "title": "Sheriff services: admiralty actions",
+              "url": "https://www.judiciary.gov.sg/services/sheriff-services-admiralty-actions"
             }
           ],
-          "note": "Competent court for civil vessel arrest at this declared destination has not been verified from an official source."
+          "note": "Warrant of arrest and Sheriff intervention within Singapore port limits."
         },
         "comparison": {
           "backend_position_at": "2026-10-08T06:22:57.000Z",
@@ -857,13 +852,13 @@
           "backend_static_at": "2026-10-12T09:58:46.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702405",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -874,20 +869,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9702417",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440245000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "North Pacific Ocean",
-        "position_age_reported": "6 days ago",
+        "position_age_reported": "7 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Masan, Korea",
         "port": "Masan",
         "country": "Korea",
-        "eta_reported": "Oct 20, 18:00",
+        "eta_reported": "Oct 20, 16:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -912,13 +907,13 @@
           "backend_static_at": "2026-10-08T20:50:51.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702417",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -929,7 +924,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9702429",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440252000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -937,34 +932,34 @@
         "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Antwerpen, Belgium",
-        "port": "Antwerpen",
-        "country": "Belgium",
-        "eta_reported": "Oct 15, 01:00",
+        "destination_reported": "Southampton, United Kingdom",
+        "port": "Southampton",
+        "country": "United Kingdom",
+        "eta_reported": "Oct 17, 00:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": null,
+          "name": "Admiralty Court, King’s Bench Division (London)",
           "status": "unverified",
-          "checked_at": "2026-10-14",
+          "checked_at": "2026-10-16",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Antwerpen has not yet been verified from an official judicial source during this check."
+          "note": "England and Wales admiralty jurisdiction reference; arrest venue and Southampton-specific procedure require confirmation with local counsel."
         },
         "comparison": {
-          "backend_position_at": "2026-10-16T01:26:27.000Z",
-          "backend_destination": "BEANR",
-          "backend_static_at": "2026-10-16T01:26:27.000Z",
+          "backend_position_at": "2026-10-16T13:28:25.000Z",
+          "backend_destination": "GBSOU",
+          "backend_static_at": "2026-10-16T13:28:25.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702429",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -975,7 +970,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9702431",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440254000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -998,13 +993,13 @@
           "backend_static_at": "2026-10-12T19:36:16.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702431",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1015,7 +1010,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9706994",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440906000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -1039,18 +1034,18 @@
           "note": "Competent admiralty court not verified from an official source in this check."
         },
         "comparison": {
-          "backend_position_at": "2026-10-14T21:25:18.000Z",
+          "backend_position_at": "2026-10-16T13:05:00.000Z",
           "backend_destination": "INBOM",
-          "backend_static_at": "2026-10-14T21:25:18.000Z",
+          "backend_static_at": "2026-10-16T13:05:00.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9706994",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1061,20 +1056,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9707003",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441331000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "South America East Coast",
-        "position_age_reported": "7 days ago",
+        "position_age_reported": "8 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "San Antonio, Chile",
         "port": "San Antonio",
         "country": "Chile",
-        "eta_reported": "Oct 16, 22:00",
+        "eta_reported": "Oct 16, 21:30",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -1090,13 +1085,13 @@
           "backend_static_at": "2026-10-08T09:32:57.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707003",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1107,7 +1102,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9707015",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440468000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -1118,9 +1113,9 @@
         "destination_reported": "Shanghai, China",
         "port": "Shanghai",
         "country": "China",
-        "eta_reported": "Oct 21, 18:00",
+        "eta_reported": "Oct 22, 03:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -1136,13 +1131,13 @@
           "backend_static_at": "2026-10-03T08:30:44.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707015",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1153,7 +1148,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9707027",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441397000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -1182,13 +1177,13 @@
           "backend_static_at": "2026-10-14T03:11:29.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707027",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1199,20 +1194,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9710608",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440414000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "East Australia",
-        "position_age_reported": "12 days ago",
+        "position_age_reported": "13 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "KRSCW",
-        "port": "Samcheonpo",
+        "port": null,
         "country": "Korea",
-        "eta_reported": "Oct 16, 18:00",
+        "eta_reported": "Oct 17, 00:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": null,
@@ -1222,13 +1217,13 @@
           "backend_static_at": "2026-10-02T19:16:08.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710608",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1239,7 +1234,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9710658",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440417000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -1273,13 +1268,13 @@
           "backend_static_at": "2026-10-14T21:11:22.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710658",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1290,20 +1285,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9710660",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440913000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "North America West Coast",
-        "position_age_reported": "11 days ago",
+        "position_age_reported": "13 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "SAMCHEONPO_KR",
         "port": "Samcheonpo",
         "country": "Korea",
-        "eta_reported": "Oct 22, 19:00",
+        "eta_reported": "Oct 22, 23:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -1328,13 +1323,13 @@
           "backend_static_at": "2026-10-02T19:47:39.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710660",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1345,19 +1340,19 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9749104",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "538006909",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "East Asia",
-        "position_age_reported": "55 min ago",
+        "position_age_reported": "3 hours ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Daesan/Seosan Anch., Korea",
-        "port": "Daesan/Seosan Anch.",
+        "destination_reported": "Daesan, Korea",
+        "port": "Daesan",
         "country": "Korea",
         "eta_reported": null,
-        "arrival_reported": "Oct 14, 06:07 UTC",
+        "arrival_reported": "Oct 16, 10:22 UTC",
         "voyage_status": "arrived",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
@@ -1378,18 +1373,18 @@
           "note": "Jurisdiction covering Seosan, Dangjin and Taean; confirm the actual berth and filing arrangements locally."
         },
         "comparison": {
-          "backend_position_at": "2026-10-08T04:14:15.000Z",
+          "backend_position_at": "2026-10-16T10:25:38.000Z",
           "backend_destination": "KR TSN",
-          "backend_static_at": "2026-10-14T20:49:26.000Z",
+          "backend_static_at": "2026-10-16T10:25:38.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749104",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1400,28 +1395,28 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9749568",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440255000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "West Africa",
-        "position_age_reported": "4 days ago",
+        "position_age_reported": "12 hours ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Lagos, Nigeria",
-        "port": "Lagos",
-        "country": "Nigeria",
-        "eta_reported": "Oct 11, 15:00",
+        "destination_reported": "Durban, South Africa",
+        "port": "Durban",
+        "country": "South Africa",
+        "eta_reported": "Oct 25, 06:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": null,
+          "name": "KwaZulu-Natal Division of the High Court – Durban",
           "status": "unverified",
-          "checked_at": "2026-10-11",
+          "checked_at": "2026-10-16",
           "sources": [],
-          "note": "Civil arrest jurisdiction for Lagos has not yet been verified from an official judicial source."
+          "note": "Likely local High Court division; admiralty arrest competence and procedure require confirmation with South African counsel."
         },
         "comparison": {
           "backend_position_at": "2026-09-25T12:40:36.000Z",
@@ -1429,13 +1424,13 @@
           "backend_static_at": "2026-09-25T12:40:36.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749568",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1446,20 +1441,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9749570",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440257000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "North America West Coast",
-        "position_age_reported": "3 days ago",
+        "position_age_reported": "4 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Yokohama, Japan",
         "port": "Yokohama",
         "country": "Japan",
-        "eta_reported": "Oct 22, 12:00",
+        "eta_reported": "Oct 22, 20:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -1475,13 +1470,13 @@
           "backend_static_at": "2026-10-12T17:16:16.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749570",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1492,20 +1487,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9749582",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440258000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "South Africa",
-        "position_age_reported": "2 min ago",
+        "position_age_reported": "12 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "East London, South Africa",
         "port": "East London",
         "country": "South Africa",
-        "eta_reported": "Oct 16, 23:00",
+        "eta_reported": "Oct 17, 01:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -1516,18 +1511,18 @@
           "note": "Likely local High Court division for East London; admiralty arrest competence was not confirmed from an accessible official source and requires local-counsel verification."
         },
         "comparison": {
-          "backend_position_at": "2026-10-16T01:25:46.000Z",
+          "backend_position_at": "2026-10-16T13:00:15.000Z",
           "backend_destination": "ZA ELS",
-          "backend_static_at": "2026-10-16T01:25:46.000Z",
+          "backend_static_at": "2026-10-16T13:00:15.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749582",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1538,20 +1533,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9749594",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440260000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "China Coast",
-        "position_age_reported": "4 hours ago",
+        "position_age_reported": "15 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Pyeongtaek, Korea",
         "port": "Pyeongtaek",
         "country": "Korea",
-        "eta_reported": "Oct 16, 23:30",
+        "eta_reported": "Oct 16, 22:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -1576,13 +1571,13 @@
           "backend_static_at": "2026-10-11T16:20:49.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749594",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1593,7 +1588,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9775828",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440249000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -1616,13 +1611,13 @@
           "backend_static_at": "2026-09-23T04:30:37.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9775828",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1633,7 +1628,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9798387",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441511000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -1666,18 +1661,18 @@
           "note": "Warrant of arrest and Sheriff intervention within Singapore port limits."
         },
         "comparison": {
-          "backend_position_at": "2026-10-10T18:36:29.000Z",
+          "backend_position_at": "2026-10-16T10:40:37.000Z",
           "backend_destination": "SGSIN(PEBGB)",
-          "backend_static_at": "2026-10-10T18:36:29.000Z",
+          "backend_static_at": "2026-10-16T10:40:37.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9798387",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1688,20 +1683,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9798399",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441104000",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "North America West Coast",
-        "position_age_reported": "42 min ago",
+        "position_age_reported": "36 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Corinto, Nicaragua",
         "port": "Corinto",
         "country": "Nicaragua",
-        "eta_reported": "Oct 15, 10:00",
+        "eta_reported": "Oct 16, 21:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -1717,13 +1712,13 @@
           "backend_static_at": "2026-09-21T10:08:49.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9798399",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1734,20 +1729,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9798404",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441109000",
         "identity_check": "Matches current backend IMO/MMSI",
-        "area": "West Mediterranean",
-        "position_age_reported": "16 hours ago",
+        "area": "East Mediterranean",
+        "position_age_reported": "10 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Port Said, Egypt",
         "port": "Port Said",
         "country": "Egypt",
-        "eta_reported": "Oct 17, 13:00",
+        "eta_reported": "Oct 17, 12:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -1768,13 +1763,13 @@
           "backend_static_at": "2026-10-15T07:27:26.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9798404",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1785,28 +1780,37 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9798416",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440500000",
         "identity_check": "Matches current backend IMO/MMSI",
-        "area": "Caribbean Sea",
-        "position_age_reported": "11 hours ago",
+        "area": "North America West Coast",
+        "position_age_reported": "3 hours ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Cristobal, Panama",
-        "port": "Cristobal",
-        "country": "Panama",
-        "eta_reported": "Oct 15, 03:30",
+        "destination_reported": "Ulsan, Korea",
+        "port": "Ulsan",
+        "country": "Korea",
+        "eta_reported": "Nov 4, 16:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-14",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Cristobal has not yet been verified from an official judicial source during this check."
+          "name": "Ulsan District Court",
+          "status": "reference",
+          "checked_at": "2026-10-13",
+          "sources": [
+            {
+              "title": "Civil Execution Act, art. 278",
+              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+            },
+            {
+              "title": "Ulsan District Court",
+              "url": "https://ulsan.scourt.go.kr/"
+            }
+          ],
+          "note": "Ulsan territorial court; verify vessel location and requirements for relief."
         },
         "comparison": {
           "backend_position_at": "2026-10-14T09:38:44.000Z",
@@ -1814,13 +1818,13 @@
           "backend_static_at": "2026-10-14T09:38:44.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9798416",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1831,7 +1835,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9845154",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441099000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -1860,13 +1864,13 @@
           "backend_static_at": "2026-10-12T20:06:19.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9845154",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1877,7 +1881,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9904089",
-        "checked_at": "2026-10-15T01:28:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "440423000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -1900,13 +1904,13 @@
           "backend_static_at": "2026-10-04T22:47:50.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
-        "last_attempt_status": "unavailable"
+        "last_attempt_at": "2026-10-16T13:34:00Z",
+        "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9904089",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1917,28 +1921,28 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9926738",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441345000",
         "identity_check": "Matches current backend IMO/MMSI",
-        "area": "Red Sea",
-        "position_age_reported": "6 hours ago",
+        "area": "East Mediterranean",
+        "position_age_reported": "22 hours ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Suez Canal, Egypt",
-        "port": "Suez Canal",
+        "destination_reported": "Sidi Kerir Oil Terminal, Egypt",
+        "port": "Sidi Kerir Oil Terminal",
         "country": "Egypt",
-        "eta_reported": "Oct 14, 09:00",
+        "eta_reported": "Oct 16, 08:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": null,
+          "name": "Alexandria Economic Court",
           "status": "unverified",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-16",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Suez Canal, Egypt has not yet been verified from an official judicial source during this check."
+          "note": "Potential reference for Sidi Kerir; territorial and subject-matter competence for ship arrest has not been verified."
         },
         "comparison": {
           "backend_position_at": "2026-10-02T11:21:30.000Z",
@@ -1946,13 +1950,13 @@
           "backend_static_at": "2026-10-02T11:21:30.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9926738",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -1963,7 +1967,7 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9926740",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "441523000",
         "identity_check": "Matches current backend IMO/MMSI",
@@ -2001,13 +2005,13 @@
           "backend_static_at": "2026-10-13T01:16:24.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9926740",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -2018,36 +2022,42 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9958274",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "636023912",
         "identity_check": "Matches current backend IMO/MMSI",
         "area": "North America West Coast",
-        "position_age_reported": "17 days ago",
+        "position_age_reported": "18 days ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Ningbo, China",
-        "port": "Ningbo",
+        "destination_reported": "Wenzhou, China",
+        "port": "Wenzhou",
         "country": "China",
-        "eta_reported": "Oct 23, 08:00",
+        "eta_reported": "Oct 23, 17:00",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "court_reference": null,
+        "court_reference": {
+          "name": "Ningbo Maritime Court",
+          "status": "unverified",
+          "checked_at": "2026-10-16",
+          "sources": [],
+          "note": "Potential maritime court reference for Wenzhou; territorial jurisdiction and arrest competence require confirmation with PRC counsel."
+        },
         "comparison": {
           "backend_position_at": "2026-09-27T23:27:50.000Z",
           "backend_destination": null,
           "backend_static_at": "2026-09-27T23:27:50.000Z",
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9958274",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -2058,20 +2068,20 @@
       "vesselfinder": {
         "source": "VesselFinder",
         "url": "https://www.vesselfinder.com/vessels/details/9975040",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "available",
         "mmsi": "636023910",
         "identity_check": "Backend identity unavailable",
         "area": "East Asia",
-        "position_age_reported": "3 hours ago",
+        "position_age_reported": "8 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "CNYGK",
         "port": "Yingkou",
         "country": "China",
-        "eta_reported": "Oct 16, 16:01",
+        "eta_reported": "Oct 16, 22:30",
         "arrival_reported": null,
-        "voyage_status": "declared_destination",
+        "voyage_status": "en_route",
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
@@ -2087,13 +2097,13 @@
           "backend_static_at": null,
           "merge_applied": false
         },
-        "last_attempt_at": "2026-10-16T01:29:00Z",
+        "last_attempt_at": "2026-10-16T13:34:00Z",
         "last_attempt_status": "available"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
         "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9975040",
-        "checked_at": "2026-10-16T01:29:00Z",
+        "checked_at": "2026-10-16T13:34:00Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported."
       }
@@ -2102,6 +2112,7 @@
   "notes": [
     "VesselFinder returned readable public pages for 24 of 44 vessels; the last valid supplemental values were retained for the other 20.",
     "MarineTraffic public pages were inaccessible for all 44 vessels (403/block); no MarineTraffic voyage data were imported.",
-    "Railway /api/watch was healthy and reported 44 vessels, 42 identified; timestamped AIS data remain authoritative over relative-age provider references."
+    "Railway /api/watch was healthy and reported 44 vessels, 42 identified; timestamped AIS data remain authoritative over relative-age provider references.",
+    "2026-10-16 13:34 UTC: all 44 VesselFinder pages were readable; MarineTraffic blocked all 44 public pages. Relative-age references remain supplemental and do not overwrite newer timestamped AIS."
   ]
 }
