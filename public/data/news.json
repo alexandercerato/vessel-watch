@@ -1,6 +1,39 @@
 {
-  "checked_at": "2026-10-16T01:51:00Z",
+  "checked_at": "2026-10-16T13:50:00Z",
   "items": [
+    {
+      "id": "hyundai-glovis-fleet-expansion-20261014",
+      "title": "Hyundai Glovis fleet projected to reach 110 vessels by year-end",
+      "published_at": "2026-10-14",
+      "source": "Financial News",
+      "url": "https://en.fnnews.com/news/202610140812386905",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Financial News cited Meritz Securities as projecting Hyundai Glovis's fleet to rise from 98 vessels at the end of the first half of 2026 to 110 by year-end and 120 by the end of 2027. The report concerns company-wide fleet capacity and does not identify any of the 44 monitored vessels."
+    },
+    {
+      "id": "hyundai-glovis-glovis-legend-delivery-20261013",
+      "title": "Glovis Legend delivered for Hyundai Glovis operation",
+      "published_at": "2026-10-13",
+      "source": "China News Service",
+      "url": "https://www.chinanews.com/cj/2026/10-13/10713806.shtml",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Guangzhou Shipyard International delivered the 10,800-CEU LNG dual-fuel PCTC Glovis Legend on October 12, nearly nine months ahead of schedule. The HMM-owned ship will be operated by Hyundai Glovis and is outside the 44-vessel watchlist."
+    },
+    {
+      "id": "glovis-america-philaport-expansion-20261013",
+      "title": "GLOVIS America joins major PhilaPort expansion",
+      "published_at": "2026-10-13",
+      "source": "Commonwealth of Pennsylvania",
+      "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/gov-shapiro-announces--837-million-investment-in-philaport-to-su",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Pennsylvania announced an $837 million-plus PhilaPort expansion combining state, federal and private investment, with GLOVIS America participating in the Southport auto-terminal growth plan. The project targets an 18% increase in auto capacity and does not identify any of the 44 monitored vessels."
+    },
     {
       "id": "hyundai-glovis-avikus-hinas-newbuilds-20261006",
       "title": "Hyundai Glovis extends HiNAS autonomous navigation to 10 newbuild PCTCs",
