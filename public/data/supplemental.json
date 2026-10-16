@@ -359,11 +359,11 @@
         "retrieval_crawl_note": "today",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
         "court_reference": {
-          "name": null,
+          "name": "First Maritime Court of Panama",
           "status": "unverified",
-          "checked_at": "2026-10-14",
+          "checked_at": "2026-10-16",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Cristobal has not yet been verified from an official judicial source during this check."
+          "note": "Potential maritime court reference for Balboa; territorial competence and ship-arrest procedure require confirmation with Panamanian counsel."
         },
         "comparison": {
           "backend_position_at": "2026-10-15T03:10:10.000Z",
