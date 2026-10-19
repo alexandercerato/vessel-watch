@@ -1,22 +1,42 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {gzipSync} from 'node:zlib';
-const root=path.resolve('public');
-const files={};
-function collect(dir){for(const name of fs.readdirSync(dir)){const p=path.join(dir,name);if(fs.statSync(p).isDirectory())collect(p);else files['/'+path.relative(root,p).replaceAll('\\','/')]=gzipSync(fs.readFileSync(p)).toString('base64');}}
-collect(root);
+const root=path.resolve('public'),files={};
+const read=name=>JSON.parse(fs.readFileSync(path.join(root,'data/'+name+'.json'),'utf8'));
+const legal=read('courts'),seed=read('supplemental'),directory=read('ports');
+const codes=new Set([...Object.keys(legal.ports),...Object.values(legal.aliases??{}),...Object.values(legal.code_hints??{}).map(v=>v.code)]);
+const names=new Set(seed.vessels.map(v=>v.vesselfinder?.port?.toUpperCase()).filter(Boolean));
+const fallbackDirectory={countries:directory.countries,ports:Object.fromEntries(Object.entries(directory.ports).filter(([code,name])=>codes.has(code)||names.has(name.toUpperCase())))};
+for(const name of ['fleet','zones','courts','supplemental'])files['/data/'+name+'.json']=gzipSync(fs.readFileSync(path.join(root,'data/'+name+'.json'))).toString('base64');
+files['/data/ports.json']=gzipSync(Buffer.from(JSON.stringify(fallbackDirectory))).toString('base64');
 const strip=s=>s.replace(/^import .*;\n/gm,'').replace(/^export /gm,'');
-const core=strip(fs.readFileSync('backend/core.js','utf8'));
-const storage=strip(fs.readFileSync('backend/storage.js','utf8'));
-const feeds=strip(fs.readFileSync('backend/feeds.js','utf8'));
-const destinations=strip(fs.readFileSync('public/destinations.js','utf8'));
-const referenceData=strip(fs.readFileSync('public/reference-data.js','utf8'));
-const referencePages=strip(fs.readFileSync('backend/reference-pages.js','utf8'));
+const module=name=>strip(fs.readFileSync(name,'utf8'));
 const server=fs.readFileSync('backend/server.js','utf8');
 const body=server.slice(server.indexOf('const store='),server.indexOf('const types='));
-const routes=server.slice(server.indexOf('const types='),server.indexOf('server.listen(')).replace("const rel=url.pathname==='/'?'index.html':decodeURIComponent(url.pathname.slice(1));", "const rel=url.pathname==='/'?'index.html':decodeURIComponent(url.pathname.slice(1));");
-// Use one in-memory static file collection; archive lives on the attached volume.
-const patchedRoutes=routes.replace("const content=fs.readFileSync(file);", "const encoded=STATIC_FILES['/'+rel];if(encoded===undefined)throw new Error('Not found');const content=gunzipSync(Buffer.from(encoded,'base64'));");
-const result=`import http from 'node:http';\nimport fs from 'node:fs';\nimport path from 'node:path';\nimport {gunzipSync} from 'node:zlib';\nimport WebSocket from 'ws@8.18.3';\nconst STATIC_FILES=${JSON.stringify(files)};\nconst root='/public';\nconst readData=name=>JSON.parse(gunzipSync(Buffer.from(STATIC_FILES['/data/'+name+'.json'],'base64')).toString('utf8'));\nconst fleet=readData('fleet'),zones=readData('zones').zones,seed=readData('supplemental'),directory=readData('ports'),legal=readData('courts');\n${core}\n${storage}\n${feeds}\n${destinations}\n${referenceData}\n${referencePages}\n${body}\n${patchedRoutes}\nserver.listen(Number(process.env.PORT??8787),'0.0.0.0');\nprocess.on('SIGTERM',()=>{clearTimeout(timer);feeds.stop();store.save(watch);server.close();});\n`;
+const routes=server.slice(server.indexOf('const types='),server.indexOf('server.listen('));
+const redirect=routes.slice(0,routes.indexOf('  let rel;'))+"  res.writeHead(302,{Location:'https://alexandercerato.github.io/vessel-watch'+url.pathname+url.search});res.end();\n});\n";
+// The API keeps only operational data. Frontend requests redirect to current Pages,
+// so assets, source references and news cannot drift behind the published site.
+const result=`import http from 'node:http';
+import fs from 'node:fs';
+import path from 'node:path';
+import {gunzipSync} from 'node:zlib';
+import WebSocket from 'ws@8.18.3';
+const STATIC_FILES=${JSON.stringify(files)};
+const readData=name=>JSON.parse(gunzipSync(Buffer.from(STATIC_FILES['/data/'+name+'.json'],'base64')).toString('utf8'));
+const fleet=readData('fleet'),zones=readData('zones').zones,seed=readData('supplemental'),legal=readData('courts');
+let directory=readData('ports');
+try{const response=await fetch('https://alexandercerato.github.io/vessel-watch/data/ports.json',{signal:AbortSignal.timeout(5000)});if(response.ok){const complete=await response.json();if(complete.ports&&complete.countries)directory=complete;}}catch{}
+${module('backend/core.js')}
+${module('backend/storage.js')}
+${module('backend/feeds.js')}
+${module('public/destinations.js')}
+${module('public/reference-data.js')}
+${module('backend/reference-pages.js')}
+${body}
+${redirect}
+server.listen(Number(process.env.PORT??8787),'0.0.0.0');
+process.on('SIGTERM',()=>{clearTimeout(timer);feeds.stop();store.save(watch);server.close();});
+`;
 fs.writeFileSync('railway-function.ts',result);
-console.log('Railway function prepared ('+Buffer.byteLength(result)+' bytes)');
+console.log('Railway API function prepared ('+Buffer.byteLength(result)+' bytes)');
