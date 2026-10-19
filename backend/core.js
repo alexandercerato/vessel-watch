@@ -1,5 +1,6 @@
 export const POSITION_TYPES = new Set(['PositionReport','StandardClassBPositionReport','ExtendedClassBPositionReport','LongRangeAisBroadcastMessage']);
 export function clean(value) { return String(value ?? '').replace(/@/g,'').trim(); }
+export function shipNameKey(value) { return clean(value).toUpperCase().replace(/[^A-Z0-9]/g,''); }
 export function numeric(value, min, max) {
   if (value === null || value === undefined || value === '') return null;
   const n = Number(value); return Number.isFinite(n) && n >= min && n < max ? n : null;
@@ -38,6 +39,7 @@ export class Watch {
     for(const ship of fleet.vessels) {
       const old=saved.rows?.find(r=>r.imo===ship.imo)??{};
       const row={...old,...ship,identity:old.identity??null,static:old.static??{},position:old.position??null,history:old.history??[],last_freshness:old.last_freshness??'unknown'};
+      if(row.position){const z=zoneAt(row.position.lat,row.position.lon,zones);row.position={...row.position,zone:z?{id:z.id,name:z.name,country:z.country}:null};}
       this.rows.set(ship.imo,row);
       if(row.identity?.mmsi) this.byMMSI.set(row.identity.mmsi,ship.imo);
     }
@@ -105,8 +107,8 @@ export class Watch {
     const imo=getIMO(body);let row=imo?this.identify(mmsi,imo,provider,at):this.rows.get(this.byMMSI.get(mmsi));
     if(!row) {
       // A name can nominate a candidate, but never verifies its identity.
-      const name=clean(isOW?(body.Name??body.ShipName):meta.ShipName).toUpperCase();
-      if(POSITION_TYPES.has(type)&&this.fleet.vessels.some(s=>s.name===name))this.pending.set(mmsi,{event,provider,at});
+      const name=shipNameKey(isOW?(body.Name??body.ShipName):meta.ShipName);
+      if(POSITION_TYPES.has(type)&&this.fleet.vessels.some(s=>shipNameKey(s.name)===name))this.pending.set(mmsi,{event,provider,at});
       for(const [key,p] of this.pending)if(Date.now()-Date.parse(p.at)>30*60000)this.pending.delete(key);
       return;
     }

@@ -19,3 +19,15 @@ test('IMO conflict clears old identity and old position',()=>{const w=new Watch(
 test('stale reports do not overwrite newer position; implausible jumps are flagged',()=>{const w=new Watch(fleet,zones),r=verified(w),at=now();w.applyPosition(r,{lat:44.4,lon:8.91,at});assert.equal(w.applyPosition(r,{lat:10,lon:10,at:new Date(Date.parse(at)-1000).toISOString()}),false);assert.equal(w.applyPosition(r,{lat:10,lon:10,at:new Date(Date.parse(at)+1000).toISOString()}),false);assert.equal(w.events.at(-1).type,'position_outlier');assert.equal(r.position.lat,44.4);});
 test('archive round trip preserves identities, positions and events',()=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'vw-'));try{const w=new Watch(fleet,zones),r=verified(w);w.applyPosition(r,{lat:44.4,lon:8.91,at:now()});const store=new Store(dir);store.save(w);assert.equal(store.error,null);const loaded=new Watch(fleet,zones,store.load());assert.equal(loaded.rows.get(r.imo).history.length,1);assert.equal(loaded.byMMSI.get('440161000'),r.imo);assert.equal(loaded.events.length,w.events.length);}finally{fs.rmSync(dir,{recursive:true});}});
 test('old snapshot may populate an empty position for the same verified IMO/MMSI',()=>{const w=new Watch(fleet,zones),r=verified(w),at=new Date(Date.now()-86400000).toISOString();assert.equal(w.ingestFeature({id:440161000,geometry:{type:'Point',coordinates:[8.91,44.4]},properties:{mmsi:440161000,imo:9122930,seen:at,name:'GLOVIS CORONA',sog:0}},true),true);assert.equal(r.position.at,at);assert.notEqual(freshness(r.position),'recent');});
+test('compact ship names nominate a candidate but require exact IMO before exposing a fix',()=>{
+ const w=new Watch(fleet,zones),at=now(),meta={MMSI:636023910,ShipName:'WOODSIDESCARLETIBIS',time_utc:at};
+ w.ingestStream({MessageType:'PositionReport',MetaData:meta,Message:{PositionReport:{Latitude:3.4,Longitude:119.5}}},'AISStream');
+ assert.equal(w.rows.get('9975040').position,null);assert.equal(w.pending.size,1);
+ w.ingestStream({MessageType:'ShipStaticData',MetaData:meta,Message:{ShipStaticData:{ImoNumber:9975040,Name:'WOODSIDESCARLETIBIS'}}},'AISStream');
+ assert.equal(w.rows.get('9975040').identity.mmsi,'636023910');assert.equal(w.rows.get('9975040').position.at,at);
+});
+test('restored positions use current watched areas without generating new arrival events',()=>{
+ const w=new Watch(fleet,zones),r=verified(w);w.applyPosition(r,{lat:-29.87,lon:31.03,at:now()});const before=w.events.length;
+ const restored=new Watch(fleet,[...zones,{id:'durban',name:'Durban',country:'South Africa',lat:-29.87,lon:31.03,radius_nm:3}],w.serialize());
+ assert.equal(restored.rows.get(r.imo).position.zone.id,'durban');assert.equal(restored.events.length,before);assert.equal(restored.rows.get(r.imo).position.at,r.position.at);
+});

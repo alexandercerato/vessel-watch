@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19T01:44:56Z",
+  "checked_at": "2026-10-19T06:02:32.461Z",
   "items": [
     {
       "id": "hyundai-glovis-fleet-expansion-20261014",
@@ -79,6 +79,21 @@
       "summary": "Korea Shipping Corporation announced a 73 billion won charter with Hyundai Glovis, due to run from November for five years and four months. This concerns the wider operating fleet; the article does not identify one of the 44 monitored vessels."
     },
     {
+      "id": "glovis-stella-spacex-starlink-20260819",
+      "title": "SpaceX reviews Starlink operations aboard Glovis Stella",
+      "published_at": "2026-08-19",
+      "source": "The Asia Business Daily",
+      "url": "https://view.asiae.co.kr/en/article/2026081908400441470",
+      "scope": "vessel",
+      "vessel_names": [
+        "GLOVIS STELLA"
+      ],
+      "vessel_imos": [
+        "9749570"
+      ],
+      "summary": "Hyundai Glovis reported on August 19 that a SpaceX delegation visited Glovis Stella at Gwangyang to inspect Starlink equipment and hear crew feedback. The accompanying photograph dates the visit to August 5. Glovis Stella is one of the 44 monitored vessels."
+    },
+    {
       "id": "glovis-nova-maiden-voyage-20260729",
       "title": "Glovis Nova begins maiden voyage as Hyundai Glovis expands 10,800-CEU fleet",
       "published_at": "2026-07-29",
@@ -132,6 +147,17 @@
       "vessel_names": [],
       "vessel_imos": [],
       "summary": "Guangzhou Shipyard International floated out the first 10,800-CEU vehicle carrier for the HMM-Hyundai Glovis partnership on January 21. The ship was subsequently named Glovis Leader and is outside the 44-vessel watchlist."
+    },
+    {
+      "id": "hyundai-glovis-gtt-lng-newbuild-20251218",
+      "title": "GTT selected for tank design of Hyundai Glovis LNG newbuild",
+      "published_at": "2025-12-18",
+      "source": "GTT",
+      "url": "https://www.gtt.fr/news/gtt-receives-order-hd-ksoe-tank-design-new-lng-carrier-0",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "GTT announced a tank-design order for a 174,000 m3 LNG carrier to be built by Hyundai Samho for Hyundai Glovis, using Mark III Flex containment technology. Delivery is scheduled for the fourth quarter of 2028. The unnamed newbuild is outside the 44-vessel watchlist."
     }
   ]
 }

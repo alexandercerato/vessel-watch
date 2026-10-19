@@ -1,6 +1,6 @@
 {
   "checked_at": "2026-10-06",
-  "scope": "Tribunale di riferimento per sequestro civile se la nave giunge nel porto dichiarato; non determina la competenza sul merito né i presupposti del credito.",
+  "scope": "Reference court for civil ship arrest if the vessel arrives at the declared port; this does not determine jurisdiction on the merits or whether a claim permits arrest.",
   "aliases": {
     "PORT SAID": "EGPSD",
     "SAMCHEONPO KR": "KRSCP",
@@ -28,7 +28,7 @@
           "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
         },
         {
-          "title": "Circoscrizione giudiziaria",
+          "title": "Court territorial jurisdiction",
           "url": "https://suwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_co=000253"
         }
       ]
@@ -43,7 +43,7 @@
           "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
         },
         {
-          "title": "Circoscrizione di Masan",
+          "title": "Masan territorial jurisdiction",
           "url": "https://changwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000431"
         }
       ]
@@ -58,7 +58,7 @@
           "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
         },
         {
-          "title": "Circoscrizione di Seosan",
+          "title": "Seosan territorial jurisdiction",
           "url": "https://daejeon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000285"
         }
       ]
@@ -73,7 +73,7 @@
           "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
         },
         {
-          "title": "Circoscrizione di Seosan",
+          "title": "Seosan territorial jurisdiction",
           "url": "https://daejeon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000285"
         }
       ]
@@ -88,7 +88,7 @@
           "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
         },
         {
-          "title": "Circoscrizione di Jinju",
+          "title": "Jinju territorial jurisdiction",
           "url": "https://changwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000421"
         }
       ]
@@ -103,7 +103,7 @@
           "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
         },
         {
-          "title": "Circoscrizione di Suncheon",
+          "title": "Suncheon territorial jurisdiction",
           "url": "https://gwangju.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000513"
         }
       ]
@@ -129,7 +129,7 @@
       "note": "Reference for England and Wales; Scotland and Northern Ireland have separate regimes.",
       "sources": [
         {
-          "title": "CPR Part 61, in particolare 61.1 e 61.5",
+          "title": "CPR Part 61, especially rules 61.1 and 61.5",
           "url": "https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part61"
         }
       ]
@@ -155,7 +155,7 @@
           "url": "https://www.flmd.uscourts.gov/admiralty-and-maritime-practice-manual-page"
         },
         {
-          "title": "Sede di Tampa",
+          "title": "Tampa Division",
           "url": "https://www.flmd.uscourts.gov/locations/tampa"
         }
       ]
@@ -181,7 +181,7 @@
           "url": "https://www.indiacode.nic.in/handle/123456789/2256?locale=en"
         },
         {
-          "title": "Ministero: giurisdizione delle High Courts costiere",
+          "title": "Ministry: coastal High Courts jurisdiction",
           "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=174565"
         }
       ]
@@ -192,11 +192,11 @@
       "note": "Territorial High Court reference; confirm the division and filing arrangements locally.",
       "sources": [
         {
-          "title": "Judicial Service: elenco delle sedi",
+          "title": "Judicial Service: court directory",
           "url": "https://judicial.gov.gh/jsweb/index.php/jsg-services/general-services/court-locator"
         },
         {
-          "title": "Judicial Service: giustizia marittima",
+          "title": "Judicial Service: maritime justice",
           "url": "https://judicial.gov.gh/index.php/publications/news-publications/speeches/384-2023-08-07-15-47-53"
         }
       ]
@@ -229,11 +229,11 @@
       "note": "Commercial claims: urgent applications judge of the first-instance section. Reform effective from 01.10.25; verify claim type and exceptions.",
       "sources": [
         {
-          "title": "RD 35/2025, artt. 11 e 14",
+          "title": "Royal Decree 35/2025, articles 11 and 14",
           "url": "https://qanoon.om/p/2025/rd2025035/"
         },
         {
-          "title": "Decisione 433/2025: sedi e circoscrizioni",
+          "title": "Decision 433/2025: court seats and territorial jurisdiction",
           "url": "https://qanoon.om/p/2025/sjc20250433/"
         }
       ]
@@ -244,11 +244,11 @@
       "note": "Commercial claims: urgent applications judge of the first-instance section. Reform effective from 01.10.25; verify claim type and exceptions.",
       "sources": [
         {
-          "title": "RD 35/2025, artt. 11 e 14",
+          "title": "Royal Decree 35/2025, articles 11 and 14",
           "url": "https://qanoon.om/p/2025/rd2025035/"
         },
         {
-          "title": "Decisione 433/2025: sedi e circoscrizioni",
+          "title": "Decision 433/2025: court seats and territorial jurisdiction",
           "url": "https://qanoon.om/p/2025/sjc20250433/"
         }
       ]
@@ -270,7 +270,7 @@
       "note": "Preliminary territorial reference for private claims; specific arrest jurisdiction and potentially concurrent venues require verification.",
       "sources": [
         {
-          "title": "TJPR: giurisdizione civile di Paranaguá",
+          "title": "TJPR: Paranagua civil jurisdiction",
           "url": "https://portal.tjpr.jus.br/jurisprudencia/j/4100000035885931/Ac%C3%B3rd%C3%A3o-0131046-23.2025.8.16.0000"
         }
       ]
@@ -303,11 +303,11 @@
       "note": "Jurisdiction over Shanghai waters, including Yangshan; arrest under the Special Maritime Procedure Law.",
       "sources": [
         {
-          "title": "Shanghai Maritime Court: giurisdizione",
+          "title": "Shanghai Maritime Court: jurisdiction",
           "url": "https://www.hshfy.sh.cn/shfy/English/MapView.jsp?pa=aaWQ9MzYzMTUxJnhoPTEmbG1kbT1sbTkzOQPdcssPdcssz"
         },
         {
-          "title": "SPC: arresto delle navi",
+          "title": "Supreme People’s Court: ship arrest",
           "url": "https://english.court.gov.cn/2021-10/20/c_761768.htm"
         }
       ]
@@ -318,11 +318,11 @@
       "note": "Jurisdiction over Shanghai waters, including Yangshan; arrest under the Special Maritime Procedure Law.",
       "sources": [
         {
-          "title": "Shanghai Maritime Court: giurisdizione",
+          "title": "Shanghai Maritime Court: jurisdiction",
           "url": "https://www.hshfy.sh.cn/shfy/English/MapView.jsp?pa=aaWQ9MzYzMTUxJnhoPTEmbG1kbT1sbTkzOQPdcssPdcssz"
         },
         {
-          "title": "SPC: arresto delle navi",
+          "title": "Supreme People’s Court: ship arrest",
           "url": "https://english.court.gov.cn/2021-10/20/c_761768.htm"
         }
       ]
@@ -333,12 +333,28 @@
       "note": "Benicia, Solano County: Sacramento division. In rem arrest under Supplemental Rule C and local admiralty rules; confirm terminal and vessel location.",
       "sources": [
         {
-          "title": "Eastern District: jurisdiction e sede",
+          "title": "Eastern District: jurisdiction and court location",
           "url": "https://www.caed.uscourts.gov/CAEDnew/index.cfm/cmecf-e-filing/jurisdiction-and-venue/"
         },
         {
           "title": "Eastern District: Local Rules, Admiralty",
           "url": "https://www.caed.uscourts.gov/caednew/assets/File/EDCA%20Local%20Rules%20Effective%208-7-23.pdf"
+        }
+      ]
+    },
+    "ZADUR": {
+      "name": "High Court of South Africa · KwaZulu-Natal Division, Durban",
+      "status": "reference",
+      "checked_at": "2026-10-19",
+      "note": "Reference for admiralty arrest applications on arrival at Durban. The 2026 division directive covers admiralty case initiation and arrest warrants; claim requirements still require local assessment.",
+      "sources": [
+        {
+          "title": "KwaZulu-Natal Division · Court Online Directive 1 of 2026, section 5.6 and Part E",
+          "url": "https://www.judiciary.org.za/images/Directives/Directives_2026/KZN%20Court%20Online%20Directives%20(Final%20June%202026).pdf"
+        },
+        {
+          "title": "KwaZulu-Natal Division · official court contacts",
+          "url": "https://www.judiciary.org.za/index.php/contact-us/superior-courts-contact/kwazulu-natal-division"
         }
       ]
     }
@@ -354,7 +370,7 @@
           "url": "https://epd2021-supremecourt.judiciary.gov.sg/part-17-admiralty-matters"
         },
         {
-          "title": "Sheriff: arresto delle navi",
+          "title": "Sheriff: ship arrest",
           "url": "https://www.judiciary.gov.sg/services/sheriff-services-admiralty-actions"
         }
       ]
@@ -365,7 +381,7 @@
       "note": "Admiralty jurisdiction; in rem ship arrest procedure.",
       "sources": [
         {
-          "title": "Decisione Matcam Marine: arresto e giurisdizione",
+          "title": "Matcam Marine judgment: arrest and jurisdiction",
           "url": "https://www.supremecourt.gov.jm/content/matcam-marine-limited-v-matalon-michael-registered-owner-orion-warrior-formerly-matcam-1"
         }
       ]
@@ -387,7 +403,7 @@
       "note": "First or Second Maritime Court, according to allocation; not the appellate court.",
       "sources": [
         {
-          "title": "Órgano Judicial: sequestro delle navi",
+          "title": "Judiciary: ship arrest",
           "url": "https://revistasapientia.organojudicial.gob.pa/index.php/sapientia/article/view/228?articlesBySimilarityPage=2"
         }
       ]
@@ -409,8 +425,20 @@
       "note": "For Lázaro Cárdenas, the territorially competent federal court in Michoacán; venue and allocation require confirmation. Article 274 LNCM.",
       "sources": [
         {
-          "title": "Ley de Navegación y Comercio Marítimos, testo vigente",
+          "title": "Navigation and Maritime Commerce Act: current text",
           "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNCM.pdf"
+        }
+      ]
+    },
+    "AU": {
+      "name": "Federal Court of Australia · Admiralty jurisdiction",
+      "status": "reference",
+      "checked_at": "2026-10-19",
+      "note": "The Federal Court states that an arrest warrant may be executed anywhere in Australia. This is a national court reference for an identifiable Australian destination, including Dampier; the appropriate registry and arrest prerequisites require confirmation.",
+      "sources": [
+        {
+          "title": "Federal Court · Admiralty jurisdiction and arrest of a vessel",
+          "url": "https://www.fedcourt.gov.au/law-and-practice/national-practice-areas/admiralty/jurisdiction"
         }
       ]
     }

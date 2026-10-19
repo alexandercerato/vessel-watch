@@ -1,10 +1,34 @@
-import {renderSupplemental} from './supplemental.js?v=20261007-1';
+import {renderSupplemental} from './supplemental.js?v=20261019-1';
+import {mergeReferenceDatasets,referenceFor,courtReferenceLabel} from './reference-data.js?v=20261019-1';
+import {feedStatusText} from './feed-status.js?v=20261019-1';
+import {briefRecords} from './brief-records.js?v=20261019-1';
+import {etaLabel} from './pdf-export.js?v=20261019-1';
 import {watchedZoneAt} from './watched-zones.js?v=20261006-sa';
 import {createResolver} from './destinations.js?v=20261006-en';
 const $=s=>document.querySelector(s),cfg=window.VESSEL_WATCH_CONFIG??{};
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let supplementalData=null;
-async function refreshSupplemental(){try{const res=await fetch('data/supplemental.json',{cache:'no-store'});if(!res.ok)throw new Error();const data=await res.json();if(data.schema_version!==1||!Array.isArray(data.vessels))throw new Error();supplementalData=data;}catch{}renderSupplemental(supplementalData,rows);}
+let supplementalData=null,referenceJob=null,referenceTimer=null,lastReferenceFetch=0;
+function renderReferenceStatus(message=''){
+ const el=$('#reference-status');if(!el)return;
+ if(message){el.textContent=message;return;}
+ const c=supplementalData?.coverage;
+ el.textContent=referenceJob?.state==='running'?'Checking public pages: '+referenceJob.completed+'/'+referenceJob.total+'…':c?'Public pages: VesselFinder '+c.vesselfinder_accessible+'/'+c.fleet+' · MarineTraffic '+c.marinetraffic_accessible+'/'+c.fleet+' accessible · Last attempt '+fmt(supplementalData.checked_at)+' · Valid references retain their own dates.':'Public source references loading…';
+}
+async function refreshSupplemental(checkSources=false){
+ clearTimeout(referenceTimer);lastReferenceFetch=Date.now();
+ const result=await Promise.allSettled([
+  fetch('data/supplemental.json',{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error();return r.json();}),
+  api('/api/references'+(checkSources?'/refresh':''),checkSources?{method:'POST'}:{})
+ ]);
+ for(const [index,r] of result.entries())if(r.status==='fulfilled'){
+  const d=index===0?r.value:r.value.data;
+  if(d?.schema_version===1&&Array.isArray(d.vessels))supplementalData=mergeReferenceDatasets(supplementalData,d);
+  if(index===1)referenceJob=r.value.job;
+ }
+ renderReferenceStatus(checkSources&&result[1].status==='rejected'?'Public-source refresh unavailable; last valid references retained.':'');
+ render();
+ if(referenceJob?.state==='running')referenceTimer=setTimeout(()=>refreshSupplemental(),5000);
+}
 let resolveDestination=()=>({match:'unresolved',note:'Port directory unavailable'}),legalData=null;
 let fleet,rows=[],snapshot=null,timer,zoneData=[],selected=null,historyData=null,historySeq=0,refreshing=false,eventBaseline=null;
 let timezone=localStorage.getItem('vw-timezone')??'UTC';
@@ -22,18 +46,23 @@ function badge(r){return '<span class="badge '+esc(r.freshness)+'">'+esc(labels[
 function notice(text,error=false){$('#notice').hidden=!text;$('#notice').className='notice'+(error?' error':'');$('#notice').textContent=text;}
 function toast(text){$('#toast').textContent=text;$('#toast').hidden=false;setTimeout(()=>$('#toast').hidden=true,7000);}
 function filtered(){const q=$('#search').value.trim().toUpperCase(),role=$('#role').value,status=$('#freshness').value;
- let result=rows.filter(r=>(!q||[r.name,r.imo,r.identity?.mmsi,r.static?.destination,destinationInfo(r).country,destinationInfo(r).port,destinationInfo(r).court?.name].some(v=>String(v??'').toUpperCase().includes(q)))&&(role==='all'||(role==='owner'?isOwner(r):!isOwner(r)))&&(status==='all'||(status==='area'?r.position?.zone&&r.freshness==='recent':status==='stale'?['stale','lost'].includes(r.freshness):r.freshness===status)));
+ let result=rows.filter(r=>(!q||[r.name,r.imo,r.identity?.mmsi,r.static?.destination,destinationInfo(r).country,destinationInfo(r).port,destinationInfo(r).court?.name,referenceFor(supplementalData,r)?.country,referenceFor(supplementalData,r)?.port,referenceFor(supplementalData,r)?.court_reference?.name].some(v=>String(v??'').toUpperCase().includes(q)))&&(role==='all'||(role==='owner'?isOwner(r):!isOwner(r)))&&(status==='all'||(status==='area'?r.position?.zone&&r.freshness==='recent':status==='stale'?['stale','lost'].includes(r.freshness):r.freshness===status)));
  const rank=r=>r.position?.zone&&r.freshness==='recent'?0:r.freshness==='recent'?1:['stale','lost'].includes(r.freshness)?2:3;
  result.sort((a,b)=>$('#sort').value==='name'?a.name.localeCompare(b.name):$('#sort').value==='age'?(a.age_seconds??Infinity)-(b.age_seconds??Infinity)||a.name.localeCompare(b.name):rank(a)-rank(b)||a.name.localeCompare(b.name));return result;
 }
 function destinationInfo(r){return resolveDestination(r.static?.destination);}
 function courtLabel(d){return d.court?.name??(d.match==='missing'?'—':d.port?'Jurisdiction to verify':'Port to identify');}
-function destinationCells(r){const d=destinationInfo(r),court=d.court;
- return '<td class="destination-place">'+esc(d.country??'—')+'<span class="sub">'+esc((d.port?(d.port+(d.match==='inferred'?' · to confirm':'')):null)??(d.match==='missing'?'Destination not received':'Port not identified'))+'</span></td><td class="destination-court">'+esc(courtLabel(d))+'<span class="sub">'+esc(court?(court.status==='preliminary'||d.match==='inferred'?'Preliminary · confirm locally':'If arriving at the declared port'):'')+'</span></td>';
+function destinationCells(r){
+ const d=destinationInfo(r),ref=referenceFor(supplementalData,r),hasAIS=Boolean(r.static?.destination);
+ const ais=hasAIS?esc(d.country??'Country not identified')+'<span class="sub">'+esc(d.port??'Port not identified')+'</span><span class="sub">AIS declaration · '+esc(fmt(r.static.at))+'</span><span class="sub">ETA: '+esc(etaLabel(r.static.eta_reported))+'</span>':'';
+ const reference=ref?.destination_reported?'<div class="destination-reference">'+esc(ref.country??'Country not identified')+'<span class="sub">'+esc(ref.port??'Port not identified')+'</span><span class="sub">'+esc(ref.source)+' '+(ref.voyage_status==='reported_arrival'?'arrival reference':'destination reference')+' · consulted '+esc(fmt(ref.checked_at))+'</span><span class="sub">'+esc(ref.arrival_reported?'Reported arrival: '+ref.arrival_reported:ref.eta_reported?'ETA: '+ref.eta_reported:'ETA unavailable')+' · year/timezone only as stated</span></div>':'';
+ const aisCourt=hasAIS?esc(courtLabel(d))+'<span class="sub">AIS destination'+(d.court?.status==='preliminary'?' · preliminary':'')+'</span>':'';
+ const refCourt=ref?.destination_reported?'<div class="destination-reference">'+esc(courtReferenceLabel(ref.court_reference))+'<span class="sub">'+esc(ref.source)+' '+(ref.voyage_status==='reported_arrival'?'reported port':'declared port')+(ref.court_reference?.status==='preliminary'?' · preliminary':'')+'</span></div>':'';
+ return '<td class="destination-place">'+(ais+reference||'Destination not received')+'</td><td class="destination-court">'+(aisCourt+refCourt||'—')+'</td>';
 }
 function destinationDetail(r){const d=destinationInfo(r),court=d.court;
  const links=(court?.sources??[]).map(v=>'<li><a href="'+esc(v.url)+'" target="_blank" rel="noopener noreferrer">'+esc(v.title)+'</a></li>').join('');
- return '<div class="detail-section"><h3>Destination and court on arrival</h3><dl class="detail-grid">'+field('Destination country',d.country)+field('Identified declared port',d.port)+field('Port code',d.code)+field('Court for civil arrest on arrival',courtLabel(d))+field('Reference status',court?(court.status==='preliminary'?'Preliminary · confirm locally':'Sources checked on 06.10.26'):'Unverified')+field('Data interpretation',d.note||'Destination cannot be identified with certainty')+'</dl><p class="muted">'+esc(court?.note??'No court is assigned without an identifiable port and a verifiable source.')+'</p><p class="muted">The port is derived from the AIS declaration and does not confirm berthing, terminal or arrival. Court references concern civil arrest on arrival; claim requirements, ownership and local rules require verification.</p>'+(links?'<ul class="court-sources">'+links+'</ul>':'')+'</div>';
+ return '<div class="detail-section"><h3>Destination and court on arrival</h3><dl class="detail-grid">'+field('Destination country',d.country)+field('Identified declared port',d.port)+field('Port code',d.code)+field('Court for civil arrest on arrival',courtLabel(d))+field('Reference status',court?(court.status==='preliminary'?'Preliminary · confirm locally':'Official sources · checked '+(court.checked_at??legalData?.[1]?.checked_at??'date unavailable')):'Unverified')+field('Data interpretation',d.note||'Destination cannot be identified with certainty')+'</dl><p class="muted">'+esc(court?.note??'No court is assigned without an identifiable port and a verifiable source.')+'</p><p class="muted">The port is derived from the AIS declaration and does not confirm berthing, terminal or arrival. Court references concern civil arrest on arrival; claim requirements, ownership and local rules require verification.</p>'+(links?'<ul class="court-sources">'+links+'</ul>':'')+'</div>';
 }
 function render(){
  const result=filtered();$('#total').textContent=rows.length;$('#identified').textContent=rows.filter(r=>r.identity).length+'/'+rows.length+' identities verified by IMO';
@@ -54,16 +83,17 @@ function historyHtml(){if(!historyData)return '<p class="muted">'+(snapshot?'Loa
 function detailEvents(){const events=historyData?.events??snapshot?.events?.filter(e=>e.imo===selected)??[];return events.length?events.slice(0,30).map(e=>'<p class="muted">'+esc(fmt(e.at))+' · '+esc(eventLabels[e.type]??e.type)+(e.zone?' · '+esc(e.zone.name):'')+'</p>').join(''):'<p class="muted">No events yet.</p>';}
 async function loadHistory(){if(!selected||!snapshot)return;const imo=selected,seq=++historySeq;try{const data=await api('/api/vessels/'+imo+'/history');if(seq!==historySeq||selected!==imo)return;historyData=data;}catch{if(seq!==historySeq)return;historyData={error:'History unavailable. Try Refresh.'};}renderDetail();}
 function openDetail(imo){selected=imo;historyData=null;renderDetail();$('#detail').showModal();loadHistory();}
-async function api(route){const res=await fetch(apiBase+route,{cache:'no-store',headers:token?{authorization:'Bearer '+token}:{},signal:AbortSignal.timeout(12000)});if(!res.ok)throw new Error(res.status===401?'Service access required':'AIS service unavailable (HTTP '+res.status+')');return res.json();}
+async function api(route,options={}){const res=await fetch(apiBase+route,{...options,cache:'no-store',headers:token?{authorization:'Bearer '+token}:{},signal:AbortSignal.timeout(12000)});if(!res.ok)throw new Error(res.status===401?'Service access required':'AIS service unavailable (HTTP '+res.status+')');return res.json();}
 function decay(){for(const r of rows){if(!r.position)continue;const z=watchedZoneAt(r.position.lat,r.position.lon,zoneData);r.position.zone=z?{id:z.id,name:z.name,country:z.country}:null;r.age_seconds=Math.max(0,Math.floor((Date.now()-Date.parse(r.position.at))/1000));r.freshness=r.age_seconds<=900?'recent':r.age_seconds<=86400?'stale':'lost';}}
 async function refresh(){if(refreshing)return;refreshing=true;$('#refresh').disabled=true;
  try{const data=await api('/api/watch');if(!Array.isArray(data.vessels)||data.vessels.length!==fleet.vessels.length)throw new Error('Invalid service response');
    const expected=new Set(fleet.vessels.map(v=>v.imo));if(data.vessels.some(v=>!expected.has(v.imo))||new Set(data.vessels.map(v=>v.imo)).size!==expected.size)throw new Error('Service fleet differs from report');
    snapshot=data;rows=data.vessels;decay();$('#connection').textContent='Service connected · '+rows.filter(r=>r.freshness==='recent').length+'/44 recent AIS';$('#last-refresh').textContent='Checked '+fmt(data.generated_at)+' · '+(cfg.refreshSeconds??30)+' s';
-   const errors=Object.values(data.feeds??{}).filter(f=>f.error).length;
+   $('#feed-status').textContent=feedStatusText(data.feeds);
+   const errors=Object.values(data.feeds??{}).filter(f=>f.error||(f.state==='receiving'&&Date.now()-Date.parse(f.last_message_at)>300000)).length;
    notice(data.archive?.error?'Data is arriving, but history is not being saved.':errors?'An AIS source reports an error. Positions retain their original timestamps.':data.summary.identified===0?'Connected. IMO/MMSI identification in progress; no verified positions yet.':data.summary.recent===0?'No position received in the last 15 minutes. Displayed coordinates are last known positions.':'',Boolean(data.archive?.error||errors));
    const first=(data.events??[])[0];if(eventBaseline&&first?.id!==eventBaseline){const alert=(data.events??[]).find(e=>['area_enter','area_observed'].includes(e.type)&&Date.now()-Date.parse(e.recorded_at)<90000);if(alert)toast(alert.name+' · '+eventLabels[alert.type]+' · '+alert.zone.name);}eventBaseline=first?.id??'empty';
-   render();if(selected)loadHistory();
+   render();if(selected)loadHistory();if(Date.now()-lastReferenceFetch>300000)void refreshSupplemental();
  }catch(e){decay();$('#connection').textContent=snapshot?'Connection interrupted':'AIS service disconnected';notice((snapshot?'Data retained from the last refresh. ':'')+e.message+'. '+(!apiBase?'Open Connection to configure the service.':''),true);render();}
  finally{refreshing=false;$('#refresh').disabled=false;clearTimeout(timer);timer=setTimeout(refresh,Math.max(15,cfg.refreshSeconds??30)*1000);}}
 
@@ -76,16 +106,11 @@ async function exportManagingPDF(){
    if(!Array.isArray(data.vessels)||data.vessels.length!==expected.size||data.vessels.some(v=>!expected.has(v.imo))||new Set(data.vessels.map(v=>v.imo)).size!==expected.size)throw new Error('Invalid fleet');
    snapshot=data;rows=data.vessels;decay();render();
   }catch{offline=true;}
-  if(!snapshot){toast('No AIS snapshot available. Connect the service and try again.');return;}
-  const {createFleetPDF,etaLabel}=await import('./pdf-export.js?v=20261006-pdf1');
-  const utc=at=>at&&Number.isFinite(Date.parse(at))?new Date(at).toISOString().replace('T',' ').slice(0,16)+' UTC':'Time unavailable';
-  const records=[...rows].sort((a,b)=>a.name.localeCompare(b.name)).map(r=>{
-   const d=destinationInfo(r),p=r.position;
-   const location=p?[(p.zone?p.zone.name+' - '+(p.zone.country==='Italia'?'Italy':p.zone.country):p.near??'Port not identified'),coord(p),'Fix: '+utc(p.at)+' | '+(labels[r.freshness]??'Unverified')].join('\n'):'Position unavailable';
-   const jurisdiction=[d.country??'Country not identified',d.port??'Port not identified',courtLabel(d),d.court?(d.court.status==='preliminary'||d.match==='inferred'?'Preliminary - confirm locally':'If arriving at declared port'):null].filter(Boolean).join('\n');
-   return [r.name+'\nIMO '+r.imo,location,jurisdiction,etaLabel(r.static?.eta_reported)+'\nStatic data: '+utc(r.static?.at)];
-  });
-  const blob=createFleetPDF(records,{snapshotAt:snapshot.generated_at,offline}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  await refreshSupplemental();
+  if(!snapshot&&!supplementalData){toast('No AIS snapshot or public references available. Please try again.');return;}
+  const {createFleetPDF}=await import('./pdf-export.js?v=20261019-1');
+  const records=briefRecords(rows,supplementalData,resolveDestination);
+  const blob=createFleetPDF(records,{snapshotAt:snapshot?.generated_at,offline}),url=URL.createObjectURL(blob),a=document.createElement('a');
   a.href=url;a.download='fleet-monitor-managing-associate-'+new Date().toISOString().slice(0,10)+'.pdf';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);
   if(offline)toast('PDF exported from the last available snapshot; the service could not be refreshed.');
  }catch{toast('PDF export failed. Please try again.');}
@@ -100,7 +125,7 @@ for(const btn of document.querySelectorAll('[data-filter]'))btn.addEventListener
 function switchTab(name){for(const key of ['fleet','zones','news','game']){$('#'+key+'-panel').hidden=key!==name;$('#'+key+'-tab').classList.toggle('active',key===name);$('#'+key+'-tab').setAttribute('aria-selected',String(key===name));}}
 for(const name of ['fleet','zones','news','game'])$('#'+name+'-tab').addEventListener('click',()=>switchTab(name));
 $('#export-pdf').addEventListener('click',exportManagingPDF);
-$('#refresh').addEventListener('click',()=>{refresh();refreshSupplemental();});$('#export').addEventListener('click',exportCSV);
+$('#refresh').addEventListener('click',()=>{refresh();refreshSupplemental(true);});$('#export').addEventListener('click',exportCSV);
 $('#timezone').addEventListener('click',()=>{timezone=timezone==='UTC'?'Europe/Rome':'UTC';localStorage.setItem('vw-timezone',timezone);$('#timezone').textContent=timezone==='UTC'?'UTC':'Rome';render();});
 $('#settings').addEventListener('click',()=>{$('#api-base').value=apiBase;$('#read-token').value=token;$('#config').showModal();});
 $('#config-form').addEventListener('submit',e=>{e.preventDefault();const value=$('#api-base').value.trim();try{if(value&&new URL(value).protocol!=='https:'&&!value.startsWith('http://localhost'))throw new Error();}catch{$('#api-base').setCustomValidity('Use a valid HTTPS address.');$('#api-base').reportValidity();return;}$('#api-base').setCustomValidity('');apiBase=value.replace(/\/$/,'');token=$('#read-token').value;localStorage.setItem('vw-api',apiBase);sessionStorage.setItem('vw-token',token);$('#config').close();snapshot=null;refresh();});
