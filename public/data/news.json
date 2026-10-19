@@ -1,6 +1,17 @@
 {
-  "checked_at": "2026-10-19T06:02:32.461Z",
+  "checked_at": "2026-10-19T13:55:00.908Z",
   "items": [
+    {
+      "id": "glovis-america-philaport-expansion-20261013",
+      "title": "Hyundai Glovis plans Philadelphia terminal expansion and lease through 2056",
+      "published_at": "2026-10-19",
+      "source": "Splash247",
+      "url": "https://splash247.com/hyundai-glovis-expands-philadelphia-footprint-with-new-car-carrier-berths/",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Following Pennsylvania's October 13 PhilaPort expansion announcement, reporting on October 19 detailed a Hyundai Glovis agreement covering new vehicle-handling facilities, dedicated car-carrier berths and terminal operations, with its lease extended through 2056. Planned storage capacity would increase from 33,600 to 37,600 vehicles. This updates the existing Philadelphia story and does not identify a monitored vessel."
+    },
     {
       "id": "hyundai-glovis-fleet-expansion-20261014",
       "title": "Hyundai Glovis fleet projected to reach 110 vessels by year-end",
@@ -22,17 +33,6 @@
       "vessel_names": [],
       "vessel_imos": [],
       "summary": "Guangzhou Shipyard International delivered the 10,800-CEU LNG dual-fuel PCTC Glovis Legend on October 12, nearly nine months ahead of schedule. The HMM-owned ship will be operated by Hyundai Glovis and is outside the 44-vessel watchlist."
-    },
-    {
-      "id": "glovis-america-philaport-expansion-20261013",
-      "title": "GLOVIS America joins major PhilaPort expansion",
-      "published_at": "2026-10-13",
-      "source": "Commonwealth of Pennsylvania",
-      "url": "https://www.pa.gov/governor/newsroom/2026-press-releases/gov-shapiro-announces--837-million-investment-in-philaport-to-su",
-      "scope": "company",
-      "vessel_names": [],
-      "vessel_imos": [],
-      "summary": "Pennsylvania announced an $837 million-plus PhilaPort expansion combining state, federal and private investment, with GLOVIS America participating in the Southport auto-terminal growth plan. The project targets an 18% increase in auto capacity and does not identify any of the 44 monitored vessels."
     },
     {
       "id": "hyundai-glovis-avikus-hinas-newbuilds-20261006",
@@ -114,6 +114,43 @@
       "vessel_names": [],
       "vessel_imos": [],
       "summary": "Glovis Lighthouse called at Southampton on July 14 during its maiden voyage, becoming the port's largest vehicle carrier by capacity. The 10,800-CEU ship belongs to the wider Hyundai Glovis operating fleet and is not one of the 44 monitored vessels."
+    },
+    {
+      "id": "hyundai-glovis-remote-navigation-mou-20260608",
+      "title": "Hyundai Glovis partners to verify remote navigation for car carriers",
+      "published_at": "2026-06-08",
+      "source": "Seoul Economic Daily",
+      "url": "https://en.sedaily.com/finance/2026/06/08/hyundai-glovis-to-advance-remote-navigation-tech-for-car",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Hyundai Glovis reported on June 8 that it signed a June 2 agreement at Posidonia with G-Marine Service, Avikus and Korean Register to develop and verify a remote-operation concept for car carriers. The project concerns operating procedures, technology and safety assessment; it does not establish crewless operation or identify any of the 44 monitored ships."
+    },
+    {
+      "id": "hyundai-glovis-amsterdam-partnership-20260602",
+      "title": "Hyundai Glovis signs Amsterdam vehicle-terminal partnership",
+      "published_at": "2026-06-02",
+      "source": "Koopman Logistics Group",
+      "url": "https://www.koopman.eu/en/news/strategic-partnership-with-hyundai-glovis-and-the-port-of-amsterdam",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Koopman reported on June 2 that it, Hyundai Glovis and the Port of Amsterdam signed a strategic agreement in Amsterdam on May 28 to develop a dedicated finished-vehicle logistics terminal. The partnership covers maritime transport, storage and distribution. No monitored vessel is identified."
+    },
+    {
+      "id": "glovis-sunlight-ocean-cleanup-20260521",
+      "title": "Glovis Sunlight supports ocean-plastic monitoring as partnership expands",
+      "published_at": "2026-05-21",
+      "source": "The Asia Business Daily",
+      "url": "https://view.asiae.co.kr/en/article/2026052108412938485",
+      "scope": "vessel",
+      "vessel_names": [
+        "GLOVIS SUNLIGHT"
+      ],
+      "vessel_imos": [
+        "9798416"
+      ],
+      "summary": "A May 21 report identifies an ADIS debris-imaging camera aboard Glovis Sunlight, one of the 44 monitored vessels. Hyundai Glovis said its Ocean Cleanup partnership would run through 2030 and reported 20 cameras on 10 car carriers. The renewal had already been announced by The Ocean Cleanup in April; the May report provides the named-vessel detail and expanded deployment figures."
     },
     {
       "id": "hyundai-glovis-leader-deployed-20260429",
