@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Vessel Watch · Hyundai Glovis</title><link rel="stylesheet" href="styles.css?v=20261019-1"><script src="runtime-config.js"></script><script type="module" src="app.js?v=20261019-1"></script><style>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><title>Vessel Watch · Hyundai Glovis</title><link rel="stylesheet" href="styles.css?v=20261019-2"><script src="runtime-config.js"></script><script type="module" src="app.js?v=20261019-2"></script><style>
 .quote-ticker{display:flex;align-items:center;background:#111;color:#eee;border-top:1px solid #333;min-height:34px;overflow:hidden}
 .quote-window{flex:1;min-width:0;overflow:hidden;padding:8px 0}
 .quote-track{display:flex;width:max-content;animation:quote-scroll 120s linear infinite}
@@ -54,8 +54,8 @@
 <dialog id="detail"><div class="dialog-heading"><div><p class="eyebrow">VESSEL DOSSIER</p><h2 id="detail-title"></h2></div><button data-close="detail" aria-label="Close dossier">Close</button></div><div id="detail-body"></div></dialog>
 <dialog id="config"><div class="dialog-heading"><h2>AIS connection</h2><button data-close="config">Close</button></div><form id="config-form"><p>Connect the watchlist to the service collecting and retaining AIS signals.</p><label>Service address<input id="api-base" type="url" placeholder="https://vessel-watch.up.railway.app"></label><label>Access token (if required)<input id="read-token" type="password" autocomplete="off"></label><p class="muted">The token stays in this browser session. AIS provider keys must remain on the server.</p><button type="submit" class="primary">Save and connect</button></form></dialog>
 <div id="toast" class="toast" role="status" hidden></div>
-<script type="module" src="news.js?v=20261019-1"></script><script type="module" src="game.js?v=20261006-jumphigher1"></script>
-<script src="access.js?v=20261019-1"></script>
+<script type="module" src="news.js?v=20261019-2"></script><script type="module" src="game.js?v=20261006-jumphigher1"></script>
+<script src="access.js?v=20261019-2"></script>
 
 <script>document.querySelector('.quote-pause').addEventListener('click',function(){const paused=this.closest('.quote-ticker').classList.toggle('is-paused');this.setAttribute('aria-pressed',String(paused));this.setAttribute('aria-label',paused?'Resume scrolling quotations':'Pause scrolling quotations');this.textContent=paused?'▶':'Ⅱ';});</script>
 </body></html>

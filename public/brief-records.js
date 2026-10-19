@@ -1,5 +1,5 @@
-import {referenceFor,courtReferenceLabel} from './reference-data.js?v=20261019-1';
-import {etaLabel} from './pdf-export.js?v=20261019-1';
+import {referenceFor,courtReferenceLabel} from './reference-data.js?v=20261019-2';
+import {etaLabel} from './pdf-export.js?v=20261019-2';
 const utc=at=>at&&Number.isFinite(Date.parse(at))?new Date(at).toISOString().replace('T',' ').slice(0,16)+' UTC':'Time unavailable';
 const coords=p=>Math.abs(p.lat).toFixed(4)+' deg '+(p.lat<0?'S':'N')+' / '+Math.abs(p.lon).toFixed(4)+' deg '+(p.lon<0?'W':'E');
 export function briefRecords(rows,data,resolve){

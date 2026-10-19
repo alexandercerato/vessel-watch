@@ -14,8 +14,8 @@ const seed=JSON.parse(fs.readFileSync(path.join(root,'data/supplemental.json'),'
 const directory=JSON.parse(fs.readFileSync(path.join(root,'data/ports.json'),'utf8'));
 const legal=JSON.parse(fs.readFileSync(path.join(root,'data/courts.json'),'utf8'));
 const store=new Store(process.env.DATA_DIR??'./data');
-const references=new ReferenceMonitor({fleet,seed,directory,legal,dataDir:process.env.DATA_DIR??'./data'});
 const watch=new Watch(fleet,zones,store.load());
+const references=new ReferenceMonitor({fleet,seed,directory,legal,dataDir:process.env.DATA_DIR??'./data',getAISRow:imo=>watch.rows.get(imo)});
 const feeds=process.env.DISABLE_FEEDS==='1'?{status:{},stop(){}}:runFeeds(watch);
 let timer;
 function maintain(){watch.tick();store.save(watch);timer=setTimeout(maintain,10000);}maintain();

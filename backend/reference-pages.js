@@ -23,9 +23,9 @@ export function parsePublicVesselPage(input, imo) {
   const arrived = text.match(/vessel arrived at (?:the port of )?(.+?) on ([A-Z][a-z]{2} \d{1,2}, \d\d:\d\d(?: UTC)?)/i);
   const eta = text.match(/expected to arrive there on ([A-Z][a-z]{2} \d{1,2}, \d\d:\d\d(?: UTC)?)/i);
   if (!area && !enRoute && !arrived) throw new Error('Public voyage information unavailable');
-  return {reported_imo: identity[1], mmsi: identity[2], area: area?.[1] ?? null,
-    position_age_reported: area?.[2] ?? null, signal_at: null, coordinates: null,
-    destination_reported: arrived?.[1] ?? enRoute?.[1] ?? null,
+  return {reported_imo: identity[1], mmsi: identity[2], area: area?.[1]?.trim() ?? null,
+    position_age_reported: area?.[2]?.trim() ?? null, signal_at: null, coordinates: null,
+    destination_reported: (arrived?.[1] ?? enRoute?.[1])?.trim() ?? null,
     eta_reported: eta?.[1] ?? null, arrival_reported: arrived?.[2] ?? null,
     voyage_status: arrived ? 'reported_arrival' : enRoute ? 'en_route' : 'destination_unavailable'};
 }
@@ -42,7 +42,9 @@ export function referenceFromPage(input, vessel, previous, directory, legal, at)
     same ? previous?.court_reference : null;
   return {source: previous?.source ?? 'VesselFinder', url: previous?.url ??
       'https://www.vesselfinder.com/vessels/details/' + vessel.imo,
-    ...parsed, checked_at: at, access_status: 'available',
+    ...parsed, ...(previous?.mmsi === parsed.mmsi && previous.mmsi_verification_status === 'conflict' ?
+      {mmsi_verification_status:'conflict',identity_check:previous.identity_check,identity_sources:previous.identity_sources} : {}),
+    checked_at: at, access_status: 'available',
     port: d.port ?? (split > 0 ? destination.slice(0, split) : null),
     country: d.country ?? (split > 0 ? destination.slice(split + 1).trim() : null),
     court_reference: court ?? {name:null,status:'unverified',checked_at:at.slice(0,10),sources:[],
@@ -53,9 +55,9 @@ export function referenceFromPage(input, vessel, previous, directory, legal, at)
 }
 
 export class ReferenceMonitor {
-  constructor({fleet, seed, directory, legal, dataDir, fetchPage = fetch, clock = () => new Date().toISOString()}) {
+  constructor({fleet, seed, directory, legal, dataDir, getAISRow = () => null, fetchPage = fetch, clock = () => new Date().toISOString()}) {
     this.fleet = fleet; this.directory = directory; this.legal = legal;
-    this.fetchPage = fetchPage; this.clock = clock; this.job = null; this.active = null; this.error = null;
+    this.fetchPage = fetchPage; this.clock = clock; this.getAISRow = getAISRow; this.job = null; this.active = null; this.error = null;
     this.file = path.join(dataDir, 'public-references.json');
     let saved = null; try { saved = JSON.parse(fs.readFileSync(this.file, 'utf8')); } catch {}
     this.data = mergeReferenceDatasets(seed, saved);
@@ -88,6 +90,13 @@ export class ReferenceMonitor {
           const body = await res.text();
           const next = referenceFromPage(body, v, {...old,url}, this.directory, this.legal, at);
           if (key === 'marinetraffic') next.source = 'MarineTraffic';
+          const row = this.getAISRow(v.imo);
+          if (row) {
+            next.comparison = {backend_position_at:row.position?.at??null,backend_destination:row.static?.destination??null,
+              backend_static_at:row.static?.at??null,merge_applied:false};
+            next.identity_check = next.mmsi_verification_status === 'conflict' ? next.identity_check :
+              !row.identity ? 'Backend identity pending' : String(row.identity.mmsi) === next.mmsi ? 'Matches current backend IMO/MMSI' : 'MMSI conflict - do not merge';
+          }
           v[key] = next;
         } catch (e) {
           v[key] = {...old, url, last_attempt_at:at, last_attempt_status:'unavailable',
@@ -100,6 +109,7 @@ export class ReferenceMonitor {
     const count = key => this.data.vessels.filter(v => v[key]?.last_attempt_status === 'available').length;
     const vf = count('vesselfinder'), mt = count('marinetraffic');
     this.data.checked_at = this.clock();
+    if (this.fleet.vessels.some(v => this.getAISRow(v.imo))) this.data.backend_compared_at = this.data.checked_at;
     this.data.coverage = {fleet:this.fleet.vessels.length,vesselfinder_accessible:vf,vesselfinder_unavailable:this.fleet.vessels.length-vf,
       marinetraffic_accessible:mt,marinetraffic_unavailable:this.fleet.vessels.length-mt};
     this.job.state = 'completed'; this.job.accessible = {vesselfinder:vf,marinetraffic:mt};

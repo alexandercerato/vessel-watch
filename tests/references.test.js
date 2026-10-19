@@ -14,6 +14,11 @@ test('public relative age stays unverified and never becomes a signal timestamp'
  const ref=referenceFromPage(page,ship,null,directory,legal,'2026-10-19T05:00:00Z');assert.equal(ref.country,'Singapore');assert.equal(ref.port,'Singapore');assert.match(ref.court_reference.name,/High Court/);
  assert.throws(()=>parsePublicVesselPage(page,'9122942'));assert.throws(()=>parsePublicVesselPage('<h1>GLOVIS CORONA</h1><p>Verify you are human</p>',ship.imo));
 });
+test('HTML spacing is trimmed and a previously disputed MMSI stays flagged',()=>{
+ const previous={mmsi:'440161000',mmsi_verification_status:'conflict',identity_check:'Conflict under review'};
+ const p=referenceFromPage(page.replace('Singapore, Singapore, sailing','Singapore, Singapore <span></span>, sailing'),ship,previous,directory,legal,'2026-10-19T05:00:00Z');
+ assert.equal(p.destination_reported,'Singapore, Singapore');assert.equal(p.mmsi_verification_status,'conflict');assert.equal(p.identity_check,'Conflict under review');
+});
 test('an arrival reference is distinct from an ETA and a changed port clears the previous court',()=>{
  const arrived=page.replace(/The vessel is en route.*?The vessel GLOVIS/,'The vessel arrived at the port of Mystery, Example on Oct 19, 02:57 UTC. The vessel GLOVIS');
  const p=referenceFromPage(arrived,ship,{destination_reported:'Singapore, Singapore',court_reference:{name:'Singapore court',status:'reference'}},directory,legal,'2026-10-19T05:00:00Z');
@@ -25,6 +30,12 @@ test('newer public and backend attempts are reconciled without replacing newer v
  const b={checked_at:'2026-10-19T06:00:00Z',vessels:[{...ship,vesselfinder:{...v.vesselfinder,checked_at:'2026-10-18T05:00:00Z',port:'Old port',last_attempt_at:'2026-10-19T06:00:00Z',last_attempt_status:'unavailable'}}]};
  const merged=mergeReferenceDatasets(a,b);assert.equal(merged.vessels[0].vesselfinder.port,'Singapore');assert.equal(merged.vessels[0].vesselfinder.last_attempt_status,'unavailable');
  assert.equal(referenceFor(merged,{imo:ship.imo,identity:{mmsi:'441000000'}}),null);assert.equal(referenceFor(merged,{imo:ship.imo,identity:null}).port,'Singapore');
+});
+test('a newer page consultation does not clear a known disputed MMSI',()=>{
+ const old={...ship,vesselfinder:{access_status:'available',mmsi:'440161000',checked_at:'2026-10-18T01:00:00Z',mmsi_verification_status:'conflict',identity_check:'Unresolved conflict'}};
+ const latest={...ship,vesselfinder:{access_status:'available',mmsi:'440161000',checked_at:'2026-10-19T01:00:00Z'}};
+ const result=mergeReferenceDatasets({vessels:[old]},{vessels:[latest]});
+ assert.equal(result.vessels[0].vesselfinder.mmsi_verification_status,'conflict');assert.equal(referenceFor(result,{imo:ship.imo}),null);
 });
 test('a blocked source preserves valid data, timestamp and court across a refresh and restart',async()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'vw-ref-'));

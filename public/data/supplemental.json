@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-19T06:02:01.351Z",
-  "backend_compared_at": "2026-10-19T05:50:05.762Z",
+  "checked_at": "2026-10-19T06:16:28.779Z",
+  "backend_compared_at": "2026-10-19T06:16:28.779Z",
   "policy": "Public page references only. Relative ages are quoted as displayed and are not converted to signal timestamps. No coordinates or live AIS freshness are inferred from provider pages. ETA year and timezone are unverified unless explicitly supplied. The Railway AIS service was compared separately; supplemental references never overwrite newer timestamped AIS data.",
   "coverage": {
     "fleet": 44,
@@ -20,14 +20,14 @@
         "reported_imo": "9122930",
         "mmsi": "440161000",
         "area": "East Asia",
-        "position_age_reported": "11 hours ago",
+        "position_age_reported": "12 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Singapore, Singapore",
         "eta_reported": "Oct 25, 15:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:59:54.070Z",
+        "checked_at": "2026-10-19T06:16:25.524Z",
         "access_status": "available",
         "port": "Singapore",
         "country": "Singapore",
@@ -47,17 +47,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:59:54.070Z",
+        "last_attempt_at": "2026-10-19T06:16:25.524Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-18T16:42:39.000Z",
           "backend_destination": "KRUSN>SGSIN",
           "backend_static_at": "2026-10-18T16:42:39.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -65,7 +65,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:25.524Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -77,14 +79,14 @@
         "reported_imo": "9122942",
         "mmsi": "440269000",
         "area": "Black Sea",
-        "position_age_reported": "0 min ago",
+        "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Constanta, Romania",
         "eta_reported": "Oct 19, 17:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:52:08.379Z",
+        "checked_at": "2026-10-19T06:16:25.524Z",
         "access_status": "available",
         "port": "Constanta",
         "country": "Romania",
@@ -93,19 +95,19 @@
           "status": "unverified",
           "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Constanta has not yet been verified from an official judicial source during this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:08.379Z",
+        "last_attempt_at": "2026-10-19T06:16:25.524Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-19T00:53:39.000Z",
           "backend_destination": "ROCND",
           "backend_static_at": "2026-10-19T00:53:39.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -113,7 +115,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:25.539Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -125,35 +129,35 @@
         "reported_imo": "9158604",
         "mmsi": "440292000",
         "area": "West Africa",
-        "position_age_reported": "9 hours ago",
+        "position_age_reported": "10 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Rotterdam, Netherlands",
         "eta_reported": "Oct 23, 06:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:52:08.379Z",
+        "checked_at": "2026-10-19T06:16:25.547Z",
         "access_status": "available",
         "port": "Rotterdam",
         "country": "Netherlands",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Rotterdam has not yet been verified from an official judicial source during this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:08.379Z",
+        "last_attempt_at": "2026-10-19T06:16:25.547Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-18T19:52:05.000Z",
           "backend_destination": "NLRTM",
           "backend_static_at": "2026-10-18T19:52:05.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -161,7 +165,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.142Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -180,7 +186,7 @@
         "eta_reported": null,
         "arrival_reported": "Oct 18, 18:15 UTC",
         "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-19T05:52:08.379Z",
+        "checked_at": "2026-10-19T06:16:26.153Z",
         "access_status": "available",
         "port": "Santo Domingo",
         "country": "Dominican Republic",
@@ -191,17 +197,17 @@
           "sources": [],
           "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:08.379Z",
+        "last_attempt_at": "2026-10-19T06:16:26.153Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
-          "backend_position_at": "2026-10-19T05:45:52.000Z",
-          "backend_destination": null,
-          "backend_static_at": "2026-10-19T05:42:52.000Z",
+          "backend_position_at": "2026-10-19T06:09:52.000Z",
+          "backend_destination": "DOSDQ",
+          "backend_static_at": "2026-10-19T06:09:52.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -209,7 +215,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.164Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -221,14 +229,14 @@
         "reported_imo": "9419759",
         "mmsi": "441304000",
         "area": "Arabian Sea",
-        "position_age_reported": "2 days ago",
+        "position_age_reported": "6 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": null,
         "eta_reported": null,
         "arrival_reported": null,
         "voyage_status": "destination_unavailable",
-        "checked_at": "2026-10-19T05:52:08.379Z",
+        "checked_at": "2026-10-19T06:16:26.164Z",
         "access_status": "available",
         "port": null,
         "country": null,
@@ -239,17 +247,17 @@
           "sources": [],
           "note": "No declared destination is available; court competence cannot be determined."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:08.379Z",
+        "last_attempt_at": "2026-10-19T06:16:26.164Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-11T01:01:45.000Z",
           "backend_destination": "OMDQM",
           "backend_static_at": "2026-10-11T01:01:45.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -257,7 +265,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.173Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -269,35 +279,35 @@
         "reported_imo": "9445409",
         "mmsi": "441310000",
         "area": "China Coast",
-        "position_age_reported": "27 min ago",
+        "position_age_reported": "2 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Zhoushan, China",
         "eta_reported": "Oct 10, 03:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:52:08.379Z",
+        "checked_at": "2026-10-19T06:16:26.186Z",
         "access_status": "available",
         "port": "Zhoushan",
         "country": "China",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Zhoushan, China has not yet been verified from an official judicial source during this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "yesterday",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:08.379Z",
+        "last_attempt_at": "2026-10-19T06:16:26.186Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-08T05:43:06.000Z",
           "backend_destination": "KRKAN",
           "backend_static_at": "2026-10-08T05:43:06.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -305,7 +315,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.323Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -324,7 +336,7 @@
         "eta_reported": "Oct 29, 22:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:55:42.358Z",
+        "checked_at": "2026-10-19T06:16:26.332Z",
         "access_status": "available",
         "port": "Lázaro Cárdenas",
         "country": "Mexico",
@@ -340,17 +352,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:55:42.358Z",
+        "last_attempt_at": "2026-10-19T06:16:26.332Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-13T12:56:30.000Z",
           "backend_destination": "MXLZC",
           "backend_static_at": "2026-10-13T12:56:30.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -358,7 +370,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.332Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -377,28 +391,28 @@
         "eta_reported": "Nov 3, 01:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:55:42.358Z",
+        "checked_at": "2026-10-19T06:16:26.339Z",
         "access_status": "available",
         "port": "Balboa",
         "country": "Panama",
         "court_reference": {
-          "name": "First Maritime Court of Panama",
+          "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-16",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Potential maritime court reference for Balboa; territorial competence and ship-arrest procedure require confirmation with Panamanian counsel."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:55:42.358Z",
+        "last_attempt_at": "2026-10-19T06:16:26.339Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-17T03:34:57.000Z",
           "backend_destination": "KRUSN",
           "backend_static_at": "2026-10-17T03:34:57.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -406,7 +420,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.351Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -418,14 +434,14 @@
         "reported_imo": "9590589",
         "mmsi": "441200000",
         "area": "Arabian Sea",
-        "position_age_reported": "7 hours ago",
+        "position_age_reported": "9 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "OMMCT",
         "eta_reported": "Oct 3, 03:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:52:32.447Z",
+        "checked_at": "2026-10-19T06:16:26.357Z",
         "access_status": "available",
         "port": "Muscat",
         "country": "Oman",
@@ -436,17 +452,17 @@
           "sources": [],
           "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:32.447Z",
+        "last_attempt_at": "2026-10-19T06:16:26.357Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-09-24T13:09:21.000Z",
           "backend_destination": null,
           "backend_static_at": "2026-09-24T13:09:21.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -454,7 +470,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.498Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -473,7 +491,7 @@
         "eta_reported": "Nov 3, 22:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:52:32.447Z",
+        "checked_at": "2026-10-19T06:16:26.511Z",
         "access_status": "available",
         "port": "Ulsan",
         "country": "South Korea",
@@ -493,17 +511,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:32.447Z",
+        "last_attempt_at": "2026-10-19T06:16:26.511Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-11T08:57:30.000Z",
           "backend_destination": "BSNAS",
           "backend_static_at": "2026-10-11T08:57:30.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -511,7 +529,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.512Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -523,35 +543,35 @@
         "reported_imo": "9590606",
         "mmsi": "441222000",
         "area": "South Africa",
-        "position_age_reported": "2 days ago",
+        "position_age_reported": "3 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Sepetiba, Brazil",
         "eta_reported": "Oct 27, 21:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:52:32.447Z",
+        "checked_at": "2026-10-19T06:16:26.522Z",
         "access_status": "available",
         "port": "Sepetiba",
         "country": "Brazil",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-15",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Sepetiba, Brazil has not yet been verified from an official judicial source during this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:32.447Z",
+        "last_attempt_at": "2026-10-19T06:16:26.522Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-16T01:09:41.000Z",
           "backend_destination": "BRSPB",
           "backend_static_at": "2026-10-16T12:44:50.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -559,7 +579,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.522Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -578,7 +600,7 @@
         "eta_reported": "Oct 23, 11:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:52:32.447Z",
+        "checked_at": "2026-10-19T06:16:26.530Z",
         "access_status": "available",
         "port": "Pyeongtaek",
         "country": "South Korea",
@@ -598,17 +620,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:32.447Z",
+        "last_attempt_at": "2026-10-19T06:16:26.530Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-16T21:35:33.000Z",
           "backend_destination": "KRPTK",
           "backend_static_at": "2026-10-16T21:35:33.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -616,7 +638,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.678Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -635,28 +659,28 @@
         "eta_reported": "Oct 24, 01:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:52:32.447Z",
+        "checked_at": "2026-10-19T06:16:26.703Z",
         "access_status": "available",
         "port": "Mokpo",
         "country": "South Korea",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-13",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Mokpo has not yet been verified from an accessible official judicial source."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:52:32.447Z",
+        "last_attempt_at": "2026-10-19T06:16:26.703Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-09T00:13:42.861Z",
           "backend_destination": "KR USN",
           "backend_static_at": "2026-10-08T23:56:07.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -664,7 +688,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.712Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -683,7 +709,7 @@
         "eta_reported": "Oct 17, 00:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:55:42.358Z",
+        "checked_at": "2026-10-19T06:16:26.713Z",
         "access_status": "available",
         "port": "Veracruz",
         "country": "Mexico",
@@ -699,17 +725,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:55:42.358Z",
+        "last_attempt_at": "2026-10-19T06:16:26.713Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-09-28T13:39:24.000Z",
           "backend_destination": "JMKIN",
           "backend_static_at": "2026-09-28T13:39:24.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -717,7 +743,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.720Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -736,7 +764,7 @@
         "eta_reported": "Oct 17, 02:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:55:42.358Z",
+        "checked_at": "2026-10-19T06:16:26.732Z",
         "access_status": "available",
         "port": "Chennai (ex Madras)",
         "country": "India",
@@ -756,17 +784,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:55:42.358Z",
+        "last_attempt_at": "2026-10-19T06:16:26.732Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-08-21T17:54:39.000Z",
           "backend_destination": "LKHBA",
           "backend_static_at": "2026-10-09T02:35:35.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -774,7 +802,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.873Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -786,14 +816,14 @@
         "reported_imo": "9674189",
         "mmsi": "441156000",
         "area": "Indonesia",
-        "position_age_reported": "2 hours ago",
+        "position_age_reported": "3 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Singapore, Singapore",
         "eta_reported": "Oct 19, 23:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:57:15.730Z",
+        "checked_at": "2026-10-19T06:16:26.892Z",
         "access_status": "available",
         "port": "Singapore",
         "country": "Singapore",
@@ -813,17 +843,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:57:15.730Z",
+        "last_attempt_at": "2026-10-19T06:16:26.892Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-18T21:03:35.000Z",
           "backend_destination": "SGSIN",
           "backend_static_at": "2026-10-18T21:03:35.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -831,7 +861,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.893Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -843,14 +875,25 @@
         "reported_imo": "9683661",
         "mmsi": "636028886",
         "area": "China Coast",
-        "position_age_reported": "230 days ago",
+        "position_age_reported": "233 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": null,
         "eta_reported": null,
         "arrival_reported": null,
         "voyage_status": "destination_unavailable",
-        "checked_at": "2026-10-19T05:57:15.730Z",
+        "mmsi_verification_status": "conflict",
+        "identity_check": "VesselFinder reports MMSI 636028886; Open Waters returns MMSI 636023886 with malformed IMO 968366100. No AIS identity or position accepted.",
+        "identity_sources": [
+          {
+            "source": "Open Waters public snapshot",
+            "url": "https://ais.openwaters.io/v1/vessels?q=VL%20PIONEER",
+            "mmsi": "636023886",
+            "imo_reported": "968366100",
+            "signal_at": "2026-10-05T09:35:04Z"
+          }
+        ],
+        "checked_at": "2026-10-19T06:16:26.914Z",
         "access_status": "available",
         "port": null,
         "country": null,
@@ -861,27 +904,16 @@
           "sources": [],
           "note": "No declared destination is available."
         },
-        "retrieval_crawl_note": "2 days ago",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:57:15.730Z",
+        "last_attempt_at": "2026-10-19T06:16:26.914Z",
         "last_attempt_status": "available",
-        "identity_check": "VesselFinder reports MMSI 636028886; Open Waters returns MMSI 636023886 with malformed IMO 968366100. No AIS identity or position accepted.",
         "comparison": {
           "backend_position_at": null,
           "backend_destination": null,
           "backend_static_at": null,
           "merge_applied": false
-        },
-        "mmsi_verification_status": "conflict",
-        "identity_sources": [
-          {
-            "source": "Open Waters public snapshot",
-            "url": "https://ais.openwaters.io/v1/vessels?q=VL%20PIONEER",
-            "mmsi": "636023886",
-            "imo_reported": "968366100",
-            "signal_at": "2026-10-05T09:35:04Z"
-          }
-        ]
+        }
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -889,7 +921,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:26.915Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -908,7 +942,7 @@
         "eta_reported": null,
         "arrival_reported": "Oct 19, 02:57 UTC",
         "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-19T05:57:15.730Z",
+        "checked_at": "2026-10-19T06:16:26.921Z",
         "access_status": "available",
         "port": "Singapore",
         "country": "Singapore",
@@ -928,17 +962,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:57:15.730Z",
+        "last_attempt_at": "2026-10-19T06:16:26.921Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
-          "backend_position_at": "2026-10-19T05:43:36.000Z",
+          "backend_position_at": "2026-10-19T06:01:36.000Z",
           "backend_destination": "SG SIN",
-          "backend_static_at": "2026-10-19T05:43:36.000Z",
+          "backend_static_at": "2026-10-19T06:01:36.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -946,7 +980,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.064Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -965,7 +1001,7 @@
         "eta_reported": "Oct 20, 22:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:57:15.730Z",
+        "checked_at": "2026-10-19T06:16:27.088Z",
         "access_status": "available",
         "port": "Masan",
         "country": "South Korea",
@@ -985,17 +1021,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:57:15.730Z",
+        "last_attempt_at": "2026-10-19T06:16:27.088Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
-          "backend_position_at": "2026-10-19T05:44:42.000Z",
+          "backend_position_at": "2026-10-19T06:14:12.000Z",
           "backend_destination": "KRMAS",
-          "backend_static_at": "2026-10-19T05:44:42.000Z",
+          "backend_static_at": "2026-10-19T06:14:12.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1003,7 +1039,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.088Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1015,35 +1053,35 @@
         "reported_imo": "9702429",
         "mmsi": "440252000",
         "area": "North East Atlantic Ocean",
-        "position_age_reported": "5 min ago",
+        "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Dakar, Senegal",
         "eta_reported": "Oct 23, 13:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:58:47.274Z",
+        "checked_at": "2026-10-19T06:16:27.100Z",
         "access_status": "available",
         "port": "Dakar",
         "country": "Senegal",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-18",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Dakar has not yet been verified from an official judicial source during this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:58:47.274Z",
+        "last_attempt_at": "2026-10-19T06:16:27.100Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-17T22:48:58.000Z",
           "backend_destination": "SNDKR",
           "backend_static_at": "2026-10-18T01:38:49.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1051,7 +1089,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.100Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1070,7 +1110,7 @@
         "eta_reported": null,
         "arrival_reported": "Oct 11, 19:02 UTC",
         "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-19T05:58:47.274Z",
+        "checked_at": "2026-10-19T06:16:27.112Z",
         "access_status": "available",
         "port": "Khor al Fakkan Anch.",
         "country": "United Arab Emirates (UAE)",
@@ -1081,17 +1121,17 @@
           "sources": [],
           "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:58:47.274Z",
+        "last_attempt_at": "2026-10-19T06:16:27.112Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-05T18:31:05.000Z",
           "backend_destination": "OMDQM",
           "backend_static_at": "2026-10-12T19:36:16.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1099,7 +1139,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.256Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1111,35 +1153,35 @@
         "reported_imo": "9706994",
         "mmsi": "440906000",
         "area": "East Africa",
-        "position_age_reported": "4 hours ago",
+        "position_age_reported": "6 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Mumbai (ex Bombay), India",
         "eta_reported": "Oct 26, 17:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:58:47.274Z",
+        "checked_at": "2026-10-19T06:16:27.271Z",
         "access_status": "available",
         "port": "Mumbai (ex Bombay)",
         "country": "India",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-08",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Competent admiralty court not verified from an official source in this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:58:47.274Z",
+        "last_attempt_at": "2026-10-19T06:16:27.271Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-17T08:16:29.000Z",
           "backend_destination": "INBOM",
           "backend_static_at": "2026-10-17T08:16:29.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1147,7 +1189,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.271Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1159,35 +1203,35 @@
         "reported_imo": "9707003",
         "mmsi": "441331000",
         "area": "South America West Coast",
-        "position_age_reported": "4 hours ago",
+        "position_age_reported": "15 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "San Antonio, Chile",
         "eta_reported": "Oct 16, 21:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:58:47.274Z",
+        "checked_at": "2026-10-19T06:16:27.281Z",
         "access_status": "available",
         "port": "San Antonio",
         "country": "Chile",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-08",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Competent admiralty court not verified from an official source in this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:58:47.274Z",
+        "last_attempt_at": "2026-10-19T06:16:27.281Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
-          "backend_position_at": "2026-10-19T05:44:34.000Z",
+          "backend_position_at": "2026-10-19T06:01:04.000Z",
           "backend_destination": "CLSAI",
-          "backend_static_at": "2026-10-19T05:44:34.000Z",
+          "backend_static_at": "2026-10-19T06:01:04.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1195,7 +1239,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.282Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1211,10 +1257,10 @@
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Shanghai, China",
-        "eta_reported": "Oct 22, 01:00",
+        "eta_reported": "Oct 21, 22:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:59:09.342Z",
+        "checked_at": "2026-10-19T06:16:27.291Z",
         "access_status": "available",
         "port": "Shanghai",
         "country": "China",
@@ -1234,17 +1280,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:59:09.342Z",
+        "last_attempt_at": "2026-10-19T06:16:27.291Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-03T08:30:44.000Z",
           "backend_destination": "KRUSN",
           "backend_static_at": "2026-10-03T08:30:44.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1252,7 +1298,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.441Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1264,40 +1312,35 @@
         "reported_imo": "9707027",
         "mmsi": "441397000",
         "area": "Caribbean Sea",
-        "position_age_reported": "1 min ago",
+        "position_age_reported": "0 min ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Cristobal, Panama",
-        "eta_reported": "Oct 18, 04:00",
+        "destination_reported": null,
+        "eta_reported": null,
         "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:59:09.342Z",
+        "voyage_status": "destination_unavailable",
+        "checked_at": "2026-10-19T06:16:27.450Z",
         "access_status": "available",
-        "port": "Cristóbal",
-        "country": "Panama",
+        "port": null,
+        "country": null,
         "court_reference": {
-          "name": "Tribunales Marítimos de Panamá · Panama City",
-          "status": "reference",
-          "note": "First or Second Maritime Court, according to allocation; not the appellate court.",
-          "sources": [
-            {
-              "title": "Judiciary: ship arrest",
-              "url": "https://revistasapientia.organojudicial.gob.pa/index.php/sapientia/article/view/228?articlesBySimilarityPage=2"
-            }
-          ],
-          "checked_at": "2026-10-06"
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:59:09.342Z",
+        "last_attempt_at": "2026-10-19T06:16:27.450Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-14T03:11:29.000Z",
           "backend_destination": "PACTB",
           "backend_static_at": "2026-10-14T03:11:29.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1305,7 +1348,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.450Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1317,14 +1362,14 @@
         "reported_imo": "9710608",
         "mmsi": "440414000",
         "area": "East Asia",
-        "position_age_reported": "1 min ago",
+        "position_age_reported": "36 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "KRSCW",
         "eta_reported": "Oct 17, 00:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:59:09.342Z",
+        "checked_at": "2026-10-19T06:16:27.462Z",
         "access_status": "available",
         "port": null,
         "country": null,
@@ -1335,17 +1380,17 @@
           "sources": [],
           "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "2 days ago",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:59:09.342Z",
+        "last_attempt_at": "2026-10-19T06:16:27.462Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-16T19:02:53.000Z",
           "backend_destination": "KRSCW",
           "backend_static_at": "2026-10-16T19:02:53.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1353,7 +1398,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.463Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1364,41 +1411,36 @@
         "url": "https://www.vesselfinder.com/vessels/details/9710658",
         "reported_imo": "9710658",
         "mmsi": "440417000",
-        "area": "East Asia",
-        "position_age_reported": "5 hours ago",
+        "area": "Indonesia",
+        "position_age_reported": "2 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Tanjung Bara, Indonesia",
-        "eta_reported": "Oct 18, 00:00",
+        "eta_reported": "Oct 17, 22:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:59:09.342Z",
+        "checked_at": "2026-10-19T06:16:27.480Z",
         "access_status": "available",
         "port": "Tanjung Bara",
         "country": "Indonesia",
         "court_reference": {
-          "name": "Pengadilan Negeri Sangatta (preliminary)",
-          "status": "preliminary",
-          "checked_at": "2026-10-10",
-          "sources": [
-            {
-              "title": "Supreme Court of Indonesia — East Kalimantan court register",
-              "url": "https://mahkamahagung.go.id/media/6863"
-            }
-          ],
-          "note": "Official Supreme Court material identifies Pengadilan Negeri Sangatta in East Kalimantan. Territorial and subject-matter competence for a civil vessel arrest at Tanjung Bara requires local verification."
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "2 days ago",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:59:09.342Z",
+        "last_attempt_at": "2026-10-19T06:16:27.480Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-19T01:20:55.000Z",
           "backend_destination": "IDTBA",
           "backend_static_at": "2026-10-19T01:20:55.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1406,7 +1448,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.618Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1418,14 +1462,14 @@
         "reported_imo": "9710660",
         "mmsi": "440913000",
         "area": "North America West Coast",
-        "position_age_reported": "15 days ago",
+        "position_age_reported": "16 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "SAMCHEONPO_KR",
         "eta_reported": "Oct 23, 03:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:59:54.070Z",
+        "checked_at": "2026-10-19T06:16:27.629Z",
         "access_status": "available",
         "port": "Samcheonpo/Sacheon",
         "country": "South Korea",
@@ -1445,17 +1489,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:59:54.070Z",
+        "last_attempt_at": "2026-10-19T06:16:27.629Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-02T19:47:39.000Z",
           "backend_destination": "SAMCHEONPO_KR",
           "backend_static_at": "2026-10-02T19:47:39.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1463,7 +1507,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.633Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1475,35 +1521,35 @@
         "reported_imo": "9749104",
         "mmsi": "538006909",
         "area": "East Asia",
-        "position_age_reported": "19 hours ago",
+        "position_age_reported": "45 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Zhoushan, China",
         "eta_reported": "Oct 19, 06:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:59:54.070Z",
+        "checked_at": "2026-10-19T06:16:27.651Z",
         "access_status": "available",
         "port": "Zhoushan",
         "country": "China",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-18",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Zhoushan has not yet been verified from an official judicial source during this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "yesterday",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:59:54.070Z",
+        "last_attempt_at": "2026-10-19T06:16:27.651Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-17T09:32:42.000Z",
           "backend_destination": "KR TSN",
           "backend_static_at": "2026-10-17T09:32:42.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1511,7 +1557,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.652Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1523,14 +1571,14 @@
         "reported_imo": "9749568",
         "mmsi": "440255000",
         "area": "West Africa",
-        "position_age_reported": "47 hours ago",
+        "position_age_reported": "2 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Durban, South Africa",
         "eta_reported": "Oct 25, 06:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T05:59:54.070Z",
+        "checked_at": "2026-10-19T06:16:27.666Z",
         "access_status": "available",
         "port": "Durban",
         "country": "South Africa",
@@ -1550,17 +1598,17 @@
             }
           ]
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T05:59:54.070Z",
+        "last_attempt_at": "2026-10-19T06:16:27.666Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-09-25T12:40:36.000Z",
           "backend_destination": null,
           "backend_static_at": "2026-09-25T12:40:36.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1568,7 +1616,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.798Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1580,35 +1630,35 @@
         "reported_imo": "9749570",
         "mmsi": "440257000",
         "area": "North America West Coast",
-        "position_age_reported": "6 days ago",
+        "position_age_reported": "7 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Yokohama, Japan",
         "eta_reported": "Oct 22, 23:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:00:19.118Z",
+        "checked_at": "2026-10-19T06:16:27.824Z",
         "access_status": "available",
         "port": "Yokohama",
         "country": "Japan",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-12",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil arrest jurisdiction for Yokohama has not yet been verified from an official judicial source."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:00:19.118Z",
+        "last_attempt_at": "2026-10-19T06:16:27.824Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-12T17:16:16.000Z",
           "backend_destination": "USPDX=>JPYOK",
           "backend_static_at": "2026-10-12T17:16:16.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1616,7 +1666,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.824Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1628,14 +1680,14 @@
         "reported_imo": "9749582",
         "mmsi": "440258000",
         "area": "South Africa",
-        "position_age_reported": "2 days ago",
+        "position_age_reported": "3 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Veracruz, Mexico",
         "eta_reported": "Nov 6, 07:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:00:19.118Z",
+        "checked_at": "2026-10-19T06:16:27.840Z",
         "access_status": "available",
         "port": "Veracruz",
         "country": "Mexico",
@@ -1651,17 +1703,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:00:19.118Z",
+        "last_attempt_at": "2026-10-19T06:16:27.840Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-16T13:00:15.000Z",
           "backend_destination": "ZA ELS",
           "backend_static_at": "2026-10-16T13:00:15.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1669,7 +1721,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.842Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1681,14 +1735,14 @@
         "reported_imo": "9749594",
         "mmsi": "440260000",
         "area": "East Asia",
-        "position_age_reported": "3 min ago",
+        "position_age_reported": "2 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Pyeongtaek, Korea",
         "eta_reported": null,
         "arrival_reported": "Oct 16, 23:54 UTC",
         "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-19T06:00:19.118Z",
+        "checked_at": "2026-10-19T06:16:27.850Z",
         "access_status": "available",
         "port": "Pyeongtaek",
         "country": "South Korea",
@@ -1708,17 +1762,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:00:19.118Z",
+        "last_attempt_at": "2026-10-19T06:16:27.850Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
-          "backend_position_at": "2026-10-19T05:44:20.000Z",
+          "backend_position_at": "2026-10-19T06:14:21.000Z",
           "backend_destination": "KRPTK",
-          "backend_static_at": "2026-10-19T05:44:20.000Z",
+          "backend_static_at": "2026-10-19T06:14:21.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1726,7 +1780,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:27.996Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1745,28 +1801,28 @@
         "eta_reported": "Oct 17, 18:15",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:00:19.118Z",
+        "checked_at": "2026-10-19T06:16:28.018Z",
         "access_status": "available",
         "port": "Dar es Salaam",
         "country": "Tanzania",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-17",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Dar es Salaam has not yet been verified from an official judicial source during this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:00:19.118Z",
+        "last_attempt_at": "2026-10-19T06:16:28.018Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-09-23T04:30:37.000Z",
           "backend_destination": null,
           "backend_static_at": "2026-09-23T04:30:37.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1774,7 +1830,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.045Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1786,14 +1844,14 @@
         "reported_imo": "9798387",
         "mmsi": "441511000",
         "area": "West Africa",
-        "position_age_reported": "33 hours ago",
+        "position_age_reported": "35 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Singapore, Singapore",
         "eta_reported": "Nov 3, 07:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:00:29.714Z",
+        "checked_at": "2026-10-19T06:16:28.045Z",
         "access_status": "available",
         "port": "Singapore",
         "country": "Singapore",
@@ -1813,17 +1871,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:00:29.714Z",
+        "last_attempt_at": "2026-10-19T06:16:28.045Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-17T19:15:14.000Z",
           "backend_destination": "SGSIN(PEBGB)",
           "backend_static_at": "2026-10-17T19:15:14.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1831,7 +1889,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.056Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1850,7 +1910,7 @@
         "eta_reported": "Nov 5, 03:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:00:29.714Z",
+        "checked_at": "2026-10-19T06:16:28.073Z",
         "access_status": "available",
         "port": "Ulsan",
         "country": "South Korea",
@@ -1870,17 +1930,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:00:29.714Z",
+        "last_attempt_at": "2026-10-19T06:16:28.073Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-09-21T10:08:49.000Z",
           "backend_destination": null,
           "backend_static_at": "2026-09-21T10:08:49.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1888,7 +1948,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.197Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1900,35 +1962,35 @@
         "reported_imo": "9798404",
         "mmsi": "441109000",
         "area": "Red Sea",
-        "position_age_reported": "17 min ago",
+        "position_age_reported": "6 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Aqaba Industrial, Jordan",
         "eta_reported": "Oct 19, 05:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:00:29.714Z",
+        "checked_at": "2026-10-19T06:16:28.214Z",
         "access_status": "available",
         "port": "Aqaba Industrial",
         "country": "Jordan",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-18",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Civil ship-arrest jurisdiction for Aqaba Industrial has not yet been verified from an official judicial source during this check."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:00:29.714Z",
+        "last_attempt_at": "2026-10-19T06:16:28.214Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-15T07:27:26.000Z",
           "backend_destination": "LAST UPDATE TIME",
           "backend_static_at": "2026-10-15T07:27:26.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1936,7 +1998,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.214Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -1955,7 +2019,7 @@
         "eta_reported": "Nov 3, 18:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:00:29.714Z",
+        "checked_at": "2026-10-19T06:16:28.224Z",
         "access_status": "available",
         "port": "Ulsan",
         "country": "South Korea",
@@ -1975,17 +2039,17 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:00:29.714Z",
+        "last_attempt_at": "2026-10-19T06:16:28.224Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-14T09:38:44.000Z",
           "backend_destination": "PACTB",
           "backend_static_at": "2026-10-14T09:38:44.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -1993,7 +2057,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.243Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -2012,7 +2078,7 @@
         "eta_reported": null,
         "arrival_reported": "Oct 18, 19:55 UTC",
         "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-19T06:01:03.646Z",
+        "checked_at": "2026-10-19T06:16:28.252Z",
         "access_status": "available",
         "port": "Al Fujayrah Anch.",
         "country": "United Arab Emirates (UAE)",
@@ -2023,17 +2089,17 @@
           "sources": [],
           "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:01:03.646Z",
+        "last_attempt_at": "2026-10-19T06:16:28.252Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-18T13:32:19.000Z",
           "backend_destination": "AEFJR",
           "backend_static_at": "2026-10-18T21:48:03.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -2041,7 +2107,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.384Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -2052,15 +2120,15 @@
         "url": "https://www.vesselfinder.com/vessels/details/9904089",
         "reported_imo": "9904089",
         "mmsi": "440423000",
-        "area": "Indian Ocean",
-        "position_age_reported": "10 hours ago",
+        "area": "East Africa",
+        "position_age_reported": "2 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "HIGHSEAS",
         "eta_reported": "Oct 24, 12:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:01:03.646Z",
+        "checked_at": "2026-10-19T06:16:28.395Z",
         "access_status": "available",
         "port": null,
         "country": null,
@@ -2071,17 +2139,17 @@
           "sources": [],
           "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "yesterday",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:01:03.646Z",
+        "last_attempt_at": "2026-10-19T06:16:28.395Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-10-17T07:33:46.000Z",
           "backend_destination": "HIGHSEAS",
           "backend_static_at": "2026-10-17T08:09:09.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -2089,7 +2157,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.395Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -2101,62 +2171,14 @@
         "reported_imo": "9926738",
         "mmsi": "441345000",
         "area": "East Mediterranean",
-        "position_age_reported": "22 hours ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Sidi Kerir Oil Term., Egypt",
-        "eta_reported": "Oct 16, 08:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:01:03.646Z",
-        "access_status": "available",
-        "port": "Sidi Kerir Oil Term.",
-        "country": "Egypt",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "2 days ago",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:01:03.646Z",
-        "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
-        "comparison": {
-          "backend_position_at": "2026-10-02T11:21:30.000Z",
-          "backend_destination": "EGSKT",
-          "backend_static_at": "2026-10-02T11:21:30.000Z",
-          "merge_applied": false
-        }
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9926738",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
-      }
-    },
-    {
-      "imo": "9926740",
-      "name": "VL BRIGHT",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9926740",
-        "reported_imo": "9926740",
-        "mmsi": "441523000",
-        "area": "East Asia",
-        "position_age_reported": "5 days ago",
+        "position_age_reported": "4 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Singapore, Singapore",
-        "eta_reported": "Oct 20, 10:00",
+        "eta_reported": "Nov 27, 07:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:01:03.646Z",
+        "checked_at": "2026-10-19T06:16:28.421Z",
         "access_status": "available",
         "port": "Singapore",
         "country": "Singapore",
@@ -2176,17 +2198,76 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "yesterday",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:01:03.646Z",
+        "last_attempt_at": "2026-10-19T06:16:28.421Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
+        "comparison": {
+          "backend_position_at": "2026-10-02T11:21:30.000Z",
+          "backend_destination": "EGSKT",
+          "backend_static_at": "2026-10-02T11:21:30.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9926738",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-19T06:16:28.422Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9926740",
+      "name": "VL BRIGHT",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9926740",
+        "reported_imo": "9926740",
+        "mmsi": "441523000",
+        "area": "South East Asia",
+        "position_age_reported": "3 hours ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Singapore, Singapore",
+        "eta_reported": "Oct 20, 11:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-19T06:16:28.433Z",
+        "access_status": "available",
+        "port": "Singapore",
+        "country": "Singapore",
+        "court_reference": {
+          "name": "General Division of the High Court · Singapore",
+          "status": "reference",
+          "note": "Warrant of arrest and Sheriff intervention within Singapore port limits.",
+          "sources": [
+            {
+              "title": "Supreme Court Practice Directions 2021, Part 17",
+              "url": "https://epd2021-supremecourt.judiciary.gov.sg/part-17-admiralty-matters"
+            },
+            {
+              "title": "Sheriff: ship arrest",
+              "url": "https://www.judiciary.gov.sg/services/sheriff-services-admiralty-actions"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-19T06:16:28.433Z",
+        "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-13T01:16:24.000Z",
           "backend_destination": "SGSIN",
           "backend_static_at": "2026-10-13T01:16:24.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -2194,7 +2275,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.562Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -2206,35 +2289,35 @@
         "reported_imo": "9958274",
         "mmsi": "636023912",
         "area": "North America West Coast",
-        "position_age_reported": "18 days ago",
+        "position_age_reported": "21 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Wenzhou, China",
-        "eta_reported": "Oct 23, 17:00",
+        "eta_reported": "Oct 23, 21:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:01:29.098Z",
+        "checked_at": "2026-10-19T06:16:28.576Z",
         "access_status": "available",
         "port": "Wenzhou",
         "country": "China",
         "court_reference": {
-          "name": "Ningbo Maritime Court",
+          "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-16",
+          "checked_at": "2026-10-19",
           "sources": [],
-          "note": "Potential maritime court reference for Wenzhou; territorial jurisdiction and arrest competence require confirmation with PRC counsel."
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
-        "retrieval_crawl_note": "2 days ago",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:01:29.098Z",
+        "last_attempt_at": "2026-10-19T06:16:28.576Z",
         "last_attempt_status": "available",
-        "identity_check": "Matches current backend IMO/MMSI",
         "comparison": {
           "backend_position_at": "2026-09-27T23:27:50.000Z",
           "backend_destination": null,
           "backend_static_at": "2026-09-27T23:27:50.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -2242,7 +2325,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.590Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     },
     {
@@ -2261,7 +2346,7 @@
         "eta_reported": "Oct 30, 21:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-19T06:01:29.098Z",
+        "checked_at": "2026-10-19T06:16:28.606Z",
         "access_status": "available",
         "port": "Dampier",
         "country": "Australia",
@@ -2277,17 +2362,17 @@
             }
           ]
         },
-        "retrieval_crawl_note": "today",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-19T06:01:29.098Z",
+        "last_attempt_at": "2026-10-19T06:16:28.606Z",
         "last_attempt_status": "available",
-        "identity_check": "Backend identity pending",
         "comparison": {
-          "backend_position_at": null,
-          "backend_destination": null,
-          "backend_static_at": null,
+          "backend_position_at": "2026-10-03T08:25:36.000Z",
+          "backend_destination": "CNYGK",
+          "backend_static_at": "2026-10-03T08:25:36.000Z",
           "merge_applied": false
-        }
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
       },
       "marinetraffic": {
         "source": "MarineTraffic",
@@ -2295,7 +2380,9 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-19T01:33:46Z"
+        "last_attempt_at": "2026-10-19T06:16:28.606Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
       }
     }
   ],

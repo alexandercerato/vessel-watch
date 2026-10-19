@@ -1,4 +1,4 @@
-import {courtReferenceLabel} from './reference-data.js?v=20261019-1';
+import {courtReferenceLabel} from './reference-data.js?v=20261019-2';
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const when=v=>v?String(v).replace('T',' ').replace('Z',' UTC'):'Unavailable';
 export function identityStatus(reference,row){

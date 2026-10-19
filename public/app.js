@@ -1,8 +1,8 @@
-import {renderSupplemental} from './supplemental.js?v=20261019-1';
-import {mergeReferenceDatasets,referenceFor,courtReferenceLabel} from './reference-data.js?v=20261019-1';
-import {feedStatusText} from './feed-status.js?v=20261019-1';
-import {briefRecords} from './brief-records.js?v=20261019-1';
-import {etaLabel} from './pdf-export.js?v=20261019-1';
+import {renderSupplemental} from './supplemental.js?v=20261019-2';
+import {mergeReferenceDatasets,referenceFor,courtReferenceLabel} from './reference-data.js?v=20261019-2';
+import {feedStatusText} from './feed-status.js?v=20261019-2';
+import {briefRecords} from './brief-records.js?v=20261019-2';
+import {etaLabel} from './pdf-export.js?v=20261019-2';
 import {watchedZoneAt} from './watched-zones.js?v=20261006-sa';
 import {createResolver} from './destinations.js?v=20261006-en';
 const $=s=>document.querySelector(s),cfg=window.VESSEL_WATCH_CONFIG??{};
@@ -108,7 +108,7 @@ async function exportManagingPDF(){
   }catch{offline=true;}
   await refreshSupplemental();
   if(!snapshot&&!supplementalData){toast('No AIS snapshot or public references available. Please try again.');return;}
-  const {createFleetPDF}=await import('./pdf-export.js?v=20261019-1');
+  const {createFleetPDF}=await import('./pdf-export.js?v=20261019-2');
   const records=briefRecords(rows,supplementalData,resolveDestination);
   const blob=createFleetPDF(records,{snapshotAt:snapshot?.generated_at,offline}),url=URL.createObjectURL(blob),a=document.createElement('a');
   a.href=url;a.download='fleet-monitor-managing-associate-'+new Date().toISOString().slice(0,10)+'.pdf';a.click();setTimeout(()=>URL.revokeObjectURL(url),10000);

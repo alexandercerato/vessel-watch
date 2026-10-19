@@ -16,6 +16,9 @@ export function mergeReferenceDatasets(first, second) {
       result[key] = {...successful, last_attempt_at: attempt.last_attempt_at,
         last_attempt_status: attempt.last_attempt_status ?? attempt.access_status,
         last_attempt_note: attempt.last_attempt_note ?? attempt.note ?? null};
+      const disputed = [a,b].find(s => s.mmsi === successful.mmsi && s.mmsi_verification_status === 'conflict');
+      if (disputed && !successful.mmsi_verification_status) Object.assign(result[key], {
+        mmsi_verification_status:'conflict',identity_check:disputed.identity_check,identity_sources:disputed.identity_sources});
     }
     return result;
   });
