@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-10-19T13:55:00.908Z",
+  "checked_at": "2026-10-20T01:49:41.597Z",
   "items": [
     {
       "id": "glovis-america-philaport-expansion-20261013",
       "title": "Hyundai Glovis plans Philadelphia terminal expansion and lease through 2056",
-      "published_at": "2026-10-19",
-      "source": "Splash247",
-      "url": "https://splash247.com/hyundai-glovis-expands-philadelphia-footprint-with-new-car-carrier-berths/",
+      "published_at": "2026-10-20",
+      "source": "Yonhap News Agency",
+      "url": "https://m-en.yna.co.kr/view/AEN20261020000300315",
       "scope": "company",
       "vessel_names": [],
       "vessel_imos": [],
-      "summary": "Following Pennsylvania's October 13 PhilaPort expansion announcement, reporting on October 19 detailed a Hyundai Glovis agreement covering new vehicle-handling facilities, dedicated car-carrier berths and terminal operations, with its lease extended through 2056. Planned storage capacity would increase from 33,600 to 37,600 vehicles. This updates the existing Philadelphia story and does not identify a monitored vessel."
+      "summary": "Yonhap's October 20 report, datelined Washington on October 19, confirms plans for a dedicated car-carrier berth, additional vehicle storage and a Philadelphia land lease through 2056. Planned capacity would rise from 33,600 to 37,600 vehicles. The report follows the October 13 port-expansion ceremony and updates the existing story; no monitored vessel is identified."
     },
     {
       "id": "hyundai-glovis-fleet-expansion-20261014",
@@ -195,6 +195,17 @@
       "vessel_names": [],
       "vessel_imos": [],
       "summary": "GTT announced a tank-design order for a 174,000 m3 LNG carrier to be built by Hyundai Samho for Hyundai Glovis, using Mark III Flex containment technology. Delivery is scheduled for the fourth quarter of 2028. The unnamed newbuild is outside the 44-vessel watchlist."
+    },
+    {
+      "id": "hyundai-glovis-lng-transport-contract-20251127",
+      "title": "Hyundai Glovis secures KRW 580 billion long-term LNG shipping contract",
+      "published_at": "2025-11-27",
+      "source": "The Asia Business Daily",
+      "url": "https://view.asiae.co.kr/en/article/2025112708480392618",
+      "scope": "company",
+      "vessel_names": [],
+      "vessel_imos": [],
+      "summary": "Hyundai Glovis announced on November 27, 2025 a contract with an unnamed global trading company expected to generate approximately KRW 580 billion over up to 15 years. A new 174,000 m3 LNG carrier was planned to serve US Gulf Coast-to-global routes from 2029. The report concerns an unnamed future vessel, not one of the 44 monitored ships."
     }
   ]
 }
