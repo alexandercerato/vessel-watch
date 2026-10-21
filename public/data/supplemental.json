@@ -2396,7 +2396,7 @@
     }
   ],
   "notes": [
-    "2026-10-21T13:32:38.626Z: Completed 88 public source-page retrieval attempts: VesselFinder readable for 44/44; MarineTraffic unavailable/blocked for 44/44. Last valid values were retained where a source was unavailable.",
+    "2026-10-21T13:32:38.626Z: Completed 88 public source-page retrieval attempts: VesselFinder readable for 44/44; MarineTraffic blocked or otherwise unavailable for 44/44. Last valid values were retained where a source was unavailable.",
     "No declared destination, port or country changed. Updated source-reported ETAs for Glovis Supreme, Glovis Summit, Glovis Symphony, Glovis Crown, Glovis Captain, Glovis Diamond, Glovis Stella, Glovis Silver, Glovis Sonic, VL Breeze and Woodside Scarlet Ibis.",
     "Direct and separately indexed VesselFinder views disagreed on the Glovis Summit and VL Breeze ETAs. The directly retrieved values are shown only as supplemental references with the consultation date; no absolute source signal time or AIS freshness is inferred.",
     "Court references were preserved because no destination changed. Preliminary and unverified competence labels remain unchanged.",
