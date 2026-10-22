@@ -112,6 +112,12 @@ export class ReferenceMonitor {
     if (this.fleet.vessels.some(v => this.getAISRow(v.imo))) this.data.backend_compared_at = this.data.checked_at;
     this.data.coverage = {fleet:this.fleet.vessels.length,vesselfinder_accessible:vf,vesselfinder_unavailable:this.fleet.vessels.length-vf,
       marinetraffic_accessible:mt,marinetraffic_unavailable:this.fleet.vessels.length-mt};
+    const noteAt = this.data.checked_at.replace(/\.\d{3}Z$/, 'Z');
+    this.data.notes = [
+      `${noteAt}: VesselFinder returned readable public pages for ${vf} of ${this.fleet.vessels.length} vessels; last valid supplemental values were retained where unavailable.`,
+      `${noteAt}: MarineTraffic public pages were accessible for ${mt} of ${this.fleet.vessels.length} vessels; unavailable pages or pages without verifiable absolute-timestamp voyage data were not imported.`,
+      'Relative-age provider references remain supplemental and do not overwrite newer timestamped AIS data.'
+    ];
     this.job.state = 'completed'; this.job.accessible = {vesselfinder:vf,marinetraffic:mt};
     try { fs.mkdirSync(path.dirname(this.file), {recursive:true}); fs.writeFileSync(this.file+'.tmp', JSON.stringify(this.data)); fs.renameSync(this.file+'.tmp', this.file); this.error = null; }
     catch { this.error = 'Public references could not be saved; retained in memory'; }
