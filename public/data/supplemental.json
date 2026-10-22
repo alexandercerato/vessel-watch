@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-21T13:32:38.626Z",
-  "backend_compared_at": "2026-10-21T13:32:38.626Z",
+  "checked_at": "2026-10-22T01:37:39.641Z",
+  "backend_compared_at": "2026-10-22T01:37:39.641Z",
   "policy": "Public page references only. Relative ages are quoted as displayed and are not converted to signal timestamps. No coordinates or live AIS freshness are inferred from provider pages. ETA year and timezone are unverified unless explicitly supplied. The Railway AIS service was compared separately; supplemental references never overwrite newer timestamped AIS data.",
   "coverage": {
     "fleet": 44,
@@ -20,14 +20,14 @@
         "reported_imo": "9122930",
         "mmsi": "440161000",
         "area": "China Coast",
-        "position_age_reported": "12 hours ago",
+        "position_age_reported": "24 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Singapore, Singapore",
         "eta_reported": "Oct 25, 14:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:35.375Z",
+        "checked_at": "2026-10-22T01:37:36.476Z",
         "access_status": "available",
         "port": "Singapore",
         "country": "Singapore",
@@ -49,7 +49,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:35.375Z",
+        "last_attempt_at": "2026-10-22T01:37:36.476Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-20T17:45:44.000Z",
@@ -65,7 +65,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:35.375Z",
+        "last_attempt_at": "2026-10-22T01:37:36.476Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -79,14 +79,14 @@
         "reported_imo": "9122942",
         "mmsi": "440269000",
         "area": "Black Sea",
-        "position_age_reported": "3 min ago",
+        "position_age_reported": "2 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Constanta Anch., Romania",
         "eta_reported": null,
         "arrival_reported": "Oct 19, 17:49 UTC",
         "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-21T13:32:35.375Z",
+        "checked_at": "2026-10-22T01:37:36.476Z",
         "access_status": "available",
         "port": "Constanta Anch.",
         "country": "Romania",
@@ -99,7 +99,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:35.375Z",
+        "last_attempt_at": "2026-10-22T01:37:36.476Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-19T14:03:12.000Z",
@@ -115,7 +115,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:35.415Z",
+        "last_attempt_at": "2026-10-22T01:37:36.503Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -129,14 +129,14 @@
         "reported_imo": "9158604",
         "mmsi": "440292000",
         "area": "North East Atlantic Ocean",
-        "position_age_reported": "15 hours ago",
+        "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Rotterdam, Netherlands",
         "eta_reported": "Oct 23, 01:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:35.425Z",
+        "checked_at": "2026-10-22T01:37:36.516Z",
         "access_status": "available",
         "port": "Rotterdam",
         "country": "Netherlands",
@@ -149,12 +149,12 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:35.425Z",
+        "last_attempt_at": "2026-10-22T01:37:36.516Z",
         "last_attempt_status": "available",
         "comparison": {
-          "backend_position_at": "2026-10-20T00:42:47.000Z",
+          "backend_position_at": "2026-10-22T01:36:44.545Z",
           "backend_destination": "NLRTM",
-          "backend_static_at": "2026-10-20T00:42:47.000Z",
+          "backend_static_at": "2026-10-22T01:35:59.000Z",
           "merge_applied": false
         },
         "identity_check": "Matches current backend IMO/MMSI"
@@ -165,7 +165,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:35.997Z",
+        "last_attempt_at": "2026-10-22T01:37:37.079Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -179,36 +179,27 @@
         "reported_imo": "9414876",
         "mmsi": "441344000",
         "area": "Caribbean Sea",
-        "position_age_reported": "2 days ago",
+        "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Cristobal, Panama",
-        "eta_reported": "Oct 21, 16:00",
+        "destination_reported": null,
+        "eta_reported": null,
         "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.014Z",
+        "voyage_status": "destination_unavailable",
+        "checked_at": "2026-10-22T01:37:37.091Z",
         "access_status": "available",
-        "port": "Cristóbal",
-        "country": "Panama",
+        "port": null,
+        "country": null,
         "court_reference": {
-          "name": "Tribunales Marítimos de Panamá · Panama City",
-          "status": "reference",
-          "note": "Panamanian Maritime Courts exercise first-instance maritime jurisdiction throughout Panama. Arrest availability and allocation to the First or Second Maritime Court require case-specific confirmation.",
-          "sources": [
-            {
-              "title": "Judiciary: Law 8 maritime procedure, consolidated text (Articles 1-3 and arrest provisions)",
-              "url": "https://www.organojudicial.gob.pa/uploads/wp_repo/blogs.dir/cendoj/MARITIMO/texto_unico.pdf"
-            },
-            {
-              "title": "Judiciary: ship arrest in Panamanian maritime jurisdiction",
-              "url": "https://revistasapientia.organojudicial.gob.pa/index.php/sapientia/article/view/228"
-            }
-          ],
-          "checked_at": "2026-10-19"
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-22",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.014Z",
+        "last_attempt_at": "2026-10-22T01:37:37.091Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-19T12:41:39.000Z",
@@ -224,7 +215,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.040Z",
+        "last_attempt_at": "2026-10-22T01:37:37.092Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -238,14 +229,14 @@
         "reported_imo": "9419759",
         "mmsi": "441304000",
         "area": "Arabian Sea",
-        "position_age_reported": "43 min ago",
+        "position_age_reported": "16 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": null,
         "eta_reported": null,
         "arrival_reported": null,
         "voyage_status": "destination_unavailable",
-        "checked_at": "2026-10-21T13:32:36.040Z",
+        "checked_at": "2026-10-22T01:37:37.104Z",
         "access_status": "available",
         "port": null,
         "country": null,
@@ -258,7 +249,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.040Z",
+        "last_attempt_at": "2026-10-22T01:37:37.104Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-11T01:01:45.000Z",
@@ -274,7 +265,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.054Z",
+        "last_attempt_at": "2026-10-22T01:37:37.115Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -288,14 +279,14 @@
         "reported_imo": "9445409",
         "mmsi": "441310000",
         "area": "China Coast",
-        "position_age_reported": "1 hour ago",
+        "position_age_reported": "9 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Zhoushan, China",
         "eta_reported": "Oct 10, 03:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.070Z",
+        "checked_at": "2026-10-22T01:37:37.127Z",
         "access_status": "available",
         "port": "Zhoushan",
         "country": "China",
@@ -308,7 +299,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.070Z",
+        "last_attempt_at": "2026-10-22T01:37:37.127Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-08T05:43:06.000Z",
@@ -324,7 +315,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.187Z",
+        "last_attempt_at": "2026-10-22T01:37:37.259Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -338,14 +329,14 @@
         "reported_imo": "9451898",
         "mmsi": "441302000",
         "area": "East Asia",
-        "position_age_reported": "8 days ago",
+        "position_age_reported": "9 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Lazaro Cardenas, Mexico",
         "eta_reported": "Oct 29, 22:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.212Z",
+        "checked_at": "2026-10-22T01:37:37.268Z",
         "access_status": "available",
         "port": "Lázaro Cárdenas",
         "country": "Mexico",
@@ -363,7 +354,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.212Z",
+        "last_attempt_at": "2026-10-22T01:37:37.268Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-13T12:56:30.000Z",
@@ -379,7 +370,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.212Z",
+        "last_attempt_at": "2026-10-22T01:37:37.269Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -393,14 +384,14 @@
         "reported_imo": "9460899",
         "mmsi": "440591000",
         "area": "East Asia",
-        "position_age_reported": "4 days ago",
+        "position_age_reported": "5 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Balboa, Panama",
         "eta_reported": "Nov 3, 01:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.240Z",
+        "checked_at": "2026-10-22T01:37:37.276Z",
         "access_status": "available",
         "port": "Balboa",
         "country": "Panama",
@@ -413,7 +404,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.240Z",
+        "last_attempt_at": "2026-10-22T01:37:37.276Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-17T03:34:57.000Z",
@@ -429,7 +420,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.240Z",
+        "last_attempt_at": "2026-10-22T01:37:37.306Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -443,14 +434,14 @@
         "reported_imo": "9590589",
         "mmsi": "441200000",
         "area": "Arabian Sea",
-        "position_age_reported": "21 min ago",
+        "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "OMMCT",
         "eta_reported": "Oct 3, 03:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.255Z",
+        "checked_at": "2026-10-22T01:37:37.316Z",
         "access_status": "available",
         "port": "Muscat",
         "country": "Oman",
@@ -463,7 +454,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.255Z",
+        "last_attempt_at": "2026-10-22T01:37:37.316Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-09-24T13:09:21.000Z",
@@ -479,7 +470,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.382Z",
+        "last_attempt_at": "2026-10-22T01:37:37.436Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -497,17 +488,17 @@
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Gwangyang, Korea",
-        "eta_reported": "Nov 4, 03:00",
+        "eta_reported": "Nov 4, 05:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.392Z",
+        "checked_at": "2026-10-22T01:37:37.455Z",
         "access_status": "available",
         "port": "Gwangyang",
         "country": "South Korea",
         "court_reference": {
           "name": "Gwangju District Court · Suncheon Branch",
           "status": "reference",
-          "note": "Official Suncheon Branch jurisdiction includes Gwangyang. Civil Execution Act Article 278 provides the asset-location district court or merits court as forums for provisional seizure. This is an arrival-based court reference, not confirmation that a claim qualifies for arrest; confirm the actual terminal and vessel location.",
+          "note": "Gwangyang jurisdiction; confirm the actual terminal.",
           "sources": [
             {
               "title": "Civil Execution Act, art. 278",
@@ -518,11 +509,11 @@
               "url": "https://gwangju.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000513"
             }
           ],
-          "checked_at": "2026-10-20"
+          "checked_at": "2026-10-06"
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.392Z",
+        "last_attempt_at": "2026-10-22T01:37:37.455Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-11T08:57:30.000Z",
@@ -538,7 +529,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.410Z",
+        "last_attempt_at": "2026-10-22T01:37:37.455Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -552,14 +543,14 @@
         "reported_imo": "9590606",
         "mmsi": "441222000",
         "area": "South Africa",
-        "position_age_reported": "5 days ago",
+        "position_age_reported": "6 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Sepetiba, Brazil",
         "eta_reported": "Oct 27, 15:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.424Z",
+        "checked_at": "2026-10-22T01:37:37.463Z",
         "access_status": "available",
         "port": "Sepetiba",
         "country": "Brazil",
@@ -572,7 +563,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.424Z",
+        "last_attempt_at": "2026-10-22T01:37:37.463Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-16T01:09:41.000Z",
@@ -588,7 +579,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.424Z",
+        "last_attempt_at": "2026-10-22T01:37:37.496Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -602,14 +593,14 @@
         "reported_imo": "9651101",
         "mmsi": "441168000",
         "area": "China Coast",
-        "position_age_reported": "9 hours ago",
+        "position_age_reported": "21 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Pyeongtaek, Korea",
-        "eta_reported": "Oct 23, 06:00",
+        "eta_reported": "Oct 24, 01:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.435Z",
+        "checked_at": "2026-10-22T01:37:37.505Z",
         "access_status": "available",
         "port": "Pyeongtaek",
         "country": "South Korea",
@@ -631,7 +622,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.435Z",
+        "last_attempt_at": "2026-10-22T01:37:37.505Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-21T04:15:15.000Z",
@@ -647,7 +638,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.559Z",
+        "last_attempt_at": "2026-10-22T01:37:37.619Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -660,15 +651,15 @@
         "url": "https://www.vesselfinder.com/vessels/details/9651113",
         "reported_imo": "9651113",
         "mmsi": "441188000",
-        "area": "North Pacific Ocean",
-        "position_age_reported": "13 days ago",
+        "area": "East Asia",
+        "position_age_reported": "4 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Mokpo, Korea",
-        "eta_reported": "Oct 23, 13:00",
+        "eta_reported": "Oct 23, 17:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.567Z",
+        "checked_at": "2026-10-22T01:37:37.631Z",
         "access_status": "available",
         "port": "Mokpo",
         "country": "South Korea",
@@ -681,12 +672,12 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.567Z",
+        "last_attempt_at": "2026-10-22T01:37:37.631Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-09T00:13:42.861Z",
           "backend_destination": "KR USN",
-          "backend_static_at": "2026-10-08T23:56:07.000Z",
+          "backend_static_at": "2026-10-22T01:33:44.000Z",
           "merge_applied": false
         },
         "identity_check": "Matches current backend IMO/MMSI"
@@ -697,7 +688,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.594Z",
+        "last_attempt_at": "2026-10-22T01:37:37.631Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -718,7 +709,7 @@
         "eta_reported": "Oct 17, 00:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.608Z",
+        "checked_at": "2026-10-22T01:37:37.638Z",
         "access_status": "available",
         "port": "Veracruz",
         "country": "Mexico",
@@ -736,7 +727,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.608Z",
+        "last_attempt_at": "2026-10-22T01:37:37.638Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-09-28T13:39:24.000Z",
@@ -752,7 +743,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.608Z",
+        "last_attempt_at": "2026-10-22T01:37:37.670Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -766,34 +757,32 @@
         "reported_imo": "9674177",
         "mmsi": "441133000",
         "area": "Indian Coast",
-        "position_age_reported": "11 hours ago",
+        "position_age_reported": "23 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Hambantota, Sri Lanka",
         "eta_reported": "Oct 22, 08:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.620Z",
+        "checked_at": "2026-10-22T01:37:37.681Z",
         "access_status": "available",
         "port": "Hambantota",
         "country": "Sri Lanka",
         "court_reference": {
           "name": "Commercial High Court · Colombo (Admiralty)",
-          "status": "preliminary",
-          "note": "Previously recorded Colombo Admiralty court reference applied provisionally to Hambantota. The official court FAQ could not be retrieved in this check (HTTP 502); territorial application and arrest requirements require local confirmation.",
+          "status": "reference",
+          "note": "Admiralty jurisdiction exercised in Colombo, including for Hambantota.",
           "sources": [
             {
               "title": "Commercial High Court: jurisdiction",
               "url": "https://colchc.gov.lk/faqs"
             }
           ],
-          "checked_at": "2026-10-06",
-          "last_attempt_at": "2026-10-21T01:35:59.045Z",
-          "last_attempt_status": "unavailable"
+          "checked_at": "2026-10-06"
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.620Z",
+        "last_attempt_at": "2026-10-22T01:37:37.681Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-21T02:32:36.000Z",
@@ -809,7 +798,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.739Z",
+        "last_attempt_at": "2026-10-22T01:37:37.800Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -823,1112 +812,14 @@
         "reported_imo": "9674189",
         "mmsi": "441156000",
         "area": "South East Asia",
-        "position_age_reported": "20 min ago",
+        "position_age_reported": "2 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Ulsan, Korea",
         "eta_reported": "Oct 27, 03:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.748Z",
-        "access_status": "available",
-        "port": "Ulsan",
-        "country": "South Korea",
-        "court_reference": {
-          "name": "Ulsan District Court",
-          "status": "preliminary",
-          "note": "Civil Execution Act Article 278 assigns provisional seizure to the district court for the asset location or the merits court. Ulsan District Court is a preliminary destination-based reference; the precise berth/anchorage and territorial competence were not independently verified. The court jurisdiction page could not be reliably read.",
-          "sources": [
-            {
-              "title": "Civil Execution Act, art. 278",
-              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
-            },
-            {
-              "title": "Ulsan District Court",
-              "url": "https://ulsan.scourt.go.kr/"
-            }
-          ],
-          "checked_at": "2026-10-20"
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.748Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-20T21:55:05.000Z",
-          "backend_destination": "SGSIN",
-          "backend_static_at": "2026-10-20T21:55:05.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9674189",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.782Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9683661",
-      "name": "VL PIONEER",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9683661",
-        "reported_imo": "9683661",
-        "mmsi": "636028886",
-        "area": "China Coast",
-        "position_age_reported": "235 days ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": null,
-        "eta_reported": null,
-        "arrival_reported": null,
-        "voyage_status": "destination_unavailable",
-        "mmsi_verification_status": "conflict",
-        "identity_check": "VesselFinder reports MMSI 636028886; Open Waters returns MMSI 636023886 with malformed IMO 968366100. No AIS identity or position accepted.",
-        "identity_sources": [
-          {
-            "source": "Open Waters public snapshot",
-            "url": "https://ais.openwaters.io/v1/vessels?q=VL%20PIONEER",
-            "mmsi": "636023886",
-            "imo_reported": "968366100",
-            "signal_at": "2026-10-05T09:35:04Z"
-          }
-        ],
-        "checked_at": "2026-10-21T13:32:36.797Z",
-        "access_status": "available",
-        "port": null,
-        "country": null,
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-09",
-          "sources": [],
-          "note": "No declared destination is available."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.797Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": null,
-          "backend_destination": null,
-          "backend_static_at": null,
-          "merge_applied": false
-        }
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9683661",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.797Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9702405",
-      "name": "GLOVIS SUNRISE",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9702405",
-        "reported_imo": "9702405",
-        "mmsi": "440202000",
-        "area": "South East Asia",
-        "position_age_reported": "2 hours ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Hambantota, Sri Lanka",
-        "eta_reported": "Oct 23, 05:30",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.817Z",
-        "access_status": "available",
-        "port": "Hambantota",
-        "country": "Sri Lanka",
-        "court_reference": {
-          "name": "Commercial High Court · Colombo (Admiralty)",
-          "status": "preliminary",
-          "note": "Previously recorded Colombo Admiralty court reference retained. Official court FAQ recheck failed (HTTP 502/503) on 2026-10-20; current territorial application to Hambantota and arrest requirements are not verified in this check.",
-          "sources": [
-            {
-              "title": "Commercial High Court: jurisdiction",
-              "url": "https://colchc.gov.lk/faqs"
-            }
-          ],
-          "checked_at": "2026-10-06",
-          "last_attempt_at": "2026-10-20T01:28:11.780Z",
-          "last_attempt_status": "unavailable"
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.817Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-20T06:34:06.526Z",
-          "backend_destination": "LK HBA",
-          "backend_static_at": "2026-10-20T06:34:06.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702405",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.918Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9702417",
-      "name": "GLOVIS SUMMIT",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9702417",
-        "reported_imo": "9702417",
-        "mmsi": "440245000",
-        "area": "East Asia",
-        "position_age_reported": "1 min ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Masan, Korea",
-        "eta_reported": "Oct 21, 14:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.939Z",
-        "access_status": "available",
-        "port": "Masan",
-        "country": "South Korea",
-        "court_reference": {
-          "name": "Changwon District Court · Masan Branch",
-          "status": "reference",
-          "note": "Conservatory arrest before the court at the vessel location or the court hearing the substantive claim.",
-          "sources": [
-            {
-              "title": "Civil Execution Act, art. 278",
-              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
-            },
-            {
-              "title": "Masan territorial jurisdiction",
-              "url": "https://changwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000431"
-            }
-          ],
-          "checked_at": "2026-10-06"
-        },
-        "retrieval_crawl_note": "Direct public-page retrieval at consultation reported ETA Oct 21, 14:00. A separately opened cached/indexed view still displayed Oct 20, 22:00; the new value remains supplemental and has no absolute source signal timestamp.",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.939Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-21T13:29:12.000Z",
-          "backend_destination": "KRMAS",
-          "backend_static_at": "2026-10-21T13:29:12.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702417",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.974Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9702429",
-      "name": "GLOVIS SYMPHONY",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9702429",
-        "reported_imo": "9702429",
-        "mmsi": "440252000",
-        "area": "West Africa",
-        "position_age_reported": "2 min ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Dakar, Senegal",
-        "eta_reported": "Oct 23, 11:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:36.985Z",
-        "access_status": "available",
-        "port": "Dakar",
-        "country": "Senegal",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.985Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-21T11:37:23.000Z",
-          "backend_destination": "SNDKR",
-          "backend_static_at": "2026-10-21T11:37:23.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702429",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:36.985Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9702431",
-      "name": "GLOVIS SPLENDOR",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9702431",
-        "reported_imo": "9702431",
-        "mmsi": "440254000",
-        "area": "Arabian Sea",
-        "position_age_reported": "9 days ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Khor al Fakkan Anch., United Arab Emirates (UAE)",
-        "eta_reported": null,
-        "arrival_reported": "Oct 11, 19:02 UTC",
-        "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-21T13:32:36.993Z",
-        "access_status": "available",
-        "port": "Khor al Fakkan Anch.",
-        "country": "United Arab Emirates (UAE)",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:36.993Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-05T18:31:05.000Z",
-          "backend_destination": "OMDQM",
-          "backend_static_at": "2026-10-12T19:36:16.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702431",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.109Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9706994",
-      "name": "GLOVIS CROWN",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9706994",
-        "reported_imo": "9706994",
-        "mmsi": "440906000",
-        "area": "East Africa",
-        "position_age_reported": "29 hours ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Mumbai (ex Bombay), India",
-        "eta_reported": "Oct 27, 02:30",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.121Z",
-        "access_status": "available",
-        "port": "Mumbai (ex Bombay)",
-        "country": "India",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.121Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-17T08:16:29.000Z",
-          "backend_destination": "INBOM",
-          "backend_static_at": "2026-10-17T08:16:29.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9706994",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.157Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9707003",
-      "name": "GLOVIS CRYSTAL",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9707003",
-        "reported_imo": "9707003",
-        "mmsi": "441331000",
-        "area": "South America West Coast",
-        "position_age_reported": "1 min ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "San Antonio, Chile",
-        "eta_reported": "Oct 16, 21:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.172Z",
-        "access_status": "available",
-        "port": "San Antonio",
-        "country": "Chile",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.172Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-19T20:43:40.000Z",
-          "backend_destination": "CLSAI",
-          "backend_static_at": "2026-10-19T20:43:40.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707003",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.172Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9707015",
-      "name": "GLOVIS CAPTAIN",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9707015",
-        "reported_imo": "9707015",
-        "mmsi": "440468000",
-        "area": "North America West Coast",
-        "position_age_reported": "17 days ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Shanghai, China",
-        "eta_reported": "Oct 21, 22:30",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.177Z",
-        "access_status": "available",
-        "port": "Shanghai",
-        "country": "China",
-        "court_reference": {
-          "name": "Shanghai Maritime Court",
-          "status": "reference",
-          "note": "Jurisdiction over Shanghai waters, including Yangshan; arrest under the Special Maritime Procedure Law.",
-          "sources": [
-            {
-              "title": "Shanghai Maritime Court: jurisdiction",
-              "url": "https://www.hshfy.sh.cn/shfy/English/MapView.jsp?pa=aaWQ9MzYzMTUxJnhoPTEmbG1kbT1sbTkzOQPdcssPdcssz"
-            },
-            {
-              "title": "Supreme People’s Court: ship arrest",
-              "url": "https://english.court.gov.cn/2021-10/20/c_761768.htm"
-            }
-          ],
-          "checked_at": "2026-10-06"
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.177Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-03T08:30:44.000Z",
-          "backend_destination": "KRUSN",
-          "backend_static_at": "2026-10-03T08:30:44.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707015",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.288Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9707027",
-      "name": "GLOVIS COSMOS",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9707027",
-        "reported_imo": "9707027",
-        "mmsi": "441397000",
-        "area": "North America West Coast",
-        "position_age_reported": "14 hours ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Manta, Ecuador",
-        "eta_reported": "Oct 22, 13:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.307Z",
-        "access_status": "available",
-        "port": "Manta",
-        "country": "Ecuador",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-20",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.307Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-14T03:11:29.000Z",
-          "backend_destination": "PACTB",
-          "backend_static_at": "2026-10-14T03:11:29.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707027",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.344Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9710608",
-      "name": "GLOVIS DESIRE",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9710608",
-        "reported_imo": "9710608",
-        "mmsi": "440414000",
-        "area": "East Asia",
-        "position_age_reported": "22 min ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "KRSCW",
-        "eta_reported": "Oct 17, 00:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.355Z",
-        "access_status": "available",
-        "port": null,
-        "country": null,
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.355Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-16T19:02:53.000Z",
-          "backend_destination": "KRSCW",
-          "backend_static_at": "2026-10-16T19:02:53.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710608",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.356Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9710658",
-      "name": "GLOVIS DAYLIGHT",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9710658",
-        "reported_imo": "9710658",
-        "mmsi": "440417000",
-        "area": "Indonesia",
-        "position_age_reported": "3 min ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Tanjung Bara, Indonesia",
-        "eta_reported": "Oct 17, 22:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.369Z",
-        "access_status": "available",
-        "port": "Tanjung Bara",
-        "country": "Indonesia",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.369Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-20T22:50:52.000Z",
-          "backend_destination": "IDTBA",
-          "backend_static_at": "2026-10-20T22:50:52.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710658",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.471Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9710660",
-      "name": "GLOVIS DIAMOND",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9710660",
-        "reported_imo": "9710660",
-        "mmsi": "440913000",
-        "area": "East Asia",
-        "position_age_reported": "31 hours ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "SAMCHEONPO_KR",
-        "eta_reported": "Oct 23, 05:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.483Z",
-        "access_status": "available",
-        "port": "Samcheonpo/Sacheon",
-        "country": "South Korea",
-        "court_reference": {
-          "name": "Changwon District Court · Jinju Branch",
-          "status": "reference",
-          "note": "Samcheonpo/Sacheon falls within Jinju jurisdiction.",
-          "sources": [
-            {
-              "title": "Civil Execution Act, art. 278",
-              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
-            },
-            {
-              "title": "Jinju territorial jurisdiction",
-              "url": "https://changwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000421"
-            }
-          ],
-          "checked_at": "2026-10-06"
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.483Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-20T04:17:51.000Z",
-          "backend_destination": "SAMCHEONPO_KR",
-          "backend_static_at": "2026-10-20T04:17:51.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710660",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.519Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9749104",
-      "name": "OC GRANDE",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9749104",
-        "reported_imo": "9749104",
-        "mmsi": "538006909",
-        "area": "China Coast",
-        "position_age_reported": "0 min ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Zhoushan, China",
-        "eta_reported": null,
-        "arrival_reported": "Oct 20, 02:51 UTC",
-        "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-21T13:32:37.536Z",
-        "access_status": "available",
-        "port": "Zhoushan",
-        "country": "China",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.536Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-17T09:32:42.000Z",
-          "backend_destination": "KR TSN",
-          "backend_static_at": "2026-10-17T09:32:42.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749104",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.536Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9749568",
-      "name": "GLOVIS SUN",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9749568",
-        "reported_imo": "9749568",
-        "mmsi": "440255000",
-        "area": "West Africa",
-        "position_age_reported": "4 days ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Durban, South Africa",
-        "eta_reported": "Oct 25, 09:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.551Z",
-        "access_status": "available",
-        "port": "Durban",
-        "country": "South Africa",
-        "court_reference": {
-          "name": "High Court of South Africa · KwaZulu-Natal Division, Durban",
-          "status": "reference",
-          "checked_at": "2026-10-19",
-          "note": "Reference for admiralty arrest applications on arrival at Durban. The 2026 division directive covers admiralty case initiation and arrest warrants; claim requirements still require local assessment.",
-          "sources": [
-            {
-              "title": "KwaZulu-Natal Division · Court Online Directive 1 of 2026, section 5.6 and Part E",
-              "url": "https://www.judiciary.org.za/images/Directives/Directives_2026/KZN%20Court%20Online%20Directives%20(Final%20June%202026).pdf"
-            },
-            {
-              "title": "KwaZulu-Natal Division · official court contacts",
-              "url": "https://www.judiciary.org.za/index.php/contact-us/superior-courts-contact/kwazulu-natal-division"
-            }
-          ]
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.551Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-09-25T12:40:36.000Z",
-          "backend_destination": null,
-          "backend_static_at": "2026-09-25T12:40:36.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749568",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.656Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9749570",
-      "name": "GLOVIS STELLA",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9749570",
-        "reported_imo": "9749570",
-        "mmsi": "440257000",
-        "area": "North America West Coast",
-        "position_age_reported": "9 days ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Yokohama, Japan",
-        "eta_reported": "Oct 23, 01:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.670Z",
-        "access_status": "available",
-        "port": "Yokohama",
-        "country": "Japan",
-        "court_reference": {
-          "name": null,
-          "status": "unverified",
-          "checked_at": "2026-10-19",
-          "sources": [],
-          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.670Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-12T17:16:16.000Z",
-          "backend_destination": "USPDX=>JPYOK",
-          "backend_static_at": "2026-10-12T17:16:16.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749570",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.700Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9749582",
-      "name": "GLOVIS SIRIUS",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9749582",
-        "reported_imo": "9749582",
-        "mmsi": "440258000",
-        "area": "South Africa",
-        "position_age_reported": "37 hours ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Veracruz, Mexico",
-        "eta_reported": "Nov 6, 07:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.719Z",
-        "access_status": "available",
-        "port": "Veracruz",
-        "country": "Mexico",
-        "court_reference": {
-          "name": "Juzgado de Distrito at the vessel location",
-          "status": "reference",
-          "note": "For Lázaro Cárdenas, the territorially competent federal court in Michoacán; venue and allocation require confirmation. Article 274 LNCM.",
-          "sources": [
-            {
-              "title": "Navigation and Maritime Commerce Act: current text",
-              "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNCM.pdf"
-            }
-          ],
-          "checked_at": "2026-10-06"
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.719Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-19T23:32:40.000Z",
-          "backend_destination": "MX VER",
-          "backend_static_at": "2026-10-20T00:45:11.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749582",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.719Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9749594",
-      "name": "GLOVIS SPRING",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9749594",
-        "reported_imo": "9749594",
-        "mmsi": "440260000",
-        "area": "East Asia",
-        "position_age_reported": "3 min ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Ulsan, Korea",
-        "eta_reported": null,
-        "arrival_reported": "Oct 21, 00:21 UTC",
-        "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-21T13:32:37.729Z",
-        "access_status": "available",
-        "port": "Ulsan",
-        "country": "South Korea",
-        "court_reference": {
-          "name": "Ulsan District Court",
-          "status": "preliminary",
-          "note": "Civil Execution Act Article 278 rechecked. Ulsan District Court remains a preliminary destination-based reference: the official homepage gave no readable territorial-jurisdiction information; exact berth and territorial competence require local confirmation.",
-          "sources": [
-            {
-              "title": "Civil Execution Act, art. 278",
-              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
-            },
-            {
-              "title": "Ulsan District Court",
-              "url": "https://ulsan.scourt.go.kr/"
-            }
-          ],
-          "checked_at": "2026-10-20",
-          "last_attempt_at": "2026-10-20T13:35:42.737Z",
-          "last_attempt_status": "partially_verified"
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.729Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-20T21:35:40.000Z",
-          "backend_destination": "KRMOK",
-          "backend_static_at": "2026-10-20T21:35:40.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749594",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.838Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9775828",
-      "name": "GLOVIS SILVER",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9775828",
-        "reported_imo": "9775828",
-        "mmsi": "440249000",
-        "area": "Arabian Sea",
-        "position_age_reported": "15 days ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Chennai (ex Madras), India",
-        "eta_reported": "Oct 30, 23:30",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.854Z",
-        "access_status": "available",
-        "port": "Chennai (ex Madras)",
-        "country": "India",
-        "court_reference": {
-          "name": "Madras High Court · Chennai (Admiralty)",
-          "status": "preliminary",
-          "note": "Previously recorded Madras High Court admiralty reference retained. India Code page/PDF could not be retrieved in this check; current territorial application and arrest prerequisites require confirmation. Previous verification date is unchanged.",
-          "sources": [
-            {
-              "title": "Admiralty Act 2017",
-              "url": "https://www.indiacode.nic.in/handle/123456789/2256?locale=en"
-            },
-            {
-              "title": "Ministry: coastal High Courts jurisdiction",
-              "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=174565"
-            }
-          ],
-          "checked_at": "2026-10-06",
-          "last_attempt_at": "2026-10-20T13:35:42.737Z",
-          "last_attempt_status": "unavailable"
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.854Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-09-23T04:30:37.000Z",
-          "backend_destination": null,
-          "backend_static_at": "2026-09-23T04:30:37.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9775828",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.895Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9798387",
-      "name": "GLOVIS SONIC",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9798387",
-        "reported_imo": "9798387",
-        "mmsi": "441511000",
-        "area": "South Africa",
-        "position_age_reported": "5 hours ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Singapore, Singapore",
-        "eta_reported": "Nov 3, 09:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.907Z",
-        "access_status": "available",
-        "port": "Singapore",
-        "country": "Singapore",
-        "court_reference": {
-          "name": "General Division of the High Court · Singapore",
-          "status": "reference",
-          "note": "Warrant of arrest and Sheriff intervention within Singapore port limits.",
-          "sources": [
-            {
-              "title": "Supreme Court Practice Directions 2021, Part 17",
-              "url": "https://epd2021-supremecourt.judiciary.gov.sg/part-17-admiralty-matters"
-            },
-            {
-              "title": "Sheriff: ship arrest",
-              "url": "https://www.judiciary.gov.sg/services/sheriff-services-admiralty-actions"
-            }
-          ],
-          "checked_at": "2026-10-06"
-        },
-        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
-        "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.907Z",
-        "last_attempt_status": "available",
-        "comparison": {
-          "backend_position_at": "2026-10-21T09:00:38.519Z",
-          "backend_destination": "SGSIN(PEBGB)",
-          "backend_static_at": "2026-10-21T09:00:38.000Z",
-          "merge_applied": false
-        },
-        "identity_check": "Matches current backend IMO/MMSI"
-      },
-      "marinetraffic": {
-        "source": "MarineTraffic",
-        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9798387",
-        "checked_at": "2026-10-19T01:33:46Z",
-        "access_status": "unavailable",
-        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:37.907Z",
-        "last_attempt_status": "unavailable",
-        "last_attempt_note": "HTTP 403"
-      }
-    },
-    {
-      "imo": "9798399",
-      "name": "GLOVIS SAFETY",
-      "vesselfinder": {
-        "source": "VesselFinder",
-        "url": "https://www.vesselfinder.com/vessels/details/9798399",
-        "reported_imo": "9798399",
-        "mmsi": "441104000",
-        "area": "North America West Coast",
-        "position_age_reported": "41 hours ago",
-        "signal_at": null,
-        "coordinates": null,
-        "destination_reported": "Ulsan, Korea",
-        "eta_reported": "Nov 5, 03:00",
-        "arrival_reported": null,
-        "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:37.913Z",
+        "checked_at": "2026-10-22T01:37:37.813Z",
         "access_status": "available",
         "port": "Ulsan",
         "country": "South Korea",
@@ -1950,7 +841,1108 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:37.913Z",
+        "last_attempt_at": "2026-10-22T01:37:37.813Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-20T21:55:05.000Z",
+          "backend_destination": "SGSIN",
+          "backend_static_at": "2026-10-20T21:55:05.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9674189",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:37.813Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9683661",
+      "name": "VL PIONEER",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9683661",
+        "reported_imo": "9683661",
+        "mmsi": "636028886",
+        "area": "China Coast",
+        "position_age_reported": "236 days ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": null,
+        "eta_reported": null,
+        "arrival_reported": null,
+        "voyage_status": "destination_unavailable",
+        "mmsi_verification_status": "conflict",
+        "identity_check": "VesselFinder reports MMSI 636028886; Open Waters returns MMSI 636023886 with malformed IMO 968366100. No AIS identity or position accepted.",
+        "identity_sources": [
+          {
+            "source": "Open Waters public snapshot",
+            "url": "https://ais.openwaters.io/v1/vessels?q=VL%20PIONEER",
+            "mmsi": "636023886",
+            "imo_reported": "968366100",
+            "signal_at": "2026-10-05T09:35:04Z"
+          }
+        ],
+        "checked_at": "2026-10-22T01:37:37.820Z",
+        "access_status": "available",
+        "port": null,
+        "country": null,
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-09",
+          "sources": [],
+          "note": "No declared destination is available."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:37.820Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": null,
+          "backend_destination": null,
+          "backend_static_at": null,
+          "merge_applied": false
+        }
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9683661",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:37.848Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9702405",
+      "name": "GLOVIS SUNRISE",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9702405",
+        "reported_imo": "9702405",
+        "mmsi": "440202000",
+        "area": "South East Asia",
+        "position_age_reported": "14 hours ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Hambantota, Sri Lanka",
+        "eta_reported": "Oct 23, 05:30",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:37.855Z",
+        "access_status": "available",
+        "port": "Hambantota",
+        "country": "Sri Lanka",
+        "court_reference": {
+          "name": "Commercial High Court · Colombo (Admiralty)",
+          "status": "reference",
+          "note": "Admiralty jurisdiction exercised in Colombo, including for Hambantota.",
+          "sources": [
+            {
+              "title": "Commercial High Court: jurisdiction",
+              "url": "https://colchc.gov.lk/faqs"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:37.855Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-20T06:34:06.526Z",
+          "backend_destination": "LK HBA",
+          "backend_static_at": "2026-10-20T06:34:06.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702405",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:37.982Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9702417",
+      "name": "GLOVIS SUMMIT",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9702417",
+        "reported_imo": "9702417",
+        "mmsi": "440245000",
+        "area": "East Asia",
+        "position_age_reported": "24 min ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Masan, Korea",
+        "eta_reported": "Oct 21, 14:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.000Z",
+        "access_status": "available",
+        "port": "Masan",
+        "country": "South Korea",
+        "court_reference": {
+          "name": "Changwon District Court · Masan Branch",
+          "status": "reference",
+          "note": "Conservatory arrest before the court at the vessel location or the court hearing the substantive claim.",
+          "sources": [
+            {
+              "title": "Civil Execution Act, art. 278",
+              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+            },
+            {
+              "title": "Masan territorial jurisdiction",
+              "url": "https://changwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000431"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.000Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-22T01:13:43.000Z",
+          "backend_destination": "KRMAS",
+          "backend_static_at": "2026-10-22T01:13:43.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702417",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.000Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9702429",
+      "name": "GLOVIS SYMPHONY",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9702429",
+        "reported_imo": "9702429",
+        "mmsi": "440252000",
+        "area": "West Africa",
+        "position_age_reported": "6 hours ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Dakar, Senegal",
+        "eta_reported": "Oct 23, 11:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.009Z",
+        "access_status": "available",
+        "port": "Dakar",
+        "country": "Senegal",
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.009Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-21T11:37:23.000Z",
+          "backend_destination": "SNDKR",
+          "backend_static_at": "2026-10-21T11:37:23.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702429",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.019Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9702431",
+      "name": "GLOVIS SPLENDOR",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9702431",
+        "reported_imo": "9702431",
+        "mmsi": "440254000",
+        "area": "Arabian Sea",
+        "position_age_reported": "9 days ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Khor al Fakkan Anch., United Arab Emirates (UAE)",
+        "eta_reported": null,
+        "arrival_reported": "Oct 11, 19:02 UTC",
+        "voyage_status": "reported_arrival",
+        "checked_at": "2026-10-22T01:37:38.028Z",
+        "access_status": "available",
+        "port": "Khor al Fakkan Anch.",
+        "country": "United Arab Emirates (UAE)",
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.028Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-05T18:31:05.000Z",
+          "backend_destination": "OMDQM",
+          "backend_static_at": "2026-10-12T19:36:16.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9702431",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.167Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9706994",
+      "name": "GLOVIS CROWN",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9706994",
+        "reported_imo": "9706994",
+        "mmsi": "440906000",
+        "area": "East Africa",
+        "position_age_reported": "41 hours ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Mumbai (ex Bombay), India",
+        "eta_reported": "Oct 27, 02:30",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.179Z",
+        "access_status": "available",
+        "port": "Mumbai (ex Bombay)",
+        "country": "India",
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.179Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-17T08:16:29.000Z",
+          "backend_destination": "INBOM",
+          "backend_static_at": "2026-10-17T08:16:29.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9706994",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.179Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9707003",
+      "name": "GLOVIS CRYSTAL",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9707003",
+        "reported_imo": "9707003",
+        "mmsi": "441331000",
+        "area": "South America West Coast",
+        "position_age_reported": "3 min ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "San Antonio, Chile",
+        "eta_reported": null,
+        "arrival_reported": "Oct 21, 23:51 UTC",
+        "voyage_status": "reported_arrival",
+        "checked_at": "2026-10-22T01:37:38.195Z",
+        "access_status": "available",
+        "port": "San Antonio",
+        "country": "Chile",
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.195Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-19T20:43:40.000Z",
+          "backend_destination": "CLSAI",
+          "backend_static_at": "2026-10-19T20:43:40.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707003",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.195Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9707015",
+      "name": "GLOVIS CAPTAIN",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9707015",
+        "reported_imo": "9707015",
+        "mmsi": "440468000",
+        "area": "China Coast",
+        "position_age_reported": "14 min ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Shanghai, China",
+        "eta_reported": "Oct 21, 22:45",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.211Z",
+        "access_status": "available",
+        "port": "Shanghai",
+        "country": "China",
+        "court_reference": {
+          "name": "Shanghai Maritime Court",
+          "status": "reference",
+          "note": "Jurisdiction over Shanghai waters, including Yangshan; arrest under the Special Maritime Procedure Law.",
+          "sources": [
+            {
+              "title": "Shanghai Maritime Court: jurisdiction",
+              "url": "https://www.hshfy.sh.cn/shfy/English/MapView.jsp?pa=aaWQ9MzYzMTUxJnhoPTEmbG1kbT1sbTkzOQPdcssPdcssz"
+            },
+            {
+              "title": "Supreme People’s Court: ship arrest",
+              "url": "https://english.court.gov.cn/2021-10/20/c_761768.htm"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.211Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-03T08:30:44.000Z",
+          "backend_destination": "KRUSN",
+          "backend_static_at": "2026-10-03T08:30:44.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707015",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.353Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9707027",
+      "name": "GLOVIS COSMOS",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9707027",
+        "reported_imo": "9707027",
+        "mmsi": "441397000",
+        "area": "North America West Coast",
+        "position_age_reported": "26 hours ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Manta, Ecuador",
+        "eta_reported": "Oct 22, 13:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.371Z",
+        "access_status": "available",
+        "port": "Manta",
+        "country": "Ecuador",
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-20",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.371Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-14T03:11:29.000Z",
+          "backend_destination": "PACTB",
+          "backend_static_at": "2026-10-14T03:11:29.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9707027",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.374Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9710608",
+      "name": "GLOVIS DESIRE",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9710608",
+        "reported_imo": "9710608",
+        "mmsi": "440414000",
+        "area": "East Asia",
+        "position_age_reported": "3 min ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "KRSCW",
+        "eta_reported": "Oct 17, 00:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.386Z",
+        "access_status": "available",
+        "port": null,
+        "country": null,
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.386Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-16T19:02:53.000Z",
+          "backend_destination": "KRSCW",
+          "backend_static_at": "2026-10-16T19:02:53.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710608",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.386Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9710658",
+      "name": "GLOVIS DAYLIGHT",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9710658",
+        "reported_imo": "9710658",
+        "mmsi": "440417000",
+        "area": "Indonesia",
+        "position_age_reported": "2 min ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Tanjung Bara, Indonesia",
+        "eta_reported": "Oct 17, 22:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.396Z",
+        "access_status": "available",
+        "port": "Tanjung Bara",
+        "country": "Indonesia",
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.396Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-22T01:02:53.000Z",
+          "backend_destination": "IDTBA",
+          "backend_static_at": "2026-10-22T01:02:53.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710658",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.537Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9710660",
+      "name": "GLOVIS DIAMOND",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9710660",
+        "reported_imo": "9710660",
+        "mmsi": "440913000",
+        "area": "East Asia",
+        "position_age_reported": "43 hours ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "SAMCHEONPO_KR",
+        "eta_reported": "Oct 23, 05:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.550Z",
+        "access_status": "available",
+        "port": "Samcheonpo/Sacheon",
+        "country": "South Korea",
+        "court_reference": {
+          "name": "Changwon District Court · Jinju Branch",
+          "status": "reference",
+          "note": "Samcheonpo/Sacheon falls within Jinju jurisdiction.",
+          "sources": [
+            {
+              "title": "Civil Execution Act, art. 278",
+              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+            },
+            {
+              "title": "Jinju territorial jurisdiction",
+              "url": "https://changwon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000421"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.550Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-20T04:17:51.000Z",
+          "backend_destination": "SAMCHEONPO_KR",
+          "backend_static_at": "2026-10-20T04:17:51.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9710660",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.560Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9749104",
+      "name": "OC GRANDE",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9749104",
+        "reported_imo": "9749104",
+        "mmsi": "538006909",
+        "area": "China Coast",
+        "position_age_reported": "9 min ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Daesan, Korea",
+        "eta_reported": "Oct 20, 01:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.560Z",
+        "access_status": "available",
+        "port": "Daesan/Seosan",
+        "country": "South Korea",
+        "court_reference": {
+          "name": "Daejeon District Court · Seosan Branch",
+          "status": "reference",
+          "note": "Jurisdiction covering Seosan, Dangjin and Taean.",
+          "sources": [
+            {
+              "title": "Civil Execution Act, art. 278",
+              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+            },
+            {
+              "title": "Seosan territorial jurisdiction",
+              "url": "https://daejeon.scourt.go.kr/jibubmgr/jurisdiction/Jurisdiction.work?bub_cd=000285"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.560Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-17T09:32:42.000Z",
+          "backend_destination": "KR TSN",
+          "backend_static_at": "2026-10-17T09:32:42.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749104",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.572Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9749568",
+      "name": "GLOVIS SUN",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9749568",
+        "reported_imo": "9749568",
+        "mmsi": "440255000",
+        "area": "West Africa",
+        "position_age_reported": "5 days ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Durban, South Africa",
+        "eta_reported": "Oct 25, 09:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.581Z",
+        "access_status": "available",
+        "port": "Durban",
+        "country": "South Africa",
+        "court_reference": {
+          "name": "High Court of South Africa · KwaZulu-Natal Division, Durban",
+          "status": "reference",
+          "checked_at": "2026-10-19",
+          "note": "Reference for admiralty arrest applications on arrival at Durban. The 2026 division directive covers admiralty case initiation and arrest warrants; claim requirements still require local assessment.",
+          "sources": [
+            {
+              "title": "KwaZulu-Natal Division · Court Online Directive 1 of 2026, section 5.6 and Part E",
+              "url": "https://www.judiciary.org.za/images/Directives/Directives_2026/KZN%20Court%20Online%20Directives%20(Final%20June%202026).pdf"
+            },
+            {
+              "title": "KwaZulu-Natal Division · official court contacts",
+              "url": "https://www.judiciary.org.za/index.php/contact-us/superior-courts-contact/kwazulu-natal-division"
+            }
+          ]
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.581Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-09-25T12:40:36.000Z",
+          "backend_destination": null,
+          "backend_static_at": "2026-09-25T12:40:36.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749568",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.717Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9749570",
+      "name": "GLOVIS STELLA",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9749570",
+        "reported_imo": "9749570",
+        "mmsi": "440257000",
+        "area": "North America West Coast",
+        "position_age_reported": "9 days ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Yokohama, Japan",
+        "eta_reported": "Oct 23, 01:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.732Z",
+        "access_status": "available",
+        "port": "Yokohama",
+        "country": "Japan",
+        "court_reference": {
+          "name": null,
+          "status": "unverified",
+          "checked_at": "2026-10-19",
+          "sources": [],
+          "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.732Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-12T17:16:16.000Z",
+          "backend_destination": "USPDX=>JPYOK",
+          "backend_static_at": "2026-10-12T17:16:16.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749570",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.734Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9749582",
+      "name": "GLOVIS SIRIUS",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9749582",
+        "reported_imo": "9749582",
+        "mmsi": "440258000",
+        "area": "South Africa",
+        "position_age_reported": "2 days ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Veracruz, Mexico",
+        "eta_reported": "Nov 6, 07:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.745Z",
+        "access_status": "available",
+        "port": "Veracruz",
+        "country": "Mexico",
+        "court_reference": {
+          "name": "Juzgado de Distrito at the vessel location",
+          "status": "reference",
+          "note": "For Lázaro Cárdenas, the territorially competent federal court in Michoacán; venue and allocation require confirmation. Article 274 LNCM.",
+          "sources": [
+            {
+              "title": "Navigation and Maritime Commerce Act: current text",
+              "url": "https://www.diputados.gob.mx/LeyesBiblio/pdf/LNCM.pdf"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.745Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-19T23:32:40.000Z",
+          "backend_destination": "MX VER",
+          "backend_static_at": "2026-10-20T00:45:11.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749582",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.745Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9749594",
+      "name": "GLOVIS SPRING",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9749594",
+        "reported_imo": "9749594",
+        "mmsi": "440260000",
+        "area": "East Asia",
+        "position_age_reported": "1 min ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Ulsan, Korea",
+        "eta_reported": null,
+        "arrival_reported": "Oct 21, 00:21 UTC",
+        "voyage_status": "reported_arrival",
+        "checked_at": "2026-10-22T01:37:38.756Z",
+        "access_status": "available",
+        "port": "Ulsan",
+        "country": "South Korea",
+        "court_reference": {
+          "name": "Ulsan District Court",
+          "status": "reference",
+          "note": "Ulsan territorial court; verify vessel location and requirements for relief.",
+          "sources": [
+            {
+              "title": "Civil Execution Act, art. 278",
+              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+            },
+            {
+              "title": "Ulsan District Court",
+              "url": "https://ulsan.scourt.go.kr/"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.756Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-20T21:35:40.000Z",
+          "backend_destination": "KRMOK",
+          "backend_static_at": "2026-10-20T21:35:40.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9749594",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.897Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9775828",
+      "name": "GLOVIS SILVER",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9775828",
+        "reported_imo": "9775828",
+        "mmsi": "440249000",
+        "area": "East Africa",
+        "position_age_reported": "3 min ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Chennai (ex Madras), India",
+        "eta_reported": "Oct 30, 23:30",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.909Z",
+        "access_status": "available",
+        "port": "Chennai (ex Madras)",
+        "country": "India",
+        "court_reference": {
+          "name": "Madras High Court · Chennai (Admiralty)",
+          "status": "reference",
+          "note": "Coastal High Court for Tamil Nadu; in rem arrest under the Admiralty Act 2017.",
+          "sources": [
+            {
+              "title": "Admiralty Act 2017",
+              "url": "https://www.indiacode.nic.in/handle/123456789/2256?locale=en"
+            },
+            {
+              "title": "Ministry: coastal High Courts jurisdiction",
+              "url": "https://www.pib.gov.in/newsite/PrintRelease.aspx?lang=2&reg=48&relid=174565"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.909Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-09-23T04:30:37.000Z",
+          "backend_destination": null,
+          "backend_static_at": "2026-09-23T04:30:37.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9775828",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.910Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9798387",
+      "name": "GLOVIS SONIC",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9798387",
+        "reported_imo": "9798387",
+        "mmsi": "441511000",
+        "area": "South Africa",
+        "position_age_reported": "17 hours ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Singapore, Singapore",
+        "eta_reported": "Nov 3, 09:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.922Z",
+        "access_status": "available",
+        "port": "Singapore",
+        "country": "Singapore",
+        "court_reference": {
+          "name": "General Division of the High Court · Singapore",
+          "status": "reference",
+          "note": "Warrant of arrest and Sheriff intervention within Singapore port limits.",
+          "sources": [
+            {
+              "title": "Supreme Court Practice Directions 2021, Part 17",
+              "url": "https://epd2021-supremecourt.judiciary.gov.sg/part-17-admiralty-matters"
+            },
+            {
+              "title": "Sheriff: ship arrest",
+              "url": "https://www.judiciary.gov.sg/services/sheriff-services-admiralty-actions"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.922Z",
+        "last_attempt_status": "available",
+        "comparison": {
+          "backend_position_at": "2026-10-21T09:00:38.519Z",
+          "backend_destination": "SGSIN(PEBGB)",
+          "backend_static_at": "2026-10-21T09:00:38.000Z",
+          "merge_applied": false
+        },
+        "identity_check": "Matches current backend IMO/MMSI"
+      },
+      "marinetraffic": {
+        "source": "MarineTraffic",
+        "url": "https://www.marinetraffic.com/en/ais/details/ships/imo:9798387",
+        "checked_at": "2026-10-19T01:33:46Z",
+        "access_status": "unavailable",
+        "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
+        "last_attempt_at": "2026-10-22T01:37:38.922Z",
+        "last_attempt_status": "unavailable",
+        "last_attempt_note": "HTTP 403"
+      }
+    },
+    {
+      "imo": "9798399",
+      "name": "GLOVIS SAFETY",
+      "vesselfinder": {
+        "source": "VesselFinder",
+        "url": "https://www.vesselfinder.com/vessels/details/9798399",
+        "reported_imo": "9798399",
+        "mmsi": "441104000",
+        "area": "North America West Coast",
+        "position_age_reported": "2 days ago",
+        "signal_at": null,
+        "coordinates": null,
+        "destination_reported": "Ulsan, Korea",
+        "eta_reported": "Nov 5, 03:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:38.934Z",
+        "access_status": "available",
+        "port": "Ulsan",
+        "country": "South Korea",
+        "court_reference": {
+          "name": "Ulsan District Court",
+          "status": "reference",
+          "note": "Ulsan territorial court; verify vessel location and requirements for relief.",
+          "sources": [
+            {
+              "title": "Civil Execution Act, art. 278",
+              "url": "https://elaw.klri.re.kr/eng_mobile/viewer.do?hseq=73562&key=9&type=sogan"
+            },
+            {
+              "title": "Ulsan District Court",
+              "url": "https://ulsan.scourt.go.kr/"
+            }
+          ],
+          "checked_at": "2026-10-06"
+        },
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
+        "temporal_status": "reference_only_no_absolute_signal_timestamp",
+        "last_attempt_at": "2026-10-22T01:37:38.934Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-09-21T10:08:49.000Z",
@@ -1966,7 +1958,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.024Z",
+        "last_attempt_at": "2026-10-22T01:37:39.076Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -1980,14 +1972,14 @@
         "reported_imo": "9798404",
         "mmsi": "441109000",
         "area": "Red Sea",
-        "position_age_reported": "27 hours ago",
+        "position_age_reported": "39 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Aqaba Industrial, Jordan",
         "eta_reported": "Oct 19, 05:30",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:38.034Z",
+        "checked_at": "2026-10-22T01:37:39.091Z",
         "access_status": "available",
         "port": "Aqaba Industrial",
         "country": "Jordan",
@@ -2000,7 +1992,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:38.034Z",
+        "last_attempt_at": "2026-10-22T01:37:39.091Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-15T07:27:26.000Z",
@@ -2016,7 +2008,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.072Z",
+        "last_attempt_at": "2026-10-22T01:37:39.091Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -2030,21 +2022,21 @@
         "reported_imo": "9798416",
         "mmsi": "440500000",
         "area": "North America West Coast",
-        "position_age_reported": "37 min ago",
+        "position_age_reported": "13 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Shanghai, China",
         "eta_reported": "Nov 5, 01:45",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:38.084Z",
+        "checked_at": "2026-10-22T01:37:39.109Z",
         "access_status": "available",
         "port": "Shanghai",
         "country": "China",
         "court_reference": {
           "name": "Shanghai Maritime Court",
           "status": "reference",
-          "note": "Official Shanghai court information covers Shanghai coastal waters, including Yangshan and surrounding waters. Supreme People's Court ship-arrest provisions were consulted. Exact vessel location, claim eligibility and arrest prerequisites still require confirmation.",
+          "note": "Jurisdiction over Shanghai waters, including Yangshan; arrest under the Special Maritime Procedure Law.",
           "sources": [
             {
               "title": "Shanghai Maritime Court: jurisdiction",
@@ -2055,11 +2047,11 @@
               "url": "https://english.court.gov.cn/2021-10/20/c_761768.htm"
             }
           ],
-          "checked_at": "2026-10-20"
+          "checked_at": "2026-10-06"
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:38.084Z",
+        "last_attempt_at": "2026-10-22T01:37:39.109Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-20T19:45:38.000Z",
@@ -2075,7 +2067,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.084Z",
+        "last_attempt_at": "2026-10-22T01:37:39.109Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -2096,7 +2088,7 @@
         "eta_reported": null,
         "arrival_reported": "Oct 18, 19:55 UTC",
         "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-21T13:32:38.092Z",
+        "checked_at": "2026-10-22T01:37:39.115Z",
         "access_status": "available",
         "port": "Al Fujayrah Anch.",
         "country": "United Arab Emirates (UAE)",
@@ -2109,7 +2101,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:38.092Z",
+        "last_attempt_at": "2026-10-22T01:37:39.115Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-18T13:32:19.000Z",
@@ -2125,7 +2117,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.203Z",
+        "last_attempt_at": "2026-10-22T01:37:39.259Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -2139,14 +2131,14 @@
         "reported_imo": "9904089",
         "mmsi": "440423000",
         "area": "South Africa",
-        "position_age_reported": "8 hours ago",
+        "position_age_reported": "20 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "HIGHSEAS",
         "eta_reported": "Oct 24, 12:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:38.209Z",
+        "checked_at": "2026-10-22T01:37:39.267Z",
         "access_status": "available",
         "port": null,
         "country": null,
@@ -2159,7 +2151,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:38.209Z",
+        "last_attempt_at": "2026-10-22T01:37:39.267Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-10-21T01:14:25.000Z",
@@ -2175,7 +2167,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.260Z",
+        "last_attempt_at": "2026-10-22T01:37:39.278Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -2189,14 +2181,14 @@
         "reported_imo": "9926738",
         "mmsi": "441345000",
         "area": "East Mediterranean",
-        "position_age_reported": "2 min ago",
+        "position_age_reported": "3 min ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Singapore, Singapore",
         "eta_reported": "Nov 29, 09:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:38.275Z",
+        "checked_at": "2026-10-22T01:37:39.291Z",
         "access_status": "available",
         "port": "Singapore",
         "country": "Singapore",
@@ -2216,14 +2208,14 @@
           ],
           "checked_at": "2026-10-06"
         },
-        "retrieval_crawl_note": "Direct public-page retrieval at consultation reported ETA Nov 29, 09:00. A separately opened cached/indexed view still displayed Nov 27, 07:00; the new value remains supplemental and has no absolute source signal timestamp.",
+        "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:38.275Z",
+        "last_attempt_at": "2026-10-22T01:37:39.291Z",
         "last_attempt_status": "available",
         "comparison": {
-          "backend_position_at": "2026-10-21T13:28:48.000Z",
+          "backend_position_at": "2026-10-21T20:25:58.000Z",
           "backend_destination": "SGSIN",
-          "backend_static_at": "2026-10-21T13:28:48.000Z",
+          "backend_static_at": "2026-10-21T20:25:58.000Z",
           "merge_applied": false
         },
         "identity_check": "Matches current backend IMO/MMSI"
@@ -2234,7 +2226,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.275Z",
+        "last_attempt_at": "2026-10-22T01:37:39.291Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -2248,32 +2240,32 @@
         "reported_imo": "9926740",
         "mmsi": "441523000",
         "area": "South East Asia",
-        "position_age_reported": "3 min ago",
+        "position_age_reported": "1 min ago",
         "signal_at": null,
         "coordinates": null,
-        "destination_reported": "Singapore Anch. 5, Singapore",
-        "eta_reported": null,
-        "arrival_reported": "Oct 20, 11:45 UTC",
-        "voyage_status": "reported_arrival",
-        "checked_at": "2026-10-21T13:32:38.281Z",
+        "destination_reported": "Sidi Kerir Oil Term., Egypt",
+        "eta_reported": "Nov 27, 04:00",
+        "arrival_reported": null,
+        "voyage_status": "en_route",
+        "checked_at": "2026-10-22T01:37:39.312Z",
         "access_status": "available",
-        "port": "Singapore Anch. 5",
-        "country": "Singapore",
+        "port": "Sidi Kerir Oil Term.",
+        "country": "Egypt",
         "court_reference": {
           "name": null,
           "status": "unverified",
-          "checked_at": "2026-10-20",
+          "checked_at": "2026-10-22",
           "sources": [],
           "note": "Civil ship-arrest jurisdiction has not been verified from an official source."
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:38.281Z",
+        "last_attempt_at": "2026-10-22T01:37:39.312Z",
         "last_attempt_status": "available",
         "comparison": {
-          "backend_position_at": "2026-10-21T13:29:36.000Z",
-          "backend_destination": "SGSIN",
-          "backend_static_at": "2026-10-21T13:29:36.000Z",
+          "backend_position_at": "2026-10-22T01:36:51.000Z",
+          "backend_destination": "EGSKT",
+          "backend_static_at": "2026-10-22T01:36:51.000Z",
           "merge_applied": false
         },
         "identity_check": "Matches current backend IMO/MMSI"
@@ -2284,7 +2276,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.383Z",
+        "last_attempt_at": "2026-10-22T01:37:39.434Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -2298,14 +2290,14 @@
         "reported_imo": "9958274",
         "mmsi": "636023912",
         "area": "North America West Coast",
-        "position_age_reported": "23 days ago",
+        "position_age_reported": "24 days ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Dongying, China",
         "eta_reported": "Oct 24, 19:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:38.397Z",
+        "checked_at": "2026-10-22T01:37:39.441Z",
         "access_status": "available",
         "port": "Dongying",
         "country": "China",
@@ -2318,7 +2310,7 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:38.397Z",
+        "last_attempt_at": "2026-10-22T01:37:39.441Z",
         "last_attempt_status": "available",
         "comparison": {
           "backend_position_at": "2026-09-27T23:27:50.000Z",
@@ -2334,7 +2326,7 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.442Z",
+        "last_attempt_at": "2026-10-22T01:37:39.458Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
@@ -2347,15 +2339,15 @@
         "url": "https://www.vesselfinder.com/vessels/details/9975040",
         "reported_imo": "9975040",
         "mmsi": "636023910",
-        "area": "China Coast",
-        "position_age_reported": "32 hours ago",
+        "area": "East Asia",
+        "position_age_reported": "3 hours ago",
         "signal_at": null,
         "coordinates": null,
         "destination_reported": "Dampier, Australia",
         "eta_reported": "Oct 29, 21:00",
         "arrival_reported": null,
         "voyage_status": "en_route",
-        "checked_at": "2026-10-21T13:32:38.458Z",
+        "checked_at": "2026-10-22T01:37:39.476Z",
         "access_status": "available",
         "port": "Dampier",
         "country": "Australia",
@@ -2373,12 +2365,12 @@
         },
         "retrieval_crawl_note": "Public page retrieved at consultation; upstream caching is possible",
         "temporal_status": "reference_only_no_absolute_signal_timestamp",
-        "last_attempt_at": "2026-10-21T13:32:38.458Z",
+        "last_attempt_at": "2026-10-22T01:37:39.476Z",
         "last_attempt_status": "available",
         "comparison": {
-          "backend_position_at": "2026-10-20T05:21:33.000Z",
+          "backend_position_at": "2026-10-21T22:17:44.000Z",
           "backend_destination": "AUDAM",
-          "backend_static_at": "2026-10-20T05:21:33.000Z",
+          "backend_static_at": "2026-10-21T22:17:44.000Z",
           "merge_applied": false
         },
         "identity_check": "Matches current backend IMO/MMSI"
@@ -2389,19 +2381,15 @@
         "checked_at": "2026-10-19T01:33:46Z",
         "access_status": "unavailable",
         "note": "Public page unavailable through retrieval (403/block); no voyage data imported.",
-        "last_attempt_at": "2026-10-21T13:32:38.459Z",
+        "last_attempt_at": "2026-10-22T01:37:39.476Z",
         "last_attempt_status": "unavailable",
         "last_attempt_note": "HTTP 403"
       }
     }
   ],
   "notes": [
-    "2026-10-21T13:32:38.626Z: Completed 88 public source-page retrieval attempts: VesselFinder readable for 44/44; MarineTraffic blocked or otherwise unavailable for 44/44. Last valid values were retained where a source was unavailable.",
-    "No declared destination, port or country changed. Updated source-reported ETAs for Glovis Supreme, Glovis Summit, Glovis Symphony, Glovis Crown, Glovis Captain, Glovis Diamond, Glovis Stella, Glovis Silver, Glovis Sonic, VL Breeze and Woodside Scarlet Ibis.",
-    "Direct and separately indexed VesselFinder views disagreed on the Glovis Summit and VL Breeze ETAs. The directly retrieved values are shown only as supplemental references with the consultation date; no absolute source signal time or AIS freshness is inferred.",
-    "Court references were preserved because no destination changed. Preliminary and unverified competence labels remain unchanged.",
-    "43 source IMO/MMSI pairs match current backend identities. VL Pioneer retains conflicting public MMSI records; no AIS identity or position is accepted for that ship.",
-    "Relative signal ages are quoted at consultation and never converted to absolute timestamps. No coordinates or live freshness were inferred; yearless ETAs retain unverified year/timezone.",
-    "Supplemental references remain separate from timestamped AIS observations; no AIS position, destination or freshness was overwritten."
+    "2026-10-22T01:37:39Z: VesselFinder returned readable public pages for 44 of 44 vessels; last valid supplemental values were retained where unavailable.",
+    "2026-10-22T01:37:39Z: MarineTraffic public pages remained unavailable or yielded no verifiable absolute-timestamp voyage data; no MarineTraffic voyage fields were imported.",
+    "Relative-age provider references remain supplemental and do not overwrite newer timestamped AIS data."
   ]
 }
