@@ -48,3 +48,14 @@ test('a blocked source preserves valid data, timestamp and court across a refres
   assert.equal(new ReferenceMonitor(options).snapshot().data.vessels[0].vesselfinder.checked_at,ref.checked_at);
  }finally{fs.rmSync(dir,{recursive:true});}
 });
+test('completed refresh replaces stale summary-note dates with the consultation time',async()=>{
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'vw-note-'));
+ try{
+  const seed={schema_version:1,checked_at:'2026-10-19T01:33:46Z',notes:['stale'],coverage:{},vessels:[{...ship,vesselfinder:{},marinetraffic:{}}]};
+  const monitor=new ReferenceMonitor({fleet:{vessels:[ship]},seed,directory,legal,dataDir:dir,clock:()=> '2026-10-22T01:37:39.641Z',
+   fetchPage:async url=>url.includes('supplemental.json')?{ok:false,status:404}:url.includes('vesselfinder')?{ok:true,text:async()=>page}:{ok:false,status:403}});
+  await monitor.refresh();
+  const notes=monitor.snapshot().data.notes;
+  assert.match(notes[0],/^2026-10-22T01:37:39Z:/);assert.match(notes[1],/accessible for 0 of 1 vessels/);
+ }finally{fs.rmSync(dir,{recursive:true});}
+});
